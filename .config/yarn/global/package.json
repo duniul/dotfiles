@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "depcheck": "^1.0.0",
+    "eslint": "^7.5.0",
+    "fkill-cli": "^6.0.1",
+    "generator-code": "^1.2.19",
+    "git-open": "^2.1.0",
+    "git-recent": "^1.1.1",
+    "jq.node": "^2.2.0",
+    "lerna": "^3.22.1",
+    "nodemon": "^2.0.4",
+    "npm-check-updates": "^7.0.2",
+    "npm-which": "^3.0.1",
+    "prettier": "^2.0.5",
+    "trash-cli": "^3.0.0",
+    "yo": "^3.1.1"
+  }
+}

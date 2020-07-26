@@ -1,0 +1,37 @@
+#### Global .gitignore file
+# Will be ignored in all directories.
+# To ensure it's being used, run `git config --global core.excludesfile ~/.gitignore_global`
+
+### dotfiles
+.dotfiles-git/
+
+### Fish
+fishd.*
+fish/config.fish.backup
+.config/fish/fish_history
+fish/fish_history
+fish/fish_variables
+
+### Git
+.gitconfig.local
+
+### Node
+node_modules
+
+### Dynamic environment variables
+# direnv (https://github.com/direnv/direnv)
+.direnv
+.envrc
+# dotenv (https://github.com/motdotla/dotenv)
+.env
+
+
+### OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
