@@ -9,6 +9,10 @@ fi
 
 git clone --bare https://github.com/duniul/dotfiles.git $DOTFILES_GIT_DIR
 
+# set fetch and branch refs
+git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME config --local branch.master.remote "origin"
+git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME config --local branch.master.merge "refs/heads/master"
 # don't show untracked files
 git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME config --local status.showUntrackedFiles no
 # checkout bare git repo contents
