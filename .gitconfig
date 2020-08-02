@@ -29,8 +29,6 @@ unpublish = push origin :$(git branch-name)
 clear-local = branch | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 clear-merged = branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 continue = rebase --continue
-edit-config = !code ~/.gitconfig
-edit-config-local = !code $(git root)/.git/config
 global-ignore = !code ~/.gitignore_global
 
 [pull]
