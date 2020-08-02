@@ -201,12 +201,12 @@ sudo pmset -b sleep 5 &>/dev/null
 step "Set standby delay to 24 hours (default is 1 hour)"
 sudo pmset -a standbydelay 86400 &>/dev/null
 
-step "Never go into computer sleep mode"
-sudo systemsetup -setcomputersleep Off &>/dev/null
+step "Never go into computer sleep after 20 min"
+sudo systemsetup -setcomputersleep 20 &>/dev/null
 
 # 0: Hibernation mode, 3: Copy RAM to disk so the system state can still be restored in case of a power failure.
 step "Disable hibernation (speeds up entering sleep mode)"
-sudo pmset -a hibernatemode 0 &>/dev/null
+sudo pmset -a hibernatemode 3 &>/dev/null
 
 # step "Remove the sleep image file to save disk space, create a zero-byte file instead and make sure it can't be rewritten."
 # sudo rm /private/var/vm/sleepimage
