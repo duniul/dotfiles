@@ -3,6 +3,7 @@
     "depcheck": "^1.0.0",
     "eslint": "^7.5.0",
     "fkill-cli": "^6.0.1",
+    "gatsby-cli": "^2.12.68",
     "generator-code": "^1.2.19",
     "git-open": "^2.1.0",
     "git-recent": "^1.1.1",
