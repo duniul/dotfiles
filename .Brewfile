@@ -55,10 +55,16 @@ cask "raindropio"
 cask "rectangle"
 cask "slack"
 cask "spotify"
+cask "steam"
 cask "sublime-text"
 cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "LastPass", id: 926036361
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
