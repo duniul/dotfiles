@@ -19,9 +19,9 @@ alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
 
 # use GNU coreutils/findutils (installed through Homebrew) instead of Mac OSX's outdated ones
-alias mv='gmv --interactive --verbose'
-alias rm='grm --interactive --verbose'
-alias cp='gcp --interactive --verbose'
+alias mv='gmv --interactive'
+alias rm='grm --interactive'
+alias cp='gcp --interactive'
 alias grep='ggrep --color=auto'
 alias egrep='gegrep --color=auto'
 alias fgrep='gfgrep --color=auto'
