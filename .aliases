@@ -27,6 +27,7 @@ alias egrep='gegrep --color=auto'
 alias fgrep='gfgrep --color=auto'
 alias ls='gls --color=auto --group-directories-first --sort=extension -p'
 alias find='gfind'
+alias pip='pip3'
 
 # quick functions
 alias filesize="stat -f '%z bytes'" # print file/dir size
