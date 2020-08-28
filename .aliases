@@ -9,7 +9,7 @@ alias edit='$EDITOR' # edit with default editor
 alias sudo='sudo '   # enable aliases to be sudo’ed
 
 # edit shortcuts
-alias gitconfig='edit ~/.gitconfig'
+alias gitconfig='git config --global --edit'
 alias fishconfig='edit $FISH_DIR/config.fish'
 alias fishfunctions='edit $FISH_CUSTOM_FUNCTIONS_DIR'
 alias bashprofile='edit ~/.bash_profile'
