@@ -48,6 +48,9 @@ chsh -s $fishpath
 # install fisher packages
 fish -c "fisher"
 
+# install pip packages
+pip install -r pip/pip-requirements.txt
+
 # install global yarn packages, for some reason there's not proper install command
 yarn global upgrade
 

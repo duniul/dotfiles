@@ -8,6 +8,10 @@
 # THIS FILE IS SYNCED WITH DOTFILES AND SHOULD NOT CONTAIN SENSITIVE INFORMATION.
 # IF YOU NEED SENSITIVE ENV VARIABLES, ADD THEM TO .env/.envrc OR .extras.bash/extras.fish
 
+# append user bins to PATH
+export USER_BIN="$HOME/bin"
+export PATH="$PATH:$USER_BIN"
+
 export EDITOR="code"      # Edit with VS Code by default
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
 
