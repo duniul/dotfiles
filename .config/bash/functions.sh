@@ -29,11 +29,17 @@ function gz() {
 
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
 function brewup() {
+	echo "Updating Homebrew..."
 	brew -v update
+
+	echo "Upgrading Homebrew installs..."
 	brew upgrade -v --force-bottle
-	cleanup_brew
-	brew doctor
-	cask doctor
+
+	echo "Cleaning up Homebrew installs..."
+	cleanup-brew
+
+	echo "Running Homebrew doctor..."
+	brew doctor --verbose
 }
 
 # Dump a Brewfile to ~/.Brewfile or to a provided path. `brewdump [filepath]`
@@ -47,7 +53,8 @@ function brewdump() {
 }
 
 # Clean up unused Homebrew dependencies and packages
-function cleanup_brew() {
+function cleanup-brew() {
+	echo "Cleaning up Homebrew installs..."
 	dateSeconds=$(date +%s)
 	tmpBrewfile="$TMPDIR/Brewfile-$dateSeconds"
 	brew bundle dump --file=$tmpBrewfile --force &>/dev/null
@@ -57,12 +64,12 @@ function cleanup_brew() {
 }
 
 # Recursively delete .DS_Store files
-function cleanup_dsstore() {
+function cleanup-dsstore() {
 	find . -type f -name '*.DS_Store' -ls -delete
 }
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
-function cleanup_ls() {
+function cleanup-ls() {
 	/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder
 }
 
