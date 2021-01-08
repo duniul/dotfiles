@@ -11,7 +11,7 @@
     "jq.node": "^2.2.0",
     "lerna": "^3.22.1",
     "nodemon": "^2.0.4",
-    "npm-check-updates": "9.0.3",
+    "npm-check-updates": "10.2.5",
     "npm-which": "^3.0.1",
     "prettier": "^2.0.5",
     "trash-cli": "^3.0.0",
