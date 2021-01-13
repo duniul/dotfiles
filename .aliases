@@ -12,6 +12,8 @@ alias sudo='sudo '   # enable aliases to be sudo’ed
 alias gitconfig='git config --global --edit'
 alias fishconfig='edit $FISH_DIR/config.fish'
 alias fishfunctions='edit $FISH_CUSTOM_FUNCTIONS_DIR'
+alias bashconfig='edit ~/.bashrc'
+alias bashrc="bashconfig"
 alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 
