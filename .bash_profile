@@ -3,7 +3,7 @@
 BREW_PREFIX=$(brew --prefix)
 
 # Load common dotfiles
-for file in ~/{.exports,.aliases,.functions}; do
+for file in ~/{.exports,.aliases,.functions,.extras}; do
   test -e "$file" && source $file
 done
 

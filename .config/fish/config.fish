@@ -4,7 +4,7 @@
 set --append fish_function_path "/Users/daniel/.config/fish/custom_functions"
 
 # Load common dotfiles
-for file in ~/{.exports,.aliases,.functions}
+for file in ~/{.exports,.aliases,.functions,.extras}
     test -e "$file" && source $file
 end
 
@@ -20,10 +20,7 @@ set -e file
 ### Fish SPECIFICS ###
 # These settings are unique for Fish, and do not need to be enabled for Bash
 
-# Pisces (https://github.com/laughedelic/pisces)
-set -x pisces_only_insert_at_eol 1 # only add pair symbol if at end of line
-
-### STOP BASH SPECIFICS ###
+### STOP FISH SPECIFICS ###
 
 ### START SHELL COMMONS ###
 # These settings need to be configured in both .bash_profile and fish.config
