@@ -37,6 +37,7 @@ brew "shfmt"
 brew "terminal-notifier"
 brew "thefuck"
 brew "tree"
+brew "wget"
 brew "wifi-password"
 brew "yarn"
 brew "gemfury/tap/gemfury"
@@ -74,11 +75,3 @@ cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "LastPass", id: 926036361
-mas "Microsoft OneNote", id: 784801555
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
