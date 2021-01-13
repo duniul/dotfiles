@@ -62,6 +62,9 @@ cp -Rp ~/Library/"Application Support"/Google/Chrome/Default/Extensions $migrati
 echo "$(tput setaf 3)- Copying WiFi config$(tput sgr0)"
 cp -Rp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist $migrationDir/_root/Library/Preferences/SystemConfiguration/
 
+echo "$(tput setaf 3)- Copying Prey config$(tput sgr0)"
+cp -Rp /etc/prey/prey.conf $migrationDir/_root/prey 2>/dev/null
+
 echo
 echo "$(tput setaf 2)Done! Also consider: unpushed Git branches, new dotfiles, hidden files, downloads etc.$(tput sgr0)"
 exit 0
