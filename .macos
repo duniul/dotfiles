@@ -128,6 +128,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 step "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+step "Allow to open apps also from \"unidentified developers\" by default"
+sudo spctl --master-disable
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -155,8 +158,8 @@ sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262
 step "Follow the keyboard focus while zoomed in"
 sudo defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
-step "Disable press-and-hold for keys in favor of key repeat"
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# step "Disable press-and-hold for keys in favor of key repeat"
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 step "Set a fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 2
@@ -236,8 +239,8 @@ step "Enable subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
 
-step "Enable HiDPI display modes (requires restart)"
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+# step "Enable HiDPI display modes (requires restart)"
+# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
