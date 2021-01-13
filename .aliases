@@ -33,13 +33,11 @@ alias 1password='op'
 
 # quick functions
 alias filesize="stat -f '%z bytes'" # print file/dir size
-alias wget='curl -O'                # wget sucks with certificates. Let's keep it simple.
 alias la='ls -la'
 
 # shortcuts
 alias g='git'
 alias dot='dotfiles'
-alias cask='brew cask'
 alias fs='filesize'
 alias cdf='cdfinder'
 alias lsa='la'
