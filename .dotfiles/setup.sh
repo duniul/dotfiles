@@ -28,7 +28,7 @@ if ! which brew &>/dev/null; then
 
   # this scripts installs it the regular way by default (/usr/local):
   # shellcheck disable=SC2091
-  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
+  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 
 # install packages and apps from the Brewfile
