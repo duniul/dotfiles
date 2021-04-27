@@ -20,7 +20,7 @@ cherry = cherry-pick
 stat = status
 last = log -1 HEAD
 unstage = reset HEAD --
-uncommit = reset --soft HEAD~
+uncommit = !echo "Uncommitting:" && git log -1 --pretty=%B && git reset --soft HEAD~
 sync = fetch --all --prune && git rebase -p --autostash $1
 branch-name = rev-parse --abbrev-ref HEAD
 root = rev-parse --show-toplevel
