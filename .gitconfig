@@ -16,6 +16,7 @@ ck = checkout
 br = branch
 pu = push
 re = rebase
+amend = commit --amend --no-edit
 cherry = cherry-pick
 stat = status
 last = log -1 HEAD
@@ -30,6 +31,7 @@ unpublish = !git push origin :$(git branch-name)
 clear-local = !git branch | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 clear-merged = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 global-ignore = !code ~/.gitignore_global
+sync-master = !git fetch && git rebase origin/master
 
 [pull]
 rebase = true
@@ -39,21 +41,6 @@ clean = git-lfs clean -- %f
 smudge = git-lfs smudge -- %f
 process = git-lfs filter-process
 required = true
-
-[diff]
-tool = vscode
-
-[difftool "vscode"]
-cmd = code --wait --diff $LOCAL $REMOTE
-
-[filter "lfs"]
-clean = git-lfs clean -- %f
-smudge = git-lfs smudge -- %f
-process = git-lfs filter-process
-required = true
-
-[pull]
-rebase = true
 
 [diff]
 tool = vscode
