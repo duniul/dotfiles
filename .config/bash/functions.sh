@@ -198,30 +198,17 @@ function isodate() {
 }
 
 # Log in with aws-google-auth and extract credentials with aws-export-profile.
-function aws-google() {
-	if [ -n "$AWS_PROFILE" ]; then
+function awslogin() {
+	profile=$1
+
+	# If no profile is passed, use the the AWS_PROFILE.
+	if [ -z "$profile" ]; then
 		profile=$AWS_PROFILE
-	else
-		profile="sts"
 	fi
 
-	argv=$*
+	echo "Logging in with profile: $profile"
+	echo
 
-	while [[ $# -gt 0 ]]; do
-		key="$1"
-
-		case $key in
-		-p | --profile)
-			profile="$2"
-			shift
-			shift
-			;;
-		*)
-			shift
-			;;
-		esac
-	done
-
-	aws-google-auth $argv
-	eval aws-export-profile $profile >/dev/null && echo "Exported $profile credentials as env vars!"
+	aws sso login --profile $profile
+	yawsso --profile $profile
 }
