@@ -48,3 +48,20 @@ tool = vscode
 
 [difftool "vscode"]
 cmd = code --wait --diff $LOCAL $REMOTE
+
+# START: git-delta options
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+# END: git-delta options
