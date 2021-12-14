@@ -31,6 +31,8 @@ alias fgrep='gfgrep --color=auto'
 alias ls='gls --color=auto --group-directories-first --sort=extension -p'
 alias find='gfind'
 alias pip='pip3'
+alias cat='bat'
+alias ocat='/bin/cat'
 alias 1p='op'
 alias 1password='op'
 
