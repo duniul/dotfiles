@@ -75,6 +75,9 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 step "Disable the over-the-top focus ring animation"
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
 
+step "Adjust toolbar title rollover delay"
+defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
+
 step "Increase window resize speed for Cocoa applications"
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
@@ -128,8 +131,8 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 step "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-step "Allow to open apps also from \"unidentified developers\" by default"
-sudo spctl --master-disable
+# step "Allow to open apps also from \"unidentified developers\" by default"
+# sudo spctl --master-disable
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -158,8 +161,8 @@ sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262
 step "Follow the keyboard focus while zoomed in"
 sudo defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
-# step "Disable press-and-hold for keys in favor of key repeat"
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+step "Disable press-and-hold for keys in favor of key repeat"
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 step "Set a fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 2
@@ -236,8 +239,8 @@ defaults write com.apple.screencapture type -string 'png'
 # defaults write com.apple.screencapture disable-shadow -bool true
 
 step "Enable subpixel font rendering on non-Apple LCDs"
-defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # step "Enable HiDPI display modes (requires restart)"
 # sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
@@ -247,6 +250,9 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 ###############################################################################
 
 heading "Finder"
+
+step "Finder: disable warning when changing a file's extension"
+defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool false && killall Finder
 
 step "Finder: allow quitting via ⌘ + Q (doing so will also hide desktop icons)"
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -265,6 +271,12 @@ step "Show icons for external drives, servers, and removable media on the deskto
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# step "Finder: show hidden files by default"
+# defaults write com.apple.finder AppleShowAllFiles -bool true
+
+step "Finder: show all filename extensions"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 step "Finder: show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -287,8 +299,8 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 step "Enable spring loading for directories"
 defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 
-step "Remove the spring loading delay for directories"
-defaults write NSGlobalDomain com.apple.springing.delay -float 0
+step "Reduce the spring loading delay for directories"
+defaults write NSGlobalDomain com.apple.springing.delay -float 2
 
 step "Avoid creating .DS_Store files on network or USB volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -340,7 +352,10 @@ step "Show the /Volumes folder"
 sudo chflags nohidden /Volumes
 
 step "Expand the following File Info panes: General, Open with, and Sharing & Permissions"
-defaults write com.apple.finder FXInfoPanesExpanded -dict General -bool true OpenWith -bool true Privileges -bool true
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+	Privileges -bool true
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -351,8 +366,8 @@ heading "Dock, Dashboard, and hot corners"
 step "Enable highlight hover effect for the grid view of a stack (Dock)"
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-step "Set the icon size of Dock items to 36 pixels"
-defaults write com.apple.dock tilesize -int 58
+step "Set the icon size of Dock items to 60 pixels"
+defaults write com.apple.dock tilesize -int 60
 
 step "Change minimize/maximize window effect to scale"
 defaults write com.apple.dock mineffect -string "scale"
@@ -366,8 +381,8 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 step "Show indicator lights for open applications in the Dock"
 defaults write com.apple.dock show-process-indicators -bool true
 
-step "Wipe all (default) app icons from the Dock"
-defaults write com.apple.dock persistent-apps -array
+# step "Wipe all (default) app icons from the Dock"
+# defaults write com.apple.dock persistent-apps -array
 
 step "Don’t animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
@@ -661,6 +676,9 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 step "Enable the automatic update check"
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
 
+step "Check for software updates daily, not just once per week"
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
 step "Download newly available updates in background"
 defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 
@@ -694,11 +712,12 @@ heading "Messages"
 step "Disable automatic emoji substitution (i.e. use plain text smileys)"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
-step "Disable smart quotes as it’s annoying for messages that contain code"
+step "Disable smart quotes as it's annoying for messages that contain code"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
 step "Disable continuous spell checking"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
+
 
 ###############################################################################
 # Transmission.app                                                            #
