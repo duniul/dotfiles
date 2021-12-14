@@ -7,6 +7,19 @@ editor = code -w
 autocrlf = false
 excludesfile = ~/.gitignore_global
 
+# Treat spaces before tabs and all kinds of trailing whitespace as an error.
+# [default] trailing-space: looks for spaces at the end of a line
+# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+# Make `git rebase` safer on macOS.
+# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+trustctime = false
+
+# Speed up commands involving untracked files such as `git status`.
+# https://git-scm.com/docs/git-update-index#_untracked_cache
+untrackedCache = true
+
 [credential]
 helper = osxkeychain
 
@@ -16,23 +29,78 @@ ck = checkout
 br = branch
 pu = push
 re = rebase
-amend = commit --amend --no-edit
 cherry = cherry-pick
 stat = status
+
+# Amend the latest commit without making any changes.
+amend = commit --amend --no-edit
+
+# Credit an author for the latest commit.
+credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+
+# Log the last commit.
 last = log -1 HEAD
+
+## Unstage all commits.
 unstage = reset HEAD --
+
+# Uncommit the last commit.
 uncommit = !echo "Uncommitting:" && git log -1 --pretty=%B && git reset --soft HEAD~
+
+# Stash everything, including untracked.
 stashu = stash --include-untracked
+
+# Sync the current branch with the latest changes.
 sync = fetch --all --prune && git rebase -p --autostash $1
+
+# Print the branch name.
 branch-name = rev-parse --abbrev-ref HEAD
+
+# Print root of the Git dir.
 root = rev-parse --show-toplevel
+
+# Remove the old tag with this name and tag the latest commit with it.
+retag = "!f() { git tag -d $1 && git push origin :refs/tags/$1 && git tag $1; }; f"
+
+# Find branches containing commit.
+branch-containing = "!f() { git branch -a --contains $1; }; f"
+
+# Find tags containing commit.
+tag-containing = "!f() { git describe --always --contains $1; }; f"
+
+# Find commits by commit message.
+filter-commit = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+
+# Interactive rebase with the given number of latest commits.
+reb = "!f() { git rebase -i HEAD~$1; }; f"
+
+# Continue in an active rebase
 continue = rebase --continue
+
+# Print name and email of current Git user.
+user = "!f() { echo $(git config user.name) \\<$(git config user.email)\\>; }; f"
+
+# List contributors with number of commits.
+contributors = shortlog --summary --numbered
+
+# Push an unpushed branch to origin
 publish = !git push -u origin $(git branch-name)
+
+# Remove a branch from origin but keep it locally
 unpublish = !git push origin :$(git branch-name)
-clear-local = !git branch | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
-clear-merged = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
+
+# Remove all local branches
+clear-local = !git branch | grep -v '\\*\\|master\\|main\\|develop' | xargs -n 1 git branch -d
+
+# Remove all local branches that have been merged
+clear-merged = !git branch --merged | grep -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d
+
+# Open the global ignore file
 global-ignore = !code ~/.gitignore_global
-sync-master = !git fetch && git rebase origin/master
+
+[branch]
+# Show most recently changed branches first.
+sort = -committerdate
 
 [pull]
 rebase = true
@@ -45,23 +113,28 @@ required = true
 
 [diff]
 tool = vscode
+renames = copies
 
 [difftool "vscode"]
 cmd = code --wait --diff $LOCAL $REMOTE
 
+[help]
+# Automatically correct and execute mistyped commands.
+autocorrect = 1
+
 # START: git-delta options
 [core]
-    pager = delta
+pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
+diffFilter = delta --color-only
 
 [delta]
-    navigate = true
-    
+navigate = true
+
 [merge]
-    conflictstyle = diff3
+conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+colorMoved = default
 # END: git-delta options
