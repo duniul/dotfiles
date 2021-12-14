@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="doot doot" title="Made by Hot Paper Comics" src=".dotfiles/dootdoot.png" height="260" align="center" />
+  <img alt="doot doot" title="Made by Hot Paper Comics" src="https://user-images.githubusercontent.com/11836617/146030667-fdeefa54-b624-4fb8-bbee-3354b874356e.png" height="260" align="center" />
 </p>
 
 # duniul's dootfiles
