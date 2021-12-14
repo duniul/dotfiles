@@ -33,6 +33,8 @@ alias find='gfind'
 alias pip='pip3'
 alias cat='bat'
 alias ocat='/bin/cat'
+alias find="fd"
+alias ocat='/bin/find'
 alias 1p='op'
 alias 1password='op'
 
