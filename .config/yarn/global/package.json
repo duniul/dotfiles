@@ -11,7 +11,7 @@
     "jq.node": "^2.4.0",
     "lerna": "^4.0.0",
     "nodemon": "^2.0.14",
-    "npm-check-updates": "^12.0.0",
+    "npm-check-updates": "^12.0.2",
     "npm-which": "^3.0.1",
     "prettier": "^2.4.1",
     "prettier-plugin-organize-imports": "^2.3.4",
