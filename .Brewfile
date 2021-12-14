@@ -32,7 +32,7 @@ brew "mas"
 brew "nmap"
 brew "node"
 brew "pnpm"
-brew "postgresql"
+brew "postgresql", restart_service: true
 brew "shellcheck"
 brew "shfmt"
 brew "terminal-notifier"
