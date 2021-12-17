@@ -8,9 +8,12 @@
 # THIS FILE IS SYNCED WITH DOTFILES AND SHOULD NOT CONTAIN SENSITIVE INFORMATION.
 # IF YOU NEED SENSITIVE ENV VARIABLES, ADD THEM TO .env/.envrc OR .extras.bash/extras.fish
 
-# append user bins to PATH
+export VOLTA_HOME="$HOME/.volta"
+
+# append user bin directories to PATH
 export USER_BIN="$HOME/bin"
-export PATH="$PATH:$USER_BIN"
+export VOLTA_BIN="$VOLTA_HOME/bin"
+export PATH="$PATH:$USER_BIN:$VOLTA_BIN"
 
 export EDITOR="code"      # Edit with VS Code by default
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
@@ -29,3 +32,6 @@ export BASH_DIR="$HOME/.config/bash"
 
 ## direnv (https://direnv.net/)
 export DIRENV_LOG_FORMAT="direnv: %s" # direnv log formatting, leave empty to silence
+
+# Hide the “default interactive shell is now zsh” warning on macOS.
+export BASH_SILENCE_DEPRECATION_WARNING=1;

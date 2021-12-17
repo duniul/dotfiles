@@ -10,5 +10,5 @@
     "git-open",
     "git-home"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

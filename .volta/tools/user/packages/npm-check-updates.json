@@ -10,5 +10,5 @@
     "npm-check-updates",
     "ncu"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

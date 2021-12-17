@@ -9,5 +9,5 @@
   "bins": [
     "eslint"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

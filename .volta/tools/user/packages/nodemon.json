@@ -9,5 +9,5 @@
   "bins": [
     "nodemon"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

@@ -9,5 +9,5 @@
   "bins": [
     "git-recent"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

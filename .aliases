@@ -19,6 +19,7 @@ alias bashfunctions='edit $BASH_DIR/functions.sh'
 
 # dotfiles aliases
 alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
+alias dot='dotfiles'
 
 # use GNU coreutils/findutils (installed through Homebrew) instead of Mac OSX's outdated ones
 alias mv='gmv --interactive'
@@ -44,7 +45,6 @@ alias la='ls -la'
 
 # shortcuts
 alias g='git'
-alias dot='dotfiles'
 alias fs='filesize'
 alias cdf='cdfinder'
 alias lsa='la'

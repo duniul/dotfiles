@@ -9,5 +9,5 @@
   "bins": [
     "lerna"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

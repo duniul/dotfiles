@@ -9,5 +9,5 @@
   "bins": [
     "trash"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

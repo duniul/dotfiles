@@ -10,5 +10,5 @@
     "tsc",
     "tsserver"
   ],
-  "manager": "Yarn"
+  "manager": "Npm"
 }

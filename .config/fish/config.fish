@@ -20,15 +20,15 @@ set -e file
 ### Fish SPECIFICS ###
 # These settings are unique for Fish, and do not need to be enabled for Bash
 
-## fish.nvm defaults
-set --universal nvm_default_version "lts"
-set nvm_response (nvm use 2>&1) # use default version if available, redirect all output to stdout
+# ## fish.nvm defaults
+# set --universal nvm_default_version "lts"
+# set nvm_response (nvm use 2>&1) # use default version if available, redirect all output to stdout
 
-if string match -q -- "*Invalid version or missing*" $nvm_response
-    nvm use $nvm_default_version >/dev/null
-else if string match -q -- "*Node version not installed*" $nvm_response
-    nvm install
-end
+# if string match -q -- "*Invalid version or missing*" $nvm_response
+#     nvm use $nvm_default_version >/dev/null
+# else if string match -q -- "*Node version not installed*" $nvm_response
+#     nvm install
+# end
 
 ### STOP FISH SPECIFICS ###
 
