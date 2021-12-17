@@ -1,7 +1,5 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
-BREW_PREFIX=$(brew --prefix)
-
 # Load common dotfiles
 for file in ~/{.exports,.aliases,.functions,.extras}; do
   test -e "$file" && source $file
@@ -39,14 +37,16 @@ done
 
 ## Tab completion
 
+BREW_PREFIX=$(brew --prefix)
+
 # Brew tab completion
-if [[ -r "${BREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
-  source "${BREW_PREFIX}/etc/profile.d/bash_completion.sh"
-else
-  for completion in "${BREW_PREFIX}/etc/bash_completion.d/"*; do
-    [[ -r "$completion" ]] && source "$completion"
-  done
-fi
+if [ -r "$BREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
+	# Ensure existing Homebrew v1 completions continue to work
+	export BASH_COMPLETION_COMPAT_DIR="$BREW_PREFIX/etc/bash_completion.d";
+	source "$BREW_PREFIX/etc/profile.d/bash_completion.sh";
+elif [ -f /etc/bash_completion ]; then
+	source /etc/bash_completion;
+fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &>/dev/null; then

@@ -1,0 +1,13 @@
+{
+  "name": "lerna",
+  "version": "4.0.0",
+  "platform": {
+    "node": "16.13.1",
+    "npm": "8.3.0",
+    "yarn": "1.22.17"
+  },
+  "bins": [
+    "lerna"
+  ],
+  "manager": "Yarn"
+}
