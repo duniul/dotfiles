@@ -13,7 +13,7 @@ The dotfiles are managed using a `bare` Git repo, [see this popular guide](https
 In short, this is what is included:
 
 - `bash` and `fish` 🐟 stuff
-  - configs with [exports](.exports), [aliases](.aliases), functions ([bash](.config/bash/functions)/[fish](.config/fish/custom_functions)), [abbreviations](.config/fish/aliases) etc.
+  - configs with [exports](../.exports), [aliases](../.aliases), functions ([bash](../.config/bash/functions)/[fish](../.config/fish/custom_functions)), [abbreviations](../.config/fish/aliases) etc.
   - nice [`fisher`](https://github.com/jorgebucaran/fisher) packages
   - I use `fish` 95% of the time, but I like to keep corresponding exports, functions and aliases available in `bash` as well
 - `brew` packages and casks
@@ -23,7 +23,7 @@ In short, this is what is included:
 
 ## Installation
 
-#### 1) Clone to a bare Git repo <small>([`.dotfiles/setup-dotfiles-git.sh`](.dotfiles/setup-dotfiles-git.sh))</small>
+#### 1) Clone to a bare Git repo <small>([`.dotfiles/setup-dotfiles-git.sh`](../.dotfiles/setup-dotfiles-git.sh))</small>
 
 To automatically set up the bare Git repo and checkout the dotfiles, run:
 
@@ -34,7 +34,7 @@ curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/main/.dotfiles/set
 - If you don't feel like curling the script, you can [have a look at it yourself](.dotfiles/setup-dotfiles-git.sh) and run the steps manually.
 - If the script fails, e.g. because of conflicting files, clear up the issues and either run the script again or follow the instructions in the command.
 
-#### 2) Run the setup script <small>([`.dotfiles/setup.sh`](.dotfiles/setup.sh))</small>
+#### 2) Run the setup script <small>([`.dotfiles/setup.sh`](../.dotfiles/setup.sh))</small>
 
 ```sh
 bash "~/.dotfiles/setup.sh"
@@ -45,7 +45,7 @@ bash "~/.dotfiles/setup.sh"
 - Installs Yarn + global packages
 - Sets `$PATH`
 
-#### 3) Set sensible macOS settings <small>([`.macos`](.macos))</small>
+#### 3) Set sensible macOS settings <small>([`.macos`](../.macos))</small>
 
 ```sh
 bash "~/.macos"
