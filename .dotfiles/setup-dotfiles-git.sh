@@ -10,22 +10,22 @@ fi
 
 git clone --bare https://github.com/duniul/dotfiles.git $DOTFILES_GIT_DIR
 
-alias dot='/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
+dot="/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME"
 
 # set fetch and branch refs
-dot config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-dot config --local branch.master.remote "origin"
-dot config --local branch.master.merge "refs/heads/master"
+$dot config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+$dot config --local branch.master.remote "origin"
+$dot config --local branch.master.merge "refs/heads/master"
 
 # don't show untracked files
-dot config --local status.showUntrackedFiles no
+$dot config --local status.showUntrackedFiles no
 
 # define aliases
-dot config --local alias.volta '!f() { git add ${VOLTA_HOME}/tools/user/packages; }; f'
-dot config --local alias.fishfunctions '!f() { git add $FISH_CUSTOM_FUNCTIONS_DIR; }; f'
+$dot config --local alias.volta '!f() { git add ${VOLTA_HOME}/tools/user/packages; }; f'
+$dot config --local alias.fishfunctions '!f() { git add $FISH_CUSTOM_FUNCTIONS_DIR; }; f'
 
 # checkout bare git repo contents
-dot checkout
+$dot checkout
 checkoutExitCode=$?
 
 postCheckoutInfo="https://github.com/duniul/dotfiles for instructions on what to do next."
