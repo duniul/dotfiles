@@ -28,7 +28,7 @@ In short, this is what is included:
 To automatically set up the bare Git repo and checkout the dotfiles, run:
 
 ```sh
-curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/master/.dotfiles/setup-dotfiles-git.sh" | bash
+curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/main/.dotfiles/setup-dotfiles-git.sh" | bash
 ```
 
 - If you don't feel like curling the script, you can [have a look at it yourself](.dotfiles/setup-dotfiles-git.sh) and run the steps manually.
