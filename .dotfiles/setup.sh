@@ -66,8 +66,5 @@ curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 ##############################################################################################################
 ### extra stuff
 
-# hide README.md from dotfiles
-chflags hidden ~/README.md
-
 ### end of extra stuff
 ##############################################################################################################
