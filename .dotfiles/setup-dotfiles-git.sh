@@ -14,8 +14,8 @@ dot="/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME"
 
 # set fetch and branch refs
 $dot config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-$dot config --local branch.master.remote "origin"
-$dot config --local branch.master.merge "refs/heads/master"
+$dot config --local branch.main.remote "origin"
+$dot config --local branch.main.merge "refs/heads/main"
 
 # don't show untracked files
 $dot config --local status.showUntrackedFiles no
