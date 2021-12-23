@@ -48,7 +48,6 @@ cask "1password-cli"
 cask "airflow"
 cask "appcleaner"
 cask "brave-browser"
-cask "coscreen"
 cask "cyberghost-vpn"
 cask "datagrip"
 cask "discord"
@@ -80,8 +79,11 @@ cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
-mas "1Password 7", id: 1333542190
 mas "DuckDuckGo Privacy Essentials", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
