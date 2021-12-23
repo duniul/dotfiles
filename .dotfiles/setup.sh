@@ -28,7 +28,7 @@ if ! which brew &>/dev/null; then
 
   # this scripts installs it the regular way by default (/usr/local):
   # shellcheck disable=SC2091
-  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 fi
 
 # install packages and apps from the Brewfile
@@ -39,20 +39,23 @@ brewpath=$(brew --prefix)
 bashpath="$brewpath/bin/bash"
 fishpath="$brewpath/bin/fish"
 
-# add bash (installed by homebrew) to list of shells
-sudo bash -c "echo $bashpath >> /etc/shells"
+# add shells installed by homebrew to list of shells
+sudo bash -c "echo $bashpath$'\n'$fishpath >> /etc/shells"
 
 # set fish as default shell for current user
 chsh -s $fishpath
 
 # install fisher packages
-fish -c "fisher"
+fish -c "fisher update"
 
 # install pip packages
 # pip install -r pip/pip-requirements.txt
 
-# install global yarn packages, for some reason there's not proper install command
-yarn global upgrade
+# install Node and package managers with volta
+volta install node npm yarn
+
+# install global yarn packages, for some reason there's no proper install command
+yarn global add
 
 # install Settings Sync extension for VS Code, which will download settings and extensions on its own
 code --install-extension "shan.code-settings-sync"
@@ -65,6 +68,9 @@ curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 ##############################################################################################################
 ### extra stuff
+
+# hide README.md from dotfiles
+# chflags hidden ~/README.md
 
 ### end of extra stuff
 ##############################################################################################################
