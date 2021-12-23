@@ -49,7 +49,7 @@ chsh -s $fishpath
 fish -c "fisher update"
 
 # install pip packages
-# pip install -r pip/pip-requirements.txt
+pip install -r pip/pip-requirements.txt
 
 # install Node and package managers with volta
 volta install node npm yarn
