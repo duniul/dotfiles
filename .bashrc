@@ -1,5 +1,13 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
+# Append bin directories to PATH
+VOLTA_HOME="$HOME/.volta"
+USER_BIN="$HOME/bin"
+BREW_BIN="/opt/homebrew/bin"
+VOLTA_BIN="$VOLTA_HOME/bin"
+PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
+export PATH="$PATH:$USER_BIN:$BREW_BIN:$VOLTA_BIN:$PYTHON_BINS"
+
 # Load common dotfiles
 for file in ~/{.exports,.aliases,.functions,.extras}; do
   test -e "$file" && source $file
