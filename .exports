@@ -12,8 +12,9 @@ export VOLTA_HOME="$HOME/.volta"
 
 # append user bin directories to PATH
 export USER_BIN="$HOME/bin"
+export BREW_BIN="/opt/homebrew/bin"
 export VOLTA_BIN="$VOLTA_HOME/bin"
-export PATH="$PATH:$USER_BIN:$VOLTA_BIN"
+export PATH="$PATH:$USER_BIN:$BREW_BIN:$VOLTA_BIN"
 
 export EDITOR="code"      # Edit with VS Code by default
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
