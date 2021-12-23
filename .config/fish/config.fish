@@ -4,12 +4,15 @@
 set --append fish_function_path "/Users/daniel/.config/fish/custom_functions"
 
 # Append bin directories to PATH
-set -l VOLTA_HOME "$HOME/.volta"
-set -l USER_BIN "$HOME/bin"
-set -l BREW_BIN "/opt/homebrew/bin"
-set -l VOLTA_BIN "$VOLTA_HOME/bin"
-set -l PYTHON_BINS (echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
-export PATH="$PATH:$USER_BIN:$BREW_BIN:$VOLTA_BIN:$PYTHON_BINS"
+fish_add_path "$HOME/.volta"
+fish_add_path "$HOME/bin"
+fish_add_path "$VOLTA_HOME/bin"
+
+# Set specific brew and python bins for M1
+if [ (uname -m) = 'arm64' ]
+    fish_add_path "/opt/homebrew/bin"
+    fish_add_path $HOME/Library/Python/**/bin
+end
 
 # Load common dotfiles
 for file in ~/{.exports,.aliases,.functions,.extras}
