@@ -1,9 +1,8 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
 # Append bin directories to PATH
-VOLTA_HOME="$HOME/.volta"
 USER_BIN="$HOME/bin"
-VOLTA_BIN="$VOLTA_HOME/bin"
+VOLTA_BIN="$HOME/.volta/bin"
 export PATH="$PATH:$USER_BIN:$VOLTA_BIN"
 
 # Set specific brew and python bins for M1
