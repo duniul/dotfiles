@@ -1,5 +1,5 @@
 function voltup -d "Update all global packages installed with Volta to the latest version."
-    set -l packagesPath "$VOLTA_HOME/tools/user/packages"
+    set -l packagesPath "$HOME/.volta/tools/user/packages"
     set -l voltaFiles (ls $packagesPath)
 
     echo -e "Updating all global packages installed with Volta...\n"
