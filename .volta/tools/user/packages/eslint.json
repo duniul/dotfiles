@@ -1,6 +1,6 @@
 {
   "name": "eslint",
-  "version": "8.4.1",
+  "version": "8.6.0",
   "platform": {
     "node": "16.13.1",
     "npm": "8.3.0",
