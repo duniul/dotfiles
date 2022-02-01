@@ -10,6 +10,7 @@ fish_add_path "$HOME/.volta/bin"
 # Set specific brew and python bins for M1
 if [ (uname -m) = 'arm64' ]
     fish_add_path "/opt/homebrew/bin"
+    fish_add_path "/opt/homebrew/sbin"
     fish_add_path $HOME/Library/Python/**/bin
 end
 

@@ -8,8 +8,9 @@ export PATH="$PATH:$USER_BIN:$VOLTA_BIN"
 # Set specific brew and python bins for M1
 if [[ $(uname -m) == 'arm64' ]]; then
     BREW_BIN="/opt/homebrew/bin"
+    BREW_SBIN="/opt/homebrew/sbin"
     PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
-    export PATH="$PATH:$BREW_BIN:$PYTHON_BINS"
+    export PATH="$PATH:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
 fi
 
 # Load common dotfiles
