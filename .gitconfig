@@ -28,6 +28,7 @@ cm = commit
 ck = checkout
 br = branch
 pu = push
+pf = push --force-with-lease
 re = rebase
 cherry = cherry-pick
 stat = status
