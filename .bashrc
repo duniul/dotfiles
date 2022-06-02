@@ -2,15 +2,13 @@
 
 # Append bin directories to PATH
 USER_BIN="$HOME/bin"
-VOLTA_BIN="$HOME/.volta/bin"
-export PATH="$PATH:$USER_BIN:$VOLTA_BIN"
 
 # Set specific brew and python bins for M1
 if [[ $(uname -m) == 'arm64' ]]; then
     BREW_BIN="/opt/homebrew/bin"
     BREW_SBIN="/opt/homebrew/sbin"
     PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
-    export PATH="$PATH:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
+    export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
 fi
 
 # Load common dotfiles
@@ -81,3 +79,7 @@ eval "$(thefuck --alias)"
 eval "$(direnv hook bash)"
 
 ### END SHELL COMMONS ###
+
+# Auto-added by `volta setup`
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

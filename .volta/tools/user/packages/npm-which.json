@@ -2,7 +2,7 @@
   "name": "npm-which",
   "version": "3.0.1",
   "platform": {
-    "node": "16.13.1",
+    "node": "14.19.1",
     "npm": "8.3.0",
     "yarn": "1.22.17"
   },

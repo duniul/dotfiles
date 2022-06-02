@@ -1,13 +1,11 @@
 {
-  "name": "nodemon",
-  "version": "2.0.16",
+  "name": "fkill",
+  "version": "8.0.1",
   "platform": {
     "node": "14.19.1",
     "npm": "8.3.0",
     "yarn": "1.22.17"
   },
-  "bins": [
-    "nodemon"
-  ],
+  "bins": [],
   "manager": "Npm"
 }

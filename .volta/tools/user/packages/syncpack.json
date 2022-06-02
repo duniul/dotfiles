@@ -1,0 +1,19 @@
+{
+  "name": "syncpack",
+  "version": "8.0.0",
+  "platform": {
+    "node": "14.19.1",
+    "npm": "8.3.0",
+    "yarn": "1.22.17"
+  },
+  "bins": [
+    "syncpack",
+    "syncpack-fix-mismatches",
+    "syncpack-format",
+    "syncpack-lint-semver-ranges",
+    "syncpack-list",
+    "syncpack-list-mismatches",
+    "syncpack-set-semver-ranges"
+  ],
+  "manager": "Npm"
+}

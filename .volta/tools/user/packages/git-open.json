@@ -2,7 +2,7 @@
   "name": "git-open",
   "version": "2.1.0",
   "platform": {
-    "node": "16.13.1",
+    "node": "14.19.1",
     "npm": "8.3.0",
     "yarn": "1.22.17"
   },

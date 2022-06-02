@@ -5,7 +5,6 @@ set --append fish_function_path "/Users/daniel/.config/fish/custom_functions"
 
 # Append bin directories to PATH
 fish_add_path "$HOME/bin"
-fish_add_path "$HOME/.volta/bin"
 
 # Set specific brew and python bins for M1
 if [ (uname -m) = 'arm64' ]
@@ -67,3 +66,7 @@ end
 function .....
     cd ../../../..
 end
+
+# Auto-added by `volta setup`
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH

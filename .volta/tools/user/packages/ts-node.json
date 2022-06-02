@@ -1,0 +1,17 @@
+{
+  "name": "ts-node",
+  "version": "10.5.0",
+  "platform": {
+    "node": "16.13.2",
+    "npm": "8.3.0",
+    "yarn": "1.22.17"
+  },
+  "bins": [
+    "ts-node",
+    "ts-script",
+    "ts-node-script",
+    "ts-node-cwd",
+    "ts-node-transpile-only"
+  ],
+  "manager": "Npm"
+}
