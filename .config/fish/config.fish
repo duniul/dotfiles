@@ -7,11 +7,14 @@ set --append fish_function_path "/Users/daniel/.config/fish/custom_functions"
 fish_add_path "$HOME/bin"
 
 # Set specific brew and python bins for M1
-if [ (uname -m) = 'arm64' ]
-    fish_add_path "/opt/homebrew/bin"
-    fish_add_path "/opt/homebrew/sbin"
+if [ (uname -m) = arm64 ]
+    fish_add_path /opt/homebrew/bin
+    fish_add_path /opt/homebrew/sbin
     fish_add_path $HOME/Library/Python/**/bin
 end
+
+# Append Rust Cargo to PATH
+fish_add_path "$HOME/.cargo/bin"
 
 # Load common dotfiles
 for file in ~/{.exports,.aliases,.functions,.extras}

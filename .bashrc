@@ -5,11 +5,14 @@ USER_BIN="$HOME/bin"
 
 # Set specific brew and python bins for M1
 if [[ $(uname -m) == 'arm64' ]]; then
-    BREW_BIN="/opt/homebrew/bin"
-    BREW_SBIN="/opt/homebrew/sbin"
-    PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
-    export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
+  BREW_BIN="/opt/homebrew/bin"
+  BREW_SBIN="/opt/homebrew/sbin"
+  PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
+  export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
 fi
+
+# Append Rust Cargo to PATH
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # Load common dotfiles
 for file in ~/{.exports,.aliases,.functions,.extras}; do
@@ -52,12 +55,12 @@ BREW_PREFIX=$(brew --prefix)
 
 # Brew tab completion
 if [ -r "$BREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
-	# Ensure existing Homebrew v1 completions continue to work
-	export BASH_COMPLETION_COMPAT_DIR="$BREW_PREFIX/etc/bash_completion.d";
-	source "$BREW_PREFIX/etc/profile.d/bash_completion.sh";
+  # Ensure existing Homebrew v1 completions continue to work
+  export BASH_COMPLETION_COMPAT_DIR="$BREW_PREFIX/etc/bash_completion.d"
+  source "$BREW_PREFIX/etc/profile.d/bash_completion.sh"
 elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
-fi;
+  source /etc/bash_completion
+fi
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &>/dev/null; then
