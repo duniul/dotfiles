@@ -51,6 +51,12 @@ uncommit = !echo "Uncommitting:" && git log -1 --pretty=%B && git reset --soft H
 # Stash everything, including untracked.
 stashu = stash --include-untracked
 
+# Pop last stash.
+stashp = stash pop
+
+# Apply last stash.
+stasha = stash apply
+
 # Sync the current branch with the latest changes.
 sync = fetch --all --prune && git rebase -p --autostash $1
 
