@@ -35,3 +35,6 @@ node_modules
 ehthumbs.db
 Thumbs.db
 desktop.ini
+
+# Quokka files in /src directories (helps with relative imports)
+src/.quokka/
