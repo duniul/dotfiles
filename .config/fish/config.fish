@@ -54,6 +54,9 @@ eval (dircolors-fish ~/.dircolors/duniul.dircolors)
 ## direnv (https://direnv.net/)
 eval (direnv hook fish) # Enable direnv
 
+## pure-fish (https://github.com/pure-fish/pure)
+set --universal pure_color_prompt_on_success cyan
+
 ### END SHELL COMMONS ###
 
 # Easy navigation funcs that I don't want to create separate function files for
