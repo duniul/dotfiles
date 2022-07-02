@@ -55,7 +55,9 @@ eval (dircolors-fish ~/.dircolors/duniul.dircolors)
 eval (direnv hook fish) # Enable direnv
 
 ## pure-fish (https://github.com/pure-fish/pure)
-set --universal pure_color_prompt_on_success cyan
+set -g pure_color_prompt_on_success cyan # Different color for more contrast against red error prompts.
+set -g pure_show_subsecond_command_duration true # Show subsecond (ex. 1.5s) in command duration.
+set -g pure_threshold_command_duration 2 # Show command duration when above this value (seconds).
 
 ### END SHELL COMMONS ###
 
