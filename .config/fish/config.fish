@@ -59,6 +59,9 @@ set -g pure_color_prompt_on_success cyan # Different color for more contrast aga
 set -g pure_show_subsecond_command_duration true # Show subsecond (ex. 1.5s) in command duration.
 set -g pure_threshold_command_duration 2 # Show command duration when above this value (seconds).
 
+## fish-async-prompt (https://github.com/acomagu/fish-async-prompt)
+set -g async_prompt_functions _pure_prompt_git # Async settings for pure-fish prompt (https://github.com/pure-fish/pure/wiki/Async-git-Prompt)
+
 ### END SHELL COMMONS ###
 
 # Easy navigation funcs that I don't want to create separate function files for

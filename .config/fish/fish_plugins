@@ -8,3 +8,4 @@ oh-my-fish/plugin-foreign-env
 jorgebucaran/getopts.fish
 jorgebucaran/fisher
 pure-fish/pure
+acomagu/fish-async-prompt
