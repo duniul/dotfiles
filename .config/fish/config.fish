@@ -30,20 +30,18 @@ for file in ~/.config/fish/{extras-pre,exports,aliases,extras-post}.fish
 end
 set -e file
 
-### Fish SPECIFICS ###
+### START FISH SPECIFICS ###
 # These settings are unique for Fish, and do not need to be enabled for Bash
 
-# ## fish.nvm defaults
-# set --universal nvm_default_version "lts"
-# set nvm_response (nvm use 2>&1) # use default version if available, redirect all output to stdout
+## pure-fish (https://github.com/pure-fish/pure)
+set -g pure_color_prompt_on_success cyan # Different color for more contrast against red error prompts.
+set -g pure_show_subsecond_command_duration true # Show subsecond (ex. 1.5s) in command duration.
+set -g pure_threshold_command_duration 2 # Show command duration when above this value (seconds).
 
-# if string match -q -- "*Invalid version or missing*" $nvm_response
-#     nvm use $nvm_default_version >/dev/null
-# else if string match -q -- "*Node version not installed*" $nvm_response
-#     nvm install
-# end
+## fish-async-prompt (https://github.com/acomagu/fish-async-prompt)
+set -g async_prompt_functions _pure_prompt_git # Async settings for pure-fish prompt (https://github.com/pure-fish/pure/wiki/Async-git-Prompt)
 
-### STOP FISH SPECIFICS ###
+### END FISH SPECIFICS ###
 
 ### START SHELL COMMONS ###
 # These settings need to be configured in both .bash_profile and fish.config
@@ -53,14 +51,6 @@ eval (dircolors-fish ~/.dircolors/duniul.dircolors)
 
 ## direnv (https://direnv.net/)
 eval (direnv hook fish) # Enable direnv
-
-## pure-fish (https://github.com/pure-fish/pure)
-set -g pure_color_prompt_on_success cyan # Different color for more contrast against red error prompts.
-set -g pure_show_subsecond_command_duration true # Show subsecond (ex. 1.5s) in command duration.
-set -g pure_threshold_command_duration 2 # Show command duration when above this value (seconds).
-
-## fish-async-prompt (https://github.com/acomagu/fish-async-prompt)
-set -g async_prompt_functions _pure_prompt_git # Async settings for pure-fish prompt (https://github.com/pure-fish/pure/wiki/Async-git-Prompt)
 
 ### END SHELL COMMONS ###
 
