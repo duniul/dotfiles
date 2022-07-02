@@ -1,9 +1,9 @@
 {
   "name": "lerna",
-  "version": "5.0.0",
+  "version": "5.1.6",
   "platform": {
-    "node": "14.19.1",
-    "npm": "8.3.0",
+    "node": "16.15.1",
+    "npm": null,
     "yarn": "1.22.17"
   },
   "bins": [

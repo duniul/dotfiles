@@ -1,9 +1,9 @@
 {
   "name": "nodemon",
-  "version": "2.0.16",
+  "version": "2.0.18",
   "platform": {
-    "node": "14.19.1",
-    "npm": "8.3.0",
+    "node": "16.15.1",
+    "npm": null,
     "yarn": "1.22.17"
   },
   "bins": [

@@ -2,8 +2,8 @@
   "name": "trash-cli",
   "version": "5.0.0",
   "platform": {
-    "node": "16.13.1",
-    "npm": "8.3.0",
+    "node": "16.15.1",
+    "npm": null,
     "yarn": "1.22.17"
   },
   "bins": [

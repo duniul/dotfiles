@@ -1,9 +1,9 @@
 {
   "name": "typescript",
-  "version": "4.5.4",
+  "version": "4.7.4",
   "platform": {
-    "node": "16.13.1",
-    "npm": "8.3.0",
+    "node": "16.15.1",
+    "npm": null,
     "yarn": "1.22.17"
   },
   "bins": [
