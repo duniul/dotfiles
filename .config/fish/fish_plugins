@@ -2,7 +2,6 @@ jorgebucaran/fish-nvm
 matusf/goto
 jethrokuan/z
 edc/bass
-jethrokuan/fzf
 franciscolourenco/done
 oh-my-fish/plugin-foreign-env
 jorgebucaran/getopts.fish
@@ -10,3 +9,5 @@ jorgebucaran/fisher
 pure-fish/pure
 acomagu/fish-async-prompt
 nickeb96/puffer-fish
+andreiborisov/sponge
+PatrickF1/fzf.fish

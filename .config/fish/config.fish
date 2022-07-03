@@ -33,6 +33,25 @@ set -e file
 ### START FISH SPECIFICS ###
 # These settings are unique for Fish, and do not need to be enabled for Bash
 
+## fish keybindings
+
+# Remove delete/exit hotkey
+bind --erase "\cd" --all
+
+# Remap clear to Ctrl-K (like VSCode has CMD+K)
+bind --erase \cl --all
+bind --user \v echo\ -n\ \(clear\ \|\ string\ replace\ \\e\\\[3J\ \"\"\)\;\ commandline\ -f\ repaint
+
+## fzf (https://github.com/PatrickF1/fzf.fish)
+
+# Remap fzf keybindings:
+# - Search directory: Ctrl+F
+# - Search git log: Ctrl+L
+# - Search git status: Ctrl+S
+# - Search history: Ctrl+H
+# - Search processes: Ctrl+P
+fzf_configure_bindings --directory=\cF --git_status=\cS --git_log=\f --history=\b --variables=\cV --processes=\cP
+
 ## pure-fish (https://github.com/pure-fish/pure)
 set -g pure_color_prompt_on_success cyan # Different color for more contrast against red error prompts.
 set -g pure_show_subsecond_command_duration true # Show subsecond (ex. 1.5s) in command duration.
