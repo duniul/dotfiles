@@ -2,7 +2,7 @@
   "name": "syncpack",
   "version": "8.2.4",
   "platform": {
-    "node": "16.15.1",
+    "node": "16.16.0",
     "npm": null,
     "yarn": "1.22.17"
   },

@@ -1,8 +1,8 @@
 {
   "name": "npm-check-updates",
-  "version": "15.0.1",
+  "version": "16.0.5",
   "platform": {
-    "node": "16.15.1",
+    "node": "16.16.0",
     "npm": null,
     "yarn": "1.22.17"
   },
