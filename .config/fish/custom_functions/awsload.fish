@@ -6,7 +6,7 @@ function awsload -d "Log in with aws sso and extract credentials with yawsso."
 
     # Check if we need to log in first.
     if [ $status -ne 0 ]
-        if string match -q "*Can not find valid AWS CLI v2 SSO login*" $yawsso_result
+        if string match -q -r -i "(Can not find valid AWS CLI v2 SSO login)|(Try login again)" $yawsso_result
             echo "Not logged in with AWS SSO. Trying to log in first..."
             echo
 
@@ -24,7 +24,7 @@ function awsload -d "Log in with aws sso and extract credentials with yawsso."
                 set_color red
                 echo "Failed to log in with AWS SSO."
                 set_color normal
-                exit $status
+                return $status
             else
                 # Successfully logged in with AWS SSO.
                 # Reload profiles
@@ -37,7 +37,7 @@ function awsload -d "Log in with aws sso and extract credentials with yawsso."
             set_color normal
 
             echo $yawsso_result
-            exit $status
+            return $status
         end
     end
 
