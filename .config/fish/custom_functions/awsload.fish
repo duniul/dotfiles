@@ -1,5 +1,9 @@
 function awsload -d "Log in with aws sso and extract credentials with yawsso."
-    set profiles $argv
+    set -l profiles $argv
+
+    if [ -z "$profiles" ]
+        set profiles $AWS_PROFILE
+    end
 
     # Since there's no way to easily check if we're logged in, try running yawsso immediately.
     set -l yawsso_result (yawsso -p $profiles)
