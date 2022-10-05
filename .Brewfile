@@ -38,7 +38,7 @@ brew "grep"
 brew "jq"
 brew "mas"
 brew "nmap"
-brew "postgresql", restart_service: true
+brew "postgresql@14"
 brew "shellcheck"
 brew "shfmt"
 brew "terminal-notifier"
@@ -78,6 +78,7 @@ cask "notion"
 cask "postman"
 cask "raindropio"
 cask "rectangle"
+cask "shottr"
 cask "slack"
 cask "spotify"
 cask "steam"
@@ -87,7 +88,7 @@ cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
 mas "Amphetamine", id: 937984704
-mas "DuckDuckGo Privacy Essentials", id: 1482920575
+mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
 mas "iMovie", id: 408981434
@@ -95,3 +96,4 @@ mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "WhatsApp", id: 1147396723
