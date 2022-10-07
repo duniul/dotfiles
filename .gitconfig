@@ -60,6 +60,12 @@ stasha = stash apply
 # Sync the current branch with the latest changes.
 sync = fetch --all --prune && git rebase -p --autostash $1
 
+# Rebase from the last N commits.
+relast = "!f() { git rebase -i HEAD~${1}; }; f"
+
+# Fetch latest and rebase on main.
+remain = !git fetch && git rebase origin/main -i
+
 # Print the branch name.
 branch-name = rev-parse --abbrev-ref HEAD
 
