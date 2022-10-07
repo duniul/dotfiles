@@ -88,7 +88,6 @@ cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
-mas "Amphetamine", id: 937984704
 mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
