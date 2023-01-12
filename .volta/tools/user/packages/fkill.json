@@ -1,10 +1,10 @@
 {
   "name": "fkill",
-  "version": "8.0.1",
+  "version": "8.1.0",
   "platform": {
-    "node": "16.16.0",
+    "node": "16.18.1",
     "npm": null,
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   },
   "bins": [],
   "manager": "Npm"

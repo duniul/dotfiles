@@ -2,9 +2,9 @@
   "name": "depcheck",
   "version": "1.4.3",
   "platform": {
-    "node": "16.16.0",
+    "node": "16.18.1",
     "npm": null,
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   },
   "bins": [
     "depcheck"

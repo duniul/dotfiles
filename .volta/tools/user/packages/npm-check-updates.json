@@ -1,10 +1,10 @@
 {
   "name": "npm-check-updates",
-  "version": "16.0.5",
+  "version": "16.6.2",
   "platform": {
-    "node": "16.16.0",
+    "node": "16.18.1",
     "npm": null,
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   },
   "bins": [
     "npm-check-updates",

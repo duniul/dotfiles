@@ -1,10 +1,10 @@
 {
   "name": "lerna",
-  "version": "5.4.0",
+  "version": "6.4.0",
   "platform": {
-    "node": "16.16.0",
+    "node": "16.18.1",
     "npm": null,
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   },
   "bins": [
     "lerna"

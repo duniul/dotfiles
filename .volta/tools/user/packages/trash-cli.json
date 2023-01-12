@@ -2,9 +2,9 @@
   "name": "trash-cli",
   "version": "5.0.0",
   "platform": {
-    "node": "16.16.0",
+    "node": "16.18.1",
     "npm": null,
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   },
   "bins": [
     "trash"
