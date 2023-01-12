@@ -20,6 +20,9 @@ trustctime = false
 # https://git-scm.com/docs/git-update-index#_untracked_cache
 untrackedCache = true
 
+[init]
+defaultBranch = main
+
 [credential]
 helper = osxkeychain
 
@@ -82,7 +85,7 @@ branch-containing = "!f() { git branch -a --contains $1; }; f"
 tag-containing = "!f() { git describe --always --contains $1; }; f"
 
 # Find commits by commit message.
-filter-commit = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+filter-commit = "!f() { git log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s%Cgreen [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
 # Interactive rebase with the given number of latest commits.
 reb = "!f() { git rebase -i HEAD~$1; }; f"
@@ -117,6 +120,10 @@ sort = -committerdate
 
 [pull]
 rebase = true
+autostash = true
+
+[rebase]
+autostash = true
 
 [filter "lfs"]
 clean = git-lfs clean -- %f
