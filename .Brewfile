@@ -11,7 +11,6 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "remotemobprogramming/brew"
 brew "act"
-brew "openssl@1.1"
 brew "readline"
 brew "awscli"
 brew "bash"
@@ -70,6 +69,7 @@ cask "grandperspective"
 cask "handbrake"
 cask "hyperswitch"
 cask "iina"
+cask "insomnia"
 cask "iterm2"
 cask "kap"
 cask "keka"
@@ -88,6 +88,8 @@ cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
+mas "ColorSlurp", id: 1287239339
+mas "Dropover", id: 1355679052
 mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
