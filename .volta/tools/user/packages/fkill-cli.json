@@ -2,9 +2,10 @@
   "name": "fkill-cli",
   "version": "7.1.0",
   "platform": {
-    "node": "16.18.1",
-    "npm": null,
-    "yarn": "1.22.19"
+    "node": "18.13.0",
+    "npm": "9.4.0",
+    "pnpm": null,
+    "yarn": "3.4.0"
   },
   "bins": [
     "fkill"
