@@ -54,12 +54,6 @@ pip install -r pip/pip-requirements.txt
 # install Node and package managers with volta
 volta install node npm yarn
 
-# install global yarn packages, for some reason there's no proper install command
-yarn global add
-
-# install Settings Sync extension for VS Code, which will download settings and extensions on its own
-code --install-extension "shan.code-settings-sync"
-
 # install better nanorc config (https://github.com/scopatz/nanorc)
 curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 

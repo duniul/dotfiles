@@ -36,8 +36,6 @@ alias cat='bat'
 alias ocat='/bin/cat'
 alias find="fd"
 alias ocat='/bin/find'
-alias 1p='op'
-alias 1password='op'
 
 # quick functions
 alias filesize="stat -f '%z bytes'" # print file/dir size
@@ -48,3 +46,9 @@ alias g='git'
 alias fs='filesize'
 alias cdf='cdfinder'
 alias lsa='la'
+
+# app aliases
+alias 1p='op'
+alias 1password='op'
+alias youtube='yt-dlp'
+alias yt='yt-dlp'
