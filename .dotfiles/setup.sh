@@ -48,14 +48,15 @@ chsh -s $fishpath
 # install fisher packages
 fish -c "fisher update"
 
+# install better nanorc config (https://github.com/scopatz/nanorc)
+curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+
 # install pip packages
 pip install -r pip/pip-requirements.txt
 
 # install Node and package managers with volta
 volta install node npm yarn
-
-# install better nanorc config (https://github.com/scopatz/nanorc)
-curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+voltup
 
 ### end of homebrew
 ##############################################################################################################
