@@ -3,6 +3,23 @@
 
 DOTFILES_GIT_DIR="$HOME/.dotfiles-git"
 
+##############################################################################################################
+### XCode Command Line Tools
+
+if ! xcode-select --print-path &>/dev/null; then
+
+  # Prompt user to install the XCode Command Line Tools
+  xcode-select --install &>/dev/null
+
+  # Wait until the XCode Command Line Tools are installed
+  until xcode-select --print-path &>/dev/null; do
+    sleep 5
+  done
+
+fi
+###
+##############################################################################################################
+
 if [ -d "$DOTFILES_GIT_DIR" ]; then
   echo "$DOTFILES_GIT_DIR already exists. Please remove it and rerun this script."
   exit 1
