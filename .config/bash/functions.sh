@@ -198,7 +198,7 @@ function isodate() {
 }
 
 # Log in with aws-google-auth and extract credentials with aws-export-profile.
-function awslogin() {
+function aws-sso-login() {
 	profile=$1
 
 	# If no profile is passed, use the the AWS_PROFILE.

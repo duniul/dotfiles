@@ -1,4 +1,4 @@
-function awsload -d "Log in with aws sso and extract credentials with yawsso."
+function aws-login-sso -d "Log in with aws sso and extract credentials with yawsso."
     set -l profiles $argv
 
     if [ -z "$profiles" ]
