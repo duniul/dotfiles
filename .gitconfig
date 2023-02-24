@@ -66,8 +66,10 @@ sync = fetch --all --prune && git rebase -p --autostash $1
 # Rebase from the last N commits.
 relast = "!f() { git rebase -i HEAD~${1}; }; f"
 
-# Fetch latest and rebase on main.
-remain = !git fetch && git rebase origin/main -i
+# Fetch latest and rebase on branch.
+rebint = !git fetch && git rebase -i
+remain = !git rebint origin/main
+remaster = !git rebint origin/master
 
 # Print the branch name.
 branch-name = rev-parse --abbrev-ref HEAD
