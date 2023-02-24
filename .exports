@@ -24,7 +24,7 @@ export FISH_CUSTOM_FUNCTIONS_DIR="$FISH_DIR/custom_functions"
 export BASH_DIR="$HOME/.config/bash"
 
 ## direnv (https://direnv.net/)
-export DIRENV_LOG_FORMAT="direnv: %s" # direnv log formatting, leave empty to silence
+export DIRENV_LOG_FORMAT="" # direnv log formatting, leave empty to silence
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
