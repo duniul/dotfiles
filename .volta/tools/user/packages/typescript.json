@@ -2,10 +2,10 @@
   "name": "typescript",
   "version": "4.9.5",
   "platform": {
-    "node": "18.13.0",
-    "npm": "9.4.0",
+    "node": "16.19.0",
+    "npm": "9.4.1",
     "pnpm": null,
-    "yarn": "3.4.0"
+    "yarn": "1.22.19"
   },
   "bins": [
     "tsc",
