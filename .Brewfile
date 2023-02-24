@@ -93,13 +93,13 @@ cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
 mas "ColorSlurp", id: 1287239339
+mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
 mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "LastPass", id: 926036361
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 1147396723
