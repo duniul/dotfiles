@@ -58,24 +58,6 @@ for option in cdspell dirspell autocd globstar nocaseglob; do
   shopt -s "$option" 2>/dev/null
 done
 
-## Tab completion
-
-BREW_PREFIX=$(brew --prefix)
-
-# Brew tab completion
-if [ -r "$BREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
-  # Ensure existing Homebrew v1 completions continue to work
-  export BASH_COMPLETION_COMPAT_DIR="$BREW_PREFIX/etc/bash_completion.d"
-  source "$BREW_PREFIX/etc/profile.d/bash_completion.sh"
-elif [ -f /etc/bash_completion ]; then
-  source /etc/bash_completion
-fi
-
-# Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &>/dev/null; then
-  complete -o default -o nospace -F _git g
-fi
-
 ################
 # SHELL COMMONS
 # These settings need to be configured in both .bash_profile and fish.config
