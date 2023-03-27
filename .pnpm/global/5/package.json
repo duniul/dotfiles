@@ -1,0 +1,15 @@
+{
+	"dependencies": {
+		"@changesets/cli": "^2.26.1",
+		"@types/node": "^18.15.10",
+		"@vscode/vsce": "^2.18.0",
+		"eslint": "^8.36.0",
+		"fkill-cli": "^7.1.0",
+		"npm-check-updates": "^16.8.0",
+		"pnpm": "^7.30.5",
+		"prettier": "^2.8.7",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.2",
+		"yarn": "^1.22.19"
+	}
+}

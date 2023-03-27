@@ -71,6 +71,9 @@ eval (dircolors-fish ~/.dircolors/duniul.dircolors)
 ## direnv (https://direnv.net/)
 eval (direnv hook fish) # Enable direnv
 
+## fnm (https://github.com/Schniz/fnm)
+eval (fnm env --use-on-cd | source)
+
 ### END SHELL COMMONS ###
 
 # Easy navigation funcs that I don't want to create separate function files for

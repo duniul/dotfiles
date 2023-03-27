@@ -81,6 +81,9 @@ eval "$(thefuck --alias)"
 ## direnv (https://direnv.net/)
 eval "$(direnv hook bash)"
 
+## fnm (https://github.com/Schniz/fnm)
+eval "$(fnm env --use-on-cd)"
+
 ### END SHELL COMMONS ###
 
 # Auto-added by `volta setup`

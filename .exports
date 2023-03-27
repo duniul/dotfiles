@@ -1,4 +1,4 @@
-# shellcheck shell=bash
+# shellcheck shell=sh disable=SC2125
 #
 # This file is for exports/environment variables that are to be shared between all shells (e.g. both bash and fish).
 # For shell-specific exports, add them to:
@@ -8,23 +8,35 @@
 # THIS FILE IS SYNCED WITH DOTFILES AND SHOULD NOT CONTAIN SENSITIVE INFORMATION.
 # IF YOU NEED SENSITIVE ENV VARIABLES, ADD THEM TO .env/.envrc OR .extras.bash/extras.fish
 
-export EDITOR="code"      # Edit with VS Code by default
-export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
+## GENERAL
+export EDITOR="code"                      # Edit with VS Code by default
+export MANPAGER="less -X"                 # Don’t clear the screen after quitting a manual page
+export BASH_SILENCE_DEPRECATION_WARNING=1 # Hide the “default interactive shell is now zsh” warning on macOS.
 
-## dotfiles
-export DOTFILES_DIR="$HOME/.dotfiles"
-export DOTFILES_GIT_DIR="$HOME/.dotfiles-git"
-export DOTFILES_ITERM_DIR="$DOTFILES_DIR/iterm"
+## dotfiles (https://github.com/duniul/dotfiles)
+export DOTFILES_DIR=$HOME/.dotfiles
+export DOTFILES_GIT_DIR=$HOME/.dotfiles-git
+export DOTFILES_ITERM_DIR=$DOTFILES_DIR/iterm
 
 ## fish
-export FISH_DIR="$HOME/.config/fish"
-export FISH_CUSTOM_FUNCTIONS_DIR="$FISH_DIR/custom_functions"
+export FISH_DIR=$HOME/.config/fish
+export FISH_CUSTOM_FUNCTIONS_DIR=$FISH_DIR/custom_functions
 
 ## bash
-export BASH_DIR="$HOME/.config/bash"
+export BASH_DIR=$HOME/.config/bash
 
-## direnv (https://direnv.net/)
+## direnv
 export DIRENV_LOG_FORMAT="" # direnv log formatting, leave empty to silence
 
-# Hide the “default interactive shell is now zsh” warning on macOS.
-export BASH_SILENCE_DEPRECATION_WARNING=1;
+## pnpm
+export PNPM_HOME=$HOME/.pnpm
+
+# ## rust cargo
+export CARGO_BIN=$HOME/.cargo/bin
+
+# ## python
+export PYTHON_BIN="$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' '_')"
+
+# ## PATH
+# export USER_BIN=$HOME/bin
+# export PATH=$PATH:$PYTHON_BIN:$CARGO_BIN:$PNPM_HOME:$USER_BIN # append to PATH
