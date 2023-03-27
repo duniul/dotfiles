@@ -1,34 +1,43 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
-# Append bin directories to PATH
-USER_BIN="$HOME/bin"
+###########
+# SET PATHS
 
 # Set specific brew and python bins for M1
 if [[ $(uname -m) == 'arm64' ]]; then
   BREW_BIN="/opt/homebrew/bin"
   BREW_SBIN="/opt/homebrew/sbin"
-  PYTHON_BINS=$(echo $HOME/Library/Python/**/bin | tr -s ' ' | tr ' ' '_')
-  export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN:$PYTHON_BINS"
+
+  export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN"
 fi
 
-# Append Rust Cargo to PATH
-export PATH="$PATH:$HOME/.cargo/bin"
+PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' '_')
+
+# Append bin directories to PATH
+export PATH="$PATH:$USER_BIN:$PNPM_HOME:$CARGO_BIN:$PYTHON_BINS"
+
+###############
+# LOAD DOTFILES
 
 # Load common dotfiles
-for file in ~/{.exports,.aliases,.functions,.extras}; do
-  test -e "$file" && source $file
+for file in ~/{.extras-pre,.exports,.aliases,.extras}; do
+  [ -r "$file" ] && source "$file"
 done
 
 # Load shell specific dotfiles
 # To load settings that shouldn't be commited, use the extras files:
-#   ~/.config/bash/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
-#   ~/.config/bash/extras-post.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
-for file in ~/.config/bash/{extras-pre,exports,functions,aliases,prompt,extras-post}.sh; do
+#   ~/.config/fish/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
+#   ~/.config/fish/extras.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
+for file in ~/.config/bash/{extras-pre,prompt,extras}.sh; do
   [ -r "$file" ] && source "$file"
 done
 unset file
 
-### BASH SPECIFICS ###
+# Append custom functions file (equivalent to the custom_functions directory for Fish)
+source "$HOME/.config/bash/functions.sh"
+
+################
+# BASH SPECIFICS
 # These settings are unique for Bash, and do not need to be enabled for Fish
 
 # Keep history up to date, across sessions, in realtime
@@ -67,9 +76,8 @@ if type _git &>/dev/null; then
   complete -o default -o nospace -F _git g
 fi
 
-### STOP BASH SPECIFICS ###
-
-### START SHELL COMMONS ###
+################
+# SHELL COMMONS
 # These settings need to be configured in both .bash_profile and fish.config
 
 # Dircolors
@@ -84,8 +92,5 @@ eval "$(direnv hook bash)"
 ## fnm (https://github.com/Schniz/fnm)
 eval "$(fnm env --use-on-cd)"
 
-### END SHELL COMMONS ###
-
-# Auto-added by `volta setup`
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+################################################
+# UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE

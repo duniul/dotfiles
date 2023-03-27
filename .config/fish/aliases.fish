@@ -14,3 +14,4 @@ abbr caks cask
 abbr gti git
 abbr gi git
 abbr yearn yarn
+abbr ppmn pnpm

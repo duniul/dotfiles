@@ -31,12 +31,8 @@ export DIRENV_LOG_FORMAT="" # direnv log formatting, leave empty to silence
 ## pnpm
 export PNPM_HOME=$HOME/.pnpm
 
-# ## rust cargo
+## rust cargo
 export CARGO_BIN=$HOME/.cargo/bin
 
-# ## python
-export PYTHON_BIN="$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' '_')"
-
-# ## PATH
-# export USER_BIN=$HOME/bin
-# export PATH=$PATH:$PYTHON_BIN:$CARGO_BIN:$PNPM_HOME:$USER_BIN # append to PATH
+## user bins
+export USER_BIN=$HOME/bin

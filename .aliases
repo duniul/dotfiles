@@ -18,6 +18,8 @@ alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 
 # dotfiles aliases
+alias dotfiles_env="env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR"
+alias dotcode='dotfiles_env code $HOME'
 alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
 alias dot='dotfiles'
 
@@ -37,8 +39,7 @@ alias ocat='/bin/cat'
 alias find="fd"
 alias ocat='/bin/find'
 
-# quick functions
-alias filesize="stat -f '%z bytes'" # print file/dir size
+# utils
 alias la='ls -la'
 
 # shortcuts

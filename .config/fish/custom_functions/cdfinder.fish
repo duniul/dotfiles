@@ -9,5 +9,3 @@ function cdfinder -d 'Change to directory opened by Finder'
         end
     end
 end
-
-alias cdf='cdfinder'
