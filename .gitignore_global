@@ -25,6 +25,8 @@ node_modules
 # dotenv (https://github.com/motdotla/dotenv)
 .env
 
+# VSCode file history extension
+.history
 
 ### OS generated files
 .DS_Store
