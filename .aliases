@@ -16,6 +16,7 @@ alias bashconfig='edit ~/.bashrc'
 alias bashrc="bashconfig"
 alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
+alias aliases='edit $HOME/.aliases'
 
 # dotfiles aliases
 alias dotfiles_env="env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR"
@@ -44,6 +45,9 @@ alias la='ls -la'
 
 # shortcuts
 alias g='git'
+alias n='npm'
+alias y='yarn'
+alias p='pnpm'
 alias fs='filesize'
 alias cdf='cdfinder'
 alias lsa='la'
