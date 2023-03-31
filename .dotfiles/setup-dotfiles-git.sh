@@ -38,7 +38,6 @@ $dot config --local branch.main.merge "refs/heads/main"
 $dot config --local status.showUntrackedFiles no
 
 # define aliases
-$dot config --local alias.volta '!f() { git add ${VOLTA_HOME}/tools/user/packages; }; f'
 $dot config --local alias.fishfunctions '!f() { git add $FISH_CUSTOM_FUNCTIONS_DIR; }; f'
 
 # checkout bare git repo contents

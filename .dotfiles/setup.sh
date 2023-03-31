@@ -43,7 +43,7 @@ fishpath="$brewpath/bin/fish"
 sudo bash -c "echo $bashpath$'\n'$fishpath >> /etc/shells"
 
 # set fish as default shell for current user
-chsh -s $fishpath
+chsh -s "$fishpath"
 
 # install fisher packages
 fish -c "fisher update"
@@ -54,9 +54,11 @@ curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 # install pip packages
 pip install -r pip/pip-requirements.txt
 
-# install Node and package managers with volta
-volta install node npm yarn
-voltup
+# install Node
+fnm install 18
+
+# install global Node deps
+pnpm -g install
 
 ### end of homebrew
 ##############################################################################################################
