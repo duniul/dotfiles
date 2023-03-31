@@ -49,7 +49,7 @@ last = log -1 HEAD
 unstage = reset HEAD --
 
 # Uncommit the last commit.
-uncommit = !echo "Uncommitting:" && git log -1 --pretty=%B && git reset --soft HEAD~
+uncommit = !echo "Uncommitting:" && git rev-parse @~0 && git reset --soft HEAD~
 
 # Stash everything, including untracked.
 stashu = stash --include-untracked
@@ -64,7 +64,10 @@ stasha = stash apply
 sync = fetch --all --prune && git rebase -p --autostash $1
 
 # Rebase from the last N commits.
-relast = "!f() { git rebase -i HEAD~${1}; }; f"
+relast = "!f() { git rebase -i HEAD~${1/-/} ${2}; }; f"
+
+# Update author for a commit.
+reauthor = "!f() { git rebase ${1} --exec \"git commit --amend --author='${2}' --no-edit\"; }; f"
 
 # Fetch latest and rebase on branch.
 rebint = !git fetch && git rebase -i
