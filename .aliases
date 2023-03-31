@@ -57,3 +57,4 @@ alias 1p='op'
 alias 1password='op'
 alias youtube='yt-dlp'
 alias yt='yt-dlp'
+alias ncug="ncu -g -p pnpm"

@@ -1,3 +1,4 @@
 {
-  "packageManager": "yarn"
+  "global": true,
+  "packageManager": "pnpm"
 }
