@@ -34,6 +34,10 @@ $dot config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 $dot config --local branch.main.remote "origin"
 $dot config --local branch.main.merge "refs/heads/main"
 
+# set author
+$dot config --local user.name "Daniel Grefberg"
+$dot config --local user.email "hello@danielgrefberg.com"
+
 # don't show untracked files
 $dot config --local status.showUntrackedFiles no
 
