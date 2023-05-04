@@ -1,15 +1,15 @@
 {
 	"dependencies": {
 		"@changesets/cli": "^2.26.1",
-		"@types/node": "^18.15.11",
-		"@vscode/vsce": "^2.18.0",
-		"eslint": "^8.38.0",
+		"@types/node": "18.16.3",
+		"@vscode/vsce": "2.19.0",
+		"eslint": "8.39.0",
 		"fkill-cli": "^7.1.0",
-		"npm-check-updates": "^16.10.7",
-		"pnpm": "^8.2.0",
-		"prettier": "^2.8.7",
+		"npm-check-updates": "16.10.9",
+		"pnpm": "8.4.0",
+		"prettier": "2.8.8",
 		"ts-node": "^10.9.1",
-		"turbo": "^1.8.8",
+		"turbo": "1.9.3",
 		"typescript": "^5.0.4",
 		"yarn": "^1.22.19"
 	}
