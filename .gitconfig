@@ -49,7 +49,19 @@ last = log -1 HEAD
 unstage = reset HEAD --
 
 # Uncommit the last commit.
-uncommit = !echo "Uncommitting:" && git rev-parse @~0 && git reset --soft HEAD~
+uncommit = !echo "Uncommitting:" && git last -1 && git reset --soft HEAD~
+
+# Make an anonymous commit, hiding both author and committer.
+anoncommit = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git commit --author 'Anonymous <>'; }; f"
+
+# Like anoncommit, but amends the last commit instead.
+anonamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git amend --author 'Anonymous <>' --no-verify; }; f"
+
+# Make a maintenance commit, useful for mass refactor or plumbing commits that should not be attributed to a person.
+maintcommit = "!f() { GIT_COMMITTER_NAME='Maintenance' GIT_COMMITTER_EMAIL='' git commit --author 'Maintenance <>'; }; f"
+
+# Like maintcommit, but amends the last commit instead.
+maintamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git amend --author 'Anonymous <>'; }; f"
 
 # Stash everything, including untracked.
 stashu = stash --include-untracked
