@@ -131,6 +131,9 @@ clear-merged = !git branch --merged | grep -v '\\*\\|main\\|develop' | xargs -n 
 # Open the global ignore file
 global-ignore = !code ~/.gitignore_global
 
+# Glone a repo from GitHub
+ghclone = "!f() { git clone https://github.com/$1.git; }; f"
+
 [branch]
 # Show most recently changed branches first.
 sort = -committerdate
