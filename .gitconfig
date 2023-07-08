@@ -1,6 +1,7 @@
 [user]
 name = Daniel Grefberg
 email = hello@danielgrefberg.com
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9Q6HjwWl75g4X1V0lhtJb6M9h+y1LmUe6e6KezCfE8
 
 [core]
 editor = code -w
@@ -25,6 +26,15 @@ defaultBranch = main
 
 [credential]
 helper = osxkeychain
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+gpgsign = true
 
 [alias]
 cm = commit
