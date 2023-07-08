@@ -29,6 +29,9 @@ function gz() {
 
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
 function brewup() {
+	echo "Some updates might require sudo!"
+	sudo -v
+
 	echo "Updating Homebrew..."
 	brew -v update
 

@@ -1,5 +1,8 @@
 function brewup -d "Update brew, upgrade brew installs, cleanup and run doctor"
-    echo "Updating Homebrew..."
+    echo "Some updates might require sudo!"
+    sudo -v
+
+    echo "Updating Homebrew"
     brew -v update
     
     echo "Upgrading Homebrew installs..."
