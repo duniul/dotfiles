@@ -1,18 +1,19 @@
 {
 	"dependencies": {
 		"@changesets/cli": "2.26.2",
-		"@nestjs/cli": "10.1.7",
-		"@vscode/vsce": "2.19.0",
+		"@nestjs/cli": "10.1.10",
+		"@vscode/vsce": "2.20.0",
 		"add": "^2.0.6",
-		"cdktf-cli": "0.17.1",
-		"eslint": "8.44.0",
+		"cdktf-cli": "0.17.3",
+		"eslint": "8.46.0",
 		"fkill-cli": "^7.1.0",
-		"npm-check-updates": "16.10.15",
-		"nx": "16.5.0",
-		"pnpm": "8.6.6",
+		"npm-check-updates": "16.10.17",
+		"nx": "16.5.5",
+		"pnpm": "8.6.11",
 		"prettier": "3.0.0",
 		"ts-node": "^10.9.1",
-		"turbo": "1.10.7",
+		"tsx": "^3.12.7",
+		"turbo": "1.10.12",
 		"typescript": "5.1.6",
 		"yarn": "^1.22.19"
 	}
