@@ -61,6 +61,10 @@ set -g pure_threshold_command_duration 2 # Show command duration when above this
 ## fish-async-prompt (https://github.com/acomagu/fish-async-prompt)
 set -g async_prompt_functions _pure_prompt_git # Async settings for pure-fish prompt (https://github.com/pure-fish/pure/wiki/Async-git-Prompt)
 
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+
 ################
 # SHELL COMMONS
 # These settings need to be configured in both .bash_profile and fish.config
