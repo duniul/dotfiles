@@ -42,6 +42,7 @@ alias ocat='/bin/find'
 
 # utils
 alias la='ls -la'
+alias filesize='dust'
 
 # shortcuts
 alias g='git'
