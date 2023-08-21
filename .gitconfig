@@ -82,6 +82,9 @@ stashp = stash pop
 # Apply last stash.
 stasha = stash apply
 
+# Add all unstaged changes.
+addu = add -u
+
 # Sync the current branch with the latest changes.
 sync = fetch --all --prune && git rebase -p --autostash $1
 
