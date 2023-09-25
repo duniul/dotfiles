@@ -700,7 +700,7 @@
 	<key>HideFromDockAndAppSwitcher</key>
 	<false/>
 	<key>HideMenuBarInFullscreen</key>
-	<true/>
+	<false/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>Hotkey</key>
@@ -1314,6 +1314,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Status Bar</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1943,7 +1945,7 @@
 			<key>Name</key>
 			<string>Hotkey Window (Quake)</string>
 			<key>Non Ascii Font</key>
-			<string>NotoMonoForPowerline 12</string>
+			<string>Menlo-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -2069,12 +2071,16 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>StatusBarIcon</key>
+	<true/>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>UIElementRequiresHotkeys</key>
+	<false/>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
