@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "quokka-plugin-subdir": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "18"
+  }
+}

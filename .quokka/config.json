@@ -1,1 +1,9 @@
-{"pro":true,"node":"~/.volta/bin/node"}
+{
+  "pro": true,
+  "node": "~/.quokka/quokka-node",
+  "installPackageCommand": "pnpm add {packageName}",
+  "plugins": [
+    "quokka-plugin-subdir",
+    "./plugins/benchmark"
+  ]
+}

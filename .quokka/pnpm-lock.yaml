@@ -1,0 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  quokka-plugin-subdir:
+    specifier: ^0.1.0
+    version: 0.1.0
+
+devDependencies:
+  '@types/node':
+    specifier: '18'
+    version: 18.17.19
+
+packages:
+
+  /@types/node@18.17.19:
+    resolution: {integrity: sha512-+pMhShR3Or5GR0/sp4Da7FnhVmTalWm81M6MkEldbwjETSaPalw138Z4KdpQaistvqQxLB7Cy4xwYdxpbSOs9Q==}
+    dev: true
+
+  /quokka-plugin-subdir@0.1.0:
+    resolution: {integrity: sha512-5DRciuL2rZQKc/koLHYupOckFCFtn8oEbAILMiKBHeRuT/kvlyDrft4VTeSadPDW7Knh9iSWuLBNMb/ksdnL/g==}
+    dev: false
