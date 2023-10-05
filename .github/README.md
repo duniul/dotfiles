@@ -15,17 +15,17 @@ In short, this is what is included:
 - `bash` and `fish` 🐟 stuff
   - configs with [exports](../.exports), [aliases](../.aliases), functions ([bash](../.config/bash/functions)/[fish](../.config/fish/custom_functions)), [abbreviations](../.config/fish/aliases) etc.
   - nice [`fisher`](https://github.com/jorgebucaran/fisher) packages
-  - I use `fish` 95% of the time, but I like to keep corresponding exports, functions and aliases available in `bash` as well
+  - I use `fish` 99% of the time, but I like to keep corresponding exports, functions, and aliases available in `bash` as well
 - `brew` packages and casks
 - `git` config with aliases and defaults
-- `yarn` global packages
+- `pnpm` for global npm packages
 - macOS defaults
 
 ## Installation
 
 #### 1) Clone to a bare Git repo <small>([`.dotfiles/setup-dotfiles-git.sh`](../.dotfiles/setup-dotfiles-git.sh))</small>
 
-To automatically set up the bare Git repo and checkout the dotfiles, run:
+To automatically set up the bare Git repo and check out the dotfiles, run:
 
 ```sh
 curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/main/.dotfiles/setup-dotfiles-git.sh" | bash
@@ -42,7 +42,7 @@ bash "~/.dotfiles/setup.sh"
 
 - Installs Homebrew + packages and casks
 - Installs Fisher + packages
-- Installs Yarn + global packages
+- Installs pnpm + global packages
 - Sets `$PATH`
 
 #### 3) Set sensible macOS settings <small>([`.macos`](../.macos))</small>
@@ -51,7 +51,7 @@ bash "~/.dotfiles/setup.sh"
 bash "~/.macos"
 ```
 
-This script configures _a lot_ of stuff on your mac, so have a quick look it before running it if you're not familiar with it.
+This script configures _a lot_ of stuff on your Mac, so have a quick look at it before running it if you're not familiar with it.
 If you're confused about what the different commands do, see [this reference guide](https://github.com/kevinSuttle/macOS-Defaults/blob/master/REFERENCE.md).
 
 ## Credits
