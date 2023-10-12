@@ -43,6 +43,7 @@ alias ocat='/bin/find'
 # utils
 alias la='ls -la'
 alias filesize='dust -s'
+alias pnpmup='pnpm -g update --latest'
 
 # shortcuts
 alias g='git'
@@ -58,7 +59,6 @@ alias 1p='op'
 alias 1password='op'
 alias youtube='yt-dlp'
 alias yt='yt-dlp'
-alias ncug="ncu -g -p pnpm"
 
 # aws aliases
 alias awsconfig="code ~/.aws"
