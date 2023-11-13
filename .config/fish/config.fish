@@ -44,7 +44,6 @@ bind --erase \cl --all
 bind --user \v echo\ -n\ \(clear\ \|\ string\ replace\ \\e\\\[3J\ \"\"\)\;\ commandline\ -f\ repaint
 
 ## fzf (https://github.com/PatrickF1/fzf.fish)
-
 # Remap fzf keybindings:
 # - Search directory: Ctrl+F
 # - Search git log: Ctrl+L

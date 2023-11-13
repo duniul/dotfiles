@@ -175,6 +175,10 @@ cmd = code --wait --diff $LOCAL $REMOTE
 # Automatically correct and execute mistyped commands.
 autocorrect = 1
 
+# Github's hub options
+[hub]
+	protocol = https
+
 # START: git-delta options
 [core]
 pager = delta

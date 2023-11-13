@@ -18,10 +18,13 @@ alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
 
+# Extend git with Github hub
+alias git='hub'
+
 # dotfiles aliases
 alias dotfiles_env="env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR"
 alias dotcode='dotfiles_env code $HOME'
-alias dotfiles='/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
+alias dotfiles='git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
 alias dot='dotfiles'
 
 # use GNU coreutils/findutils (installed through Homebrew) instead of Mac OSX's outdated ones
