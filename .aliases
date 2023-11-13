@@ -18,8 +18,9 @@ alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
 
-# Extend git with Github hub
-alias git='hub'
+# Github aliases
+alias git='hub' # hub extends git with extra functionality
+alias opr='gh pr view --web' # open pull request in browser
 
 # dotfiles aliases
 alias dotfiles_env="env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR"
