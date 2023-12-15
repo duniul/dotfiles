@@ -7,7 +7,7 @@ if [ (uname -m) = arm64 ]
 end
 
 # Append bin directories to PATH
-fish_add_path "$USER_BIN" "$PNPM_HOME" "$CARGO_BIN" "$HOME/Library/Python/**/bin"
+fish_add_path "$USER_BIN" "$PNPM_HOME" "$CARGO_BIN" $HOME/Library/Python/*/bin
 
 ###############
 # LOAD DOTFILES
