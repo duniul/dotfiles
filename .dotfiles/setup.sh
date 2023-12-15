@@ -52,7 +52,7 @@ fish -c "fisher update"
 curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 # install pip packages
-pip install -r pip/pip-requirements.txt
+pip3 install -r pip/pip-requirements.txt
 
 # install Node
 fnm install 20
