@@ -1,21 +1,21 @@
 {
 	"dependencies": {
-		"@changesets/cli": "2.26.2",
+		"@changesets/cli": "2.27.1",
 		"@nestjs/cli": "10.2.1",
 		"@vscode/vsce": "2.22.0",
 		"add": "^2.0.6",
-		"cdktf-cli": "0.19.1",
-		"eslint": "8.53.0",
+		"cdktf-cli": "0.19.2",
+		"eslint": "8.55.0",
 		"fkill-cli": "^8.0.0",
-		"npm-check-updates": "16.14.6",
-		"nx": "17.1.1",
-		"pnpm": "8.10.3",
-		"prettier": "3.1.0",
-		"publint": "^0.2.5",
-		"ts-node": "^10.9.1",
-		"tsx": "4.1.1",
-		"turbo": "1.10.16",
-		"typescript": "5.2.2",
-		"yarn": "^1.22.19"
+		"npm-check-updates": "16.14.12",
+		"nx": "17.2.5",
+		"pnpm": "^8.12.1",
+		"prettier": "3.1.1",
+		"publint": "^0.2.6",
+		"ts-node": "^10.9.2",
+		"tsx": "4.6.2",
+		"turbo": "1.11.2",
+		"typescript": "5.3.3",
+		"yarn": "^1.22.21"
 	}
 }
