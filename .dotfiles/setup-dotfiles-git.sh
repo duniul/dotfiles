@@ -41,9 +41,6 @@ $dot config --local user.email "hello@danielgrefberg.com"
 # don't show untracked files
 $dot config --local status.showUntrackedFiles no
 
-# define aliases
-$dot config --local alias.fishfunctions '!f() { git add $FISH_CUSTOM_FUNCTIONS_DIR; }; f'
-
 # checkout bare git repo contents
 $dot checkout
 checkoutExitCode=$?
