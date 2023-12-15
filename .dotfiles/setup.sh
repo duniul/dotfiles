@@ -55,7 +55,7 @@ curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 pip install -r pip/pip-requirements.txt
 
 # install Node
-fnm install 18
+fnm install 20
 
 # install global Node deps
 pnpm -g install
