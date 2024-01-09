@@ -53,6 +53,7 @@ cask "1password"
 cask "1password-cli"
 cask "airflow"
 cask "appcleaner"
+cask "arc"
 cask "brave-browser"
 cask "discord"
 cask "docker"
@@ -70,7 +71,6 @@ cask "iterm2"
 cask "kap"
 cask "keka"
 cask "logi-options-plus"
-cask "logitech-options"
 cask "mac-mouse-fix"
 cask "notion"
 cask "postman"
@@ -94,7 +94,6 @@ mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
 mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
-mas "Grammarly for Safari", id: 1462114288
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
@@ -130,7 +129,6 @@ vscode "foxundermoon.shell-format"
 vscode "george-alisson.html-preview-vscode"
 vscode "GitHub.copilot"
 vscode "GitHub.copilot-chat"
-vscode "GitHub.copilot-labs"
 vscode "github.vscode-github-actions"
 vscode "GitHub.vscode-pull-request-github"
 vscode "Gruntfuggly.todo-tree"
