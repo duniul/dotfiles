@@ -65,9 +65,6 @@ done
 # Dircolors
 eval "$(gdircolors -b ~/.dircolors/duniul.dircolors)"
 
-## thefuck (https://github.com/nvbn/thefuck)
-eval "$(thefuck --alias)"
-
 ## direnv (https://direnv.net/)
 eval "$(direnv hook bash)"
 
