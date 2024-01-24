@@ -27,6 +27,30 @@ function gz() {
 	printf "%-20s %'12.0f\n" "gzipped (--best)" "$(cat $1 | gzip --best -c | wc -c)"
 }
 
+# Update all the things
+function allup() {
+  echo "Some updates might require sudo!"
+  sudo -v
+
+  echo "-- HOMEBREW --"
+  brewup
+
+  echo "-- PNPM --"
+  pnpmup
+
+  echo "-- PIP --"
+  pipup
+}
+
+# Update pip and it's packages
+function pipup() {
+  echo 'Updating pip...'
+  pip3 install --upgrade pip
+
+  echo 'Updating pip packages...'
+  pip3 list --outdated --format=json | jq '.[].name' | xargs -n1 pip3 install -U
+}
+
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
 function brewup() {
 	echo "Some updates might require sudo!"
