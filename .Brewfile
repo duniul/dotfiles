@@ -39,7 +39,6 @@ brew "kotlin"
 brew "libpq", link: true
 brew "mas"
 brew "nmap"
-brew "pnpm"
 brew "python@3.9"
 brew "shellcheck"
 brew "shfmt"

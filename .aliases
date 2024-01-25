@@ -19,7 +19,7 @@ alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
 
 # Github aliases
-alias git='hub' # hub extends git with extra functionality
+alias git='hub'              # hub extends git with extra functionality
 alias opr='gh pr view --web' # open pull request in browser
 
 # dotfiles aliases
@@ -47,7 +47,8 @@ alias ocat='/bin/find'
 # utils
 alias la='ls -la'
 alias filesize='dust -s'
-alias pnpmup='pnpm -g update --latest'
+alias pnpmg='corepack pnpm@8'
+alias pnpmup='pnpmg update --latest'
 
 # shortcuts
 alias g='git'
