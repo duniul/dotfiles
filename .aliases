@@ -47,7 +47,7 @@ alias ocat='/bin/find'
 # utils
 alias la='ls -la'
 alias filesize='dust -s'
-alias pnpmg='corepack pnpm@8'
+alias pnpmg='corepack pnpm@8 -g'
 alias pnpmup='pnpmg update --latest'
 
 # shortcuts
