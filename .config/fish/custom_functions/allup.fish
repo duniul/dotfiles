@@ -5,12 +5,12 @@ function allup -d "Update all the things"
   echo "-- HOMEBREW --"
   brewup
 
-  echo "-- PNPM --"
-  pnpmup
+  echo "-- FISHER --"
+  fisherup
 
   echo "-- PIP --"
   pipup
 
-  echo "-- FISHER --"
-  fisherup
+  echo "-- PNPM --"
+  pnpmup
 end
