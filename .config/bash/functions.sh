@@ -29,26 +29,26 @@ function gz() {
 
 # Update all the things
 function allup() {
-  echo "Some updates might require sudo!"
-  sudo -v
+	echo "Some updates might require sudo!"
+	sudo -v
 
-  echo "-- HOMEBREW --"
-  brewup
+	echo "-- HOMEBREW --"
+	brewup
 
-  echo "-- PNPM --"
-  pnpmup
+	echo "-- PNPM --"
+	pnpmup
 
-  echo "-- PIP --"
-  pipup
+	echo "-- PIP --"
+	pipup
 }
 
 # Update pip and it's packages
 function pipup() {
-  echo 'Updating pip...'
-  pip3 install --upgrade pip
+	echo 'Updating pip...'
+	pip3 install --upgrade pip
 
-  echo 'Updating pip packages...'
-  pip3 list --outdated --format=json | jq '.[].name' | xargs -n1 pip3 install -U
+	echo 'Updating pip packages...'
+	pip3 list --outdated --format=json | jq '.[].name' | xargs -n1 pip3 install -U
 }
 
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
@@ -72,11 +72,15 @@ function brewup() {
 # Dump a Brewfile to ~/.Brewfile or to a provided path. `brewdump [filepath]`
 function brewdump() {
 	file=$1
-	if [ -n "$file" ]; then
-		brew bundle dump --force --file "$file"
-	else
-		brew bundle dump --force --global
+
+	if [ -z "$file" ]; then
+		file="$HOME/.Brewfile"
 	fi
+
+	brew bundle dump --force --file "$file"
+
+	# Remove vscode entries from the Brewfile
+	sed -i '' '/^vscode/d' "$file"
 }
 
 # Clean up unused Homebrew dependencies and packages
