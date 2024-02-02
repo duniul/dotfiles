@@ -2,6 +2,7 @@
 	"dependencies": {
 		"@changesets/cli": "2.27.1",
 		"@nestjs/cli": "10.3.0",
+		"@typescript/analyze-trace": "^0.10.1",
 		"@vscode/vsce": "2.23.0",
 		"add": "^2.0.6",
 		"cdktf-cli": "0.20.3",
