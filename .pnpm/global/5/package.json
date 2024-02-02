@@ -8,13 +8,13 @@
 		"eslint": "8.56.0",
 		"fkill-cli": "^8.0.0",
 		"npm-check-updates": "16.14.14",
-		"nx": "17.2.8",
-		"pnpm": "8.15.0",
+		"nx": "17.3.1",
+		"pnpm": "8.15.1",
 		"prettier": "3.2.4",
 		"publint": "^0.2.7",
 		"ts-node": "^10.9.2",
 		"tsx": "4.7.0",
-		"turbo": "1.11.3",
+		"turbo": "1.12.2",
 		"typescript": "5.3.3",
 		"yarn": "^1.22.21"
 	}
