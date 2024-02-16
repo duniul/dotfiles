@@ -155,6 +155,9 @@ sort = -committerdate
 rebase = true
 autostash = true
 
+[rerere]
+enabled = true
+
 [rebase]
 autostash = true
 
