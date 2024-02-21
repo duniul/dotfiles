@@ -10,6 +10,8 @@ alias sudo='sudo '   # enable aliases to be sudo’ed
 
 # edit shortcuts
 alias gitconfig='git config --global --edit'
+alias gitignore='edit ~/.gitignore_global'
+alias gitexclude='edit $(git rev-parse --git-dir)/info/exclude'
 alias fishconfig='edit $FISH_DIR/config.fish'
 alias fishfunctions='edit $FISH_CUSTOM_FUNCTIONS_DIR'
 alias bashconfig='edit ~/.bashrc'

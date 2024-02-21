@@ -141,8 +141,17 @@ clear-local = !git branch | grep -v '\\*\\|master\\|main\\|develop' | xargs -n 1
 # Remove all local branches that have been merged
 clear-merged = !git branch --merged | grep -v '\\*\\|main\\|develop' | xargs -n 1 git branch -d
 
+# Return the git root directory
+root = rev-parse --show-toplevel
+
+# Return the git directory
+gitdir = rev-parse --git-dir
+
 # Open the global ignore file
 global-ignore = !code ~/.gitignore_global
+
+# Open the closest ignore file
+exclude = "!f() { code $(git gitdir)/info/exclude; }; f"
 
 # Glone a repo from GitHub
 ghclone = "!f() { git clone https://github.com/$1.git; }; f"
