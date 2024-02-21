@@ -15,7 +15,7 @@ alias gitexclude='edit $(git rev-parse --git-dir)/info/exclude'
 alias fishconfig='edit $FISH_DIR/config.fish'
 alias fishfunctions='edit $FISH_CUSTOM_FUNCTIONS_DIR'
 alias bashconfig='edit ~/.bashrc'
-alias bashrc="bashconfig"
+alias bashrc='bashconfig'
 alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
@@ -25,7 +25,7 @@ alias git='hub'              # hub extends git with extra functionality
 alias opr='gh pr view --web' # open pull request in browser
 
 # dotfiles aliases
-alias dotfiles_env="env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR"
+alias dotfiles_env='env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR'
 alias dotcode='dotfiles_env code $HOME'
 alias dotfiles='git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
 alias dot='dotfiles'
@@ -43,7 +43,7 @@ alias find='gfind'
 alias pip='pip3'
 alias cat='bat'
 alias ocat='/bin/cat'
-alias find="fd"
+alias find='fd'
 alias ocat='/bin/find'
 
 # utils
@@ -68,5 +68,5 @@ alias youtube='yt-dlp'
 alias yt='yt-dlp'
 
 # aws aliases
-alias awsconfig="code ~/.aws"
-alias awsconf="awsconfig"
+alias awsconfig='code ~/.aws'
+alias awsconf='awsconfig'
