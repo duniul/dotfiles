@@ -37,7 +37,7 @@ brew "jq"
 brew "libpq", link: true
 brew "mas"
 brew "nmap"
-brew "openjdk@17"
+brew "openjdk"
 brew "python@3.9"
 brew "shellcheck"
 brew "shfmt"
