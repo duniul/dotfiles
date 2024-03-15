@@ -2,5 +2,10 @@
   "pro": true,
   "node": "~/.quokka/quokka-node",
   "installPackageCommand": "pnpm add {packageName}",
-  "plugins": ["quokka-plugin-subdir", "./plugins/benchmark"]
+  "plugins": ["quokka-plugin-subdir", "./plugins/benchmark"],
+  "ts": {
+    "compilerOptions": {
+      "types": ["node"]
+    }
+  }
 }
