@@ -101,6 +101,7 @@ remaster = !git rebint origin/master
 
 # Print the branch name.
 branch-name = rev-parse --abbrev-ref HEAD
+brename = branch -m
 
 # Print root of the Git dir.
 root = rev-parse --show-toplevel
