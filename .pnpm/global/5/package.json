@@ -6,7 +6,7 @@
     "eslint": "^8.57.0",
     "fkill-cli": "^8.0.0",
     "madge": "^6.1.0",
-    "npm-check-updates": "^16.14.15",
+    "npm-check-updates": "^16.14.16",
     "nx": "^18.0.8",
     "pnpm": "^8.15.4",
     "prettier": "^3.2.5",
