@@ -64,6 +64,7 @@ alias y='yarn'
 alias p='pnpm'
 alias c='clear'
 alias fs='filesize'
+alias fsu='ncdu -x'
 alias cdf='cdfinder'
 alias lsa='la'
 
