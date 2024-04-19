@@ -2,13 +2,14 @@
   "dependencies": {
     "@changesets/cli": "^2.27.1",
     "@typescript/analyze-trace": "^0.10.1",
-    "@vscode/vsce": "^2.24.0",
+    "@vscode/vsce": "^2.25.0",
+    "clean-modules": "^3.0.5",
     "eslint": "^9.0.0",
     "fkill-cli": "^8.0.0",
     "madge": "^7.0.0",
     "npm-check-updates": "^16.14.18",
-    "nx": "^18.2.4",
-    "pnpm": "^8.15.6",
+    "nx": "^18.3.2",
+    "pnpm": "^9.0.4",
     "prettier": "^3.2.5",
     "publint": "^0.2.7",
     "serve": "^14.2.1",
@@ -16,7 +17,7 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.7.2",
     "turbo": "^1.13.2",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "yarn": "^1.22.22"
   }
 }
