@@ -3,5 +3,13 @@
   "singleQuote": true,
   "printWidth": 100,
   "proseWrap": "always",
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ["**/*.json5"],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
 }
