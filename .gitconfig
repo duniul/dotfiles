@@ -38,7 +38,9 @@ gpgsign = true
 
 [alias]
 cm = commit
-ck = checkout
+ch = "!f() { git checkout \"$1\" 2>/dev/null || git checkout -b \"$1\"; }; f"
+con = continue
+cont = continue
 br = branch
 pu = push
 pf = push --force-with-lease
