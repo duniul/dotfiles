@@ -3,8 +3,6 @@ tap "bwhaley/ssmsh", "https://github.com/bwhaley/ssmsh"
 tap "github/gh"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 brew "aws-sam-cli"
@@ -41,6 +39,7 @@ brew "ncdu"
 brew "nmap"
 brew "openjdk"
 brew "phrase-cli"
+brew "pkg-config"
 brew "python@3.9"
 brew "shellcheck"
 brew "shfmt"
@@ -63,7 +62,7 @@ cask "discord"
 cask "docker"
 cask "easyfind"
 cask "figma"
-cask "firefox-developer-edition"
+cask "firefox@developer-edition"
 cask "font-hack"
 cask "google-chrome"
 cask "google-cloud-sdk"
@@ -102,4 +101,4 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "WhatsApp", id: 1147396723
+mas "‎WhatsApp", id: 310633997
