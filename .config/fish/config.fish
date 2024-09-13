@@ -39,6 +39,9 @@ set --append fish_function_path "$HOME/.config/fish/custom_functions"
 # Remove delete/exit hotkey
 bind --erase "\cd" --all
 
+# Remap Ctrl+D to delete history pager
+bind --preset \cD history-pager-delete or backward-delete-char
+
 # Remap clear to Ctrl-K (like VSCode has CMD+K)
 bind --erase \cl --all
 bind --user \v echo\ -n\ \(clear\ \|\ string\ replace\ \\e\\\[3J\ \"\"\)\;\ commandline\ -f\ repaint
