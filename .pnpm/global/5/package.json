@@ -4,6 +4,7 @@
     "@typescript/analyze-trace": "^0.10.1",
     "@vscode/vsce": "^3.1.0",
     "clean-modules": "^3.0.5",
+    "codemod": "^0.14.0",
     "eslint": "^9.10.0",
     "fkill-cli": "^8.0.0",
     "madge": "^8.0.0",
