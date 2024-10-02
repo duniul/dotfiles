@@ -40,3 +40,4 @@ desktop.ini
 
 # Quokka files in /src directories (helps with relative imports)
 src/.quokka/
+.quokka
