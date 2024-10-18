@@ -32,14 +32,20 @@ function allup() {
 	echo "Some updates might require sudo!"
 	sudo -v
 
-	echo "-- HOMEBREW --"
-	brewup
+  echo "-- HOMEBREW --"
+  brewup
 
-	echo "-- PNPM --"
-	pnpmup
+  echo "-- FISHER --"
+  fisherup
 
-	echo "-- PIP --"
-	pipup
+  echo "-- PIP --"
+  pipup
+
+  echo "-- PNPM --"
+  pnpmup
+
+  echo "-- RUST --"
+  rustup update
 }
 
 # Update pip and it's packages

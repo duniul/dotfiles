@@ -13,4 +13,7 @@ function allup -d "Update all the things"
 
   echo "-- PNPM --"
   pnpmup
+
+  echo "-- RUST --"
+  rustup update
 end
