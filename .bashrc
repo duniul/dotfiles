@@ -8,7 +8,7 @@ if [[ $(uname -m) == 'arm64' ]]; then
   BREW_BIN="/opt/homebrew/bin"
   BREW_SBIN="/opt/homebrew/sbin"
 
-  export PATH="$PATH:$USER_BIN:$BREW_BIN:$BREW_SBIN"
+  export PATH="$PATH:$BREW_BIN:$BREW_SBIN:/usr/local/bin:$USER_BIN"
 fi
 
 PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' '_')
