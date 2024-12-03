@@ -20,6 +20,9 @@ alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
 
+# vscode vs cursor aliases
+alias vscode='/opt/homebrew/bin/code'
+
 # Github aliases
 alias git='hub'              # hub extends git with extra functionality
 alias opr='gh pr view --web' # open pull request in browser
@@ -39,7 +42,6 @@ alias grep='ggrep --color=auto'
 alias egrep='gegrep --color=auto'
 alias fgrep='gfgrep --color=auto'
 alias ls='gls --color=auto --group-directories-first --sort=extension -p'
-alias find='gfind'
 alias ln='gln'
 alias pip='pip3'
 alias cat='bat'
