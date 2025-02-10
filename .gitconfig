@@ -159,6 +159,11 @@ exclude = "!f() { code $(git gitdir)/info/exclude; }; f"
 # Glone a repo from GitHub
 ghclone = "!f() { git clone https://github.com/$1.git; }; f"
 
+pr-url-print = !gh pr view --json url --template "{{.url}}"
+pr-link-print = "!f() { gh pr view --json title,number,additions,deletions,url --template '`(+{{.additions}}/-{{.deletions}})` {{.title}} [#{{.number}}]({{.url}})' $@; }; f"
+pr-url = "!/bin/bash -c 'f() { url=$(git pr-url-print \"$0\"); echo -n \"$url\" | pbcopy; printf \"Copied to clipboard:\n$url\"; }; f'"
+pr-link = "!/bin/bash -c 'f() { url=$(git pr-link-print \"$0\"); echo -n \"$url\" | pbcopy; printf \"Copied to clipboard:\n$url\"; }; f'"
+
 [branch]
 # Show most recently changed branches first.
 sort = -committerdate
@@ -211,4 +216,4 @@ conflictstyle = diff3
 colorMoved = default
 # END: git-delta options
 [gitbutler]
-	signCommits = true
+signCommits = true
