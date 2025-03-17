@@ -26,6 +26,7 @@ alias vscode='/opt/homebrew/bin/code'
 # Github aliases
 alias git='hub'              # hub extends git with extra functionality
 alias opr='gh pr view --web' # open pull request in browser
+alias prl='git pr-link'      # copy a formatted markdown link to the provided PR
 
 # dotfiles aliases
 alias dotfiles_env='env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR'
