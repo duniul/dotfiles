@@ -1,8 +1,5 @@
 {
   "pro": true,
-  "node": "~/.quokka/quokka-node",
-  "stdEsm": false,
-  "nativeEsm": true,
   "installPackageCommand": "pnpm add {packageName}",
   "delay": 1500,
   "showValueOnSelection": true,
@@ -12,11 +9,6 @@
     "alias-quokka-plugin",
     "./plugins/benchmark"
   ],
-  "ts": {
-    "compilerOptions": {
-      "types": ["node"]
-    }
-  },
   "env": {
     "params": {
       "runner": "--experimental-specifier-resolution=node"
