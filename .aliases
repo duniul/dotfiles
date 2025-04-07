@@ -53,7 +53,7 @@ alias ocat='/bin/find'
 # utils
 alias la='ls -la'
 alias filesize='dust -s'
-alias pnpmg='corepack pnpm@8 -g'
+alias pnpmg='corepack pnpm -g'
 alias pnpmup='pnpmg update --latest'
 alias cb='pbcopy'
 alias cbp='pwd | pbcopy'
