@@ -215,5 +215,7 @@ conflictstyle = diff3
 [diff]
 colorMoved = default
 # END: git-delta options
+
 [gitbutler]
 signCommits = true
+aiModelProvider = anthropic
