@@ -2,8 +2,6 @@ tap "bearer/tap"
 tap "bwhaley/ssmsh", "https://github.com/bwhaley/ssmsh"
 tap "github/gh"
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "jesseduffield/lazygit"
 brew "aws-sam-cli"
 brew "awscli"
@@ -86,10 +84,10 @@ cask "jordanbaird-ice"
 cask "kap"
 cask "keka"
 cask "mac-mouse-fix"
+cask "mouseless"
 cask "notion"
 cask "postman"
 cask "raycast"
-cask "reaper"
 cask "rectangle"
 cask "reflex"
 cask "shottr"
@@ -97,15 +95,13 @@ cask "slack"
 cask "spotify"
 cask "steam"
 cask "sublime-text"
-cask "todoist"
 cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vlc"
-mas "ColorSlurp", id: 1287239339
+mas "1Password for Safari", id: 1569813296
 mas "Dato", id: 1470584107
 mas "Dropover", id: 1355679052
-mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
