@@ -80,3 +80,6 @@ alias yt='yt-dlp'
 # aws aliases
 alias awsconfig='code ~/.aws'
 alias awsconf='awsconfig'
+
+# node aliases
+alias nodets='node --experimental-strip-types'
