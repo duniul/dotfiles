@@ -1,19 +1,22 @@
 {
   "dependencies": {
-    "@changesets/cli": "^2.29.3",
+    "@anthropic-ai/claude-code": "^1.0.120",
+    "@biomejs/biome": "^2.2.4",
+    "@changesets/cli": "^2.29.7",
     "@typescript/analyze-trace": "^0.10.1",
     "clean-modules": "3.1.1",
-    "eslint": "^9.26.0",
+    "eslint": "^9.36.0",
     "fkill-cli": "^8.0.0",
     "madge": "^8.0.0",
-    "npm-check-updates": "^18.0.1",
-    "pnpm": "10.10.0",
-    "prettier": "^3.5.3",
-    "publint": "^0.3.12",
+    "npm-check-updates": "^18.3.0",
+    "pnpm": "10.17.1",
+    "prettier": "^3.6.2",
+    "publint": "^0.3.13",
+    "serve": "^14.2.5",
     "sort-jsonc-cli": "1.0.2",
-    "tsx": "^4.19.4",
-    "turbo": "2.5.3",
-    "typescript": "^5.8.3",
-    "zx": "^8.5.3"
+    "tsx": "^4.20.5",
+    "turbo": "2.5.6",
+    "typescript": "^5.9.2",
+    "zx": "^8.8.3"
   }
 }
