@@ -1,5 +1,5 @@
 {
-  "pro": true,
+  "pro": false,
   "installPackageCommand": "pnpm add {packageName}",
   "delay": 1500,
   "showValueOnSelection": true,
@@ -9,9 +9,5 @@
     "alias-quokka-plugin",
     "./plugins/benchmark"
   ],
-  "env": {
-    "params": {
-      "runner": "--experimental-specifier-resolution=node"
-    }
-  }
+  "env": { "params": { "runner": "--experimental-specifier-resolution=node" } }
 }
