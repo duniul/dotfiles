@@ -1,6 +1,8 @@
 ###########
 # SET PATHS
 
+set fish_greeting
+
 # Set specific brew bins for M1
 if [ (uname -m) = arm64 ]
     fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
