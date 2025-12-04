@@ -220,7 +220,7 @@ function wifi-network() {
 
 #Print wifi password (requires keychain authentication)
 function wifi-password() {
-	security find-generic-password -wa "$(wifi-network-name)"
+	security find-generic-password -a "$(wifi-network)" -s "AirPort" -w
 }
 
 # Turn wifi connection on and off.
