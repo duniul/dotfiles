@@ -1,0 +1,37 @@
+# https://ghostty.org/docs/config/reference
+
+# window
+theme = dracula
+background-opacity = 0.98
+
+# fonts
+font-family = "Menlo"
+font-family-bold = "Menlo Bold"
+font-family-italic = "Menlo Italic"
+font-family-bold-italic = "Menlo Bold Italic"
+font-size = 14
+
+# clipboard
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = true
+
+# titlebar
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden
+
+# quake-style quick-terminal
+quick-terminal-animation-duration = 0.08
+
+# macos-icon
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-ghost-color = 000000
+macos-icon-screen-color = ffffff
+
+# updates
+auto-update = check
+auto-update-channel = tip
+
+# keybinds
+keybind = global:cmd+§=toggle_quick_terminal
+keybind = cmd+.=open_config
