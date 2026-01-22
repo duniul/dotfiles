@@ -13,27 +13,28 @@ export LANG="en_US.UTF-8"                 # Set the default language to English
 export EDITOR="code"                      # Edit with VS Code by default
 export MANPAGER="less -X"                 # Don’t clear the screen after quitting a manual page
 export BASH_SILENCE_DEPRECATION_WARNING=1 # Hide the “default interactive shell is now zsh” warning on macOS.
+export XDG_CONFIG_HOME="$HOME/.config"    # Some tools expect it to be set
 
 ## dotfiles (https://github.com/duniul/dotfiles)
-export DOTFILES_DIR=$HOME/.dotfiles
-export DOTFILES_GIT_DIR=$HOME/.dotfiles-git
+export DOTFILES_DIR="$HOME/.dotfiles"
+export DOTFILES_GIT_DIR="$HOME/.dotfiles-git"
 export DOTFILES_ITERM_DIR=$DOTFILES_DIR/iterm
 
 ## fish
-export FISH_DIR=$HOME/.config/fish
-export FISH_CUSTOM_FUNCTIONS_DIR=$FISH_DIR/custom_functions
+export FISH_DIR="$HOME/.config/fish"
+export FISH_CUSTOM_FUNCTIONS_DIR="$FISH_DIR/custom_functions"
 
 ## bash
-export BASH_DIR=$HOME/.config/bash
+export BASH_DIR="$HOME/.config/bash"
 
 ## direnv
 export DIRENV_LOG_FORMAT="" # direnv log formatting, leave empty to silence
 
 ## pnpm
-export PNPM_HOME=$HOME/.pnpm
+export PNPM_HOME="$HOME/.pnpm"
 
 ## rust cargo
-export CARGO_BIN=$HOME/.cargo/bin
+export CARGO_BIN="$HOME/.cargo/bin"
 
 ## user bins
-export USER_BIN=$HOME/bin
+export USER_BIN="$HOME/bin"
