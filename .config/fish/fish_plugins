@@ -7,6 +7,6 @@ oh-my-fish/plugin-foreign-env
 jorgebucaran/getopts.fish
 jorgebucaran/fisher
 pure-fish/pure
-acomagu/fish-async-prompt
 nickeb96/puffer-fish
 PatrickF1/fzf.fish
+acomagu/fish-async-prompt
