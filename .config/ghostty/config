@@ -3,13 +3,22 @@
 # window
 theme = dracula
 background-opacity = 0.98
+window-padding-x = 10
+window-padding-y = 10
 
 # fonts
+# macOS: Font rendering inconsistencies depending on monitor DPI
+# https://github.com/ghostty-org/ghostty/issues/4504
 font-family = "Menlo"
 font-family-bold = "Menlo Bold"
 font-family-italic = "Menlo Italic"
 font-family-bold-italic = "Menlo Bold Italic"
 font-size = 14
+font-thicken = true
+font-thicken-strength = 200                   
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
 
 # clipboard
 clipboard-trim-trailing-spaces = true
