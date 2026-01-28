@@ -12,7 +12,7 @@ brew "bat"
 brew "coreutils"
 brew "deno"
 brew "direnv"
-brew "docker", link: false
+brew "docker"
 brew "dust"
 brew "duti"
 brew "entr"
