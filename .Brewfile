@@ -100,6 +100,7 @@ cask "sublime-text"
 cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
+cask "vivaldi"
 cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "ColorSlurp", id: 1287239339
