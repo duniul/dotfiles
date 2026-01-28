@@ -1,10 +1,5 @@
 # shellcheck shell=bash
 
-# find shorthand
-function f() {
-	find . -name "$1" 2>&1 | grep -v 'Permission denied'
-}
-
 # List all files, long format, colorized, permissions in octal
 function la() {
 	# shellcheck disable=SC2012
@@ -102,7 +97,7 @@ function cleanup-brew() {
 
 # Recursively delete .DS_Store files
 function cleanup-dsstore() {
-	find . -type f -name '*.DS_Store' -ls -delete
+	gfind . -type f -name '*.DS_Store' -ls -delete
 }
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
