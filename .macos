@@ -75,10 +75,6 @@ step "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
-step "Expand save panel by default"
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-
 step "Save to disk (not to iCloud) by default"
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
@@ -579,9 +575,6 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
 step "Disable the annoying line marks"
 defaults write com.apple.Terminal ShowLineMarks -int 0
-
-step "Only use UTF-8 in Terminal.app"
-defaults write com.apple.terminal StringEncodings -array 4
 
 step "Install Dracula theme for Terminal.app"
 open "${HOME}/.init/Dracula.terminal"
