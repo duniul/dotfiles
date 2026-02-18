@@ -25,7 +25,7 @@ if [ -d "$DOTFILES_GIT_DIR" ]; then
   exit 1
 fi
 
-git clone --bare https://github.com/duniul/dotfiles.git $DOTFILES_GIT_DIR
+git clone --bare https://github.com/duniul/dotfiles.git "$DOTFILES_GIT_DIR"
 
 dot="/usr/bin/git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME"
 
