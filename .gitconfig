@@ -73,7 +73,7 @@ anonamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git am
 maintcommit = "!f() { GIT_COMMITTER_NAME='Maintenance' GIT_COMMITTER_EMAIL='' git commit --author 'Maintenance <>'; }; f"
 
 # Like maintcommit, but amends the last commit instead.
-maintamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git amend --author 'Anonymous <>'; }; f"
+maintamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git amend --author 'Maintenance <>'; }; f"
 
 # Stash everything, including untracked.
 stashu = stash --include-untracked
