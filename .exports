@@ -37,3 +37,6 @@ export CARGO_BIN="$HOME/.cargo/bin"
 
 ## user bins
 export USER_BIN="$HOME/bin"
+
+## bat
+export BAT_THEME="Dracula"
