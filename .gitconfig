@@ -153,7 +153,7 @@ global-ignore = !code ~/.gitignore_global
 # Open the closest ignore file
 exclude = "!f() { code $(git gitdir)/info/exclude; }; f"
 
-# Glone a repo from GitHub
+# Clone a repo from GitHub
 ghclone = "!f() { git clone https://github.com/$1.git; }; f"
 
 pr-url-print = !gh pr view --repo sanalabs/sierra-platform --json url --template "{{.url}}"

@@ -21,7 +21,6 @@ function aws-login-ecr -d "Fetches ECR login password and securely logs in with 
 
     set -l aws_account_id (aws sts get-caller-identity --output text --query "Account")
 
-    # use default region if none is set
     if test -z "$aws_account_id"
         echo "Could not get AWS account ID."
         return 1
