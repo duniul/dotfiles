@@ -3,13 +3,17 @@
 
 set fish_greeting
 
-# Set specific brew bins for M1
+set -f usr_local_bin /usr/local/bin
+set -f python_bins $HOME/Library/Python/*/bin
+set -f path_extras $USER_BIN $PNPM_HOME $CARGO_BIN $python_bins $usr_local_bin
+
 if [ (uname -m) = arm64 ]
-    fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+    # Set extra brew bins for M1
+    set -a path_extras /opt/homebrew/bin /opt/homebrew/sbin
 end
 
-# Append bin directories to PATH
-fish_add_path "/usr/local/bin" "$USER_BIN" "$PNPM_HOME" "$CARGO_BIN" $HOME/Library/Python/*/bin
+# Prepend bin directories to PATH
+fish_add_path $path_extras
 
 ###############
 # LOAD DOTFILES

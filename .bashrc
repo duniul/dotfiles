@@ -3,19 +3,17 @@
 ###########
 # SET PATHS
 
-# Set specific brew and python bins for M1
-if [[ $(uname -m) == 'arm64' ]]; then
-  BREW_BIN="/opt/homebrew/bin"
-  BREW_SBIN="/opt/homebrew/sbin"
+usr_local_bin="/usr/local/bin"
+python_bins=$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
+path_extras="$USER_BIN:$PNPM_HOME:$CARGO_BIN:$python_bins:$usr_local_bin"
 
-  export PATH="$PATH:$BREW_BIN:$BREW_SBIN:/usr/local/bin:$USER_BIN"
+if [[ $(uname -m) == 'arm64' ]]; then
+  # Set extra brew bins for M1
+  path_extras="$path_extras:/opt/homebrew/bin:/opt/homebrew/sbin"
 fi
 
-# shellcheck disable=SC2086
-PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
-
-# Append bin directories to PATH
-export PATH="$PATH:$USER_BIN:$PNPM_HOME:$CARGO_BIN:$PYTHON_BINS"
+# Prepend bin directories to PATH
+export PATH="$path_extras:$PATH"
 
 ###############
 # LOAD DOTFILES
