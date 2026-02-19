@@ -4,9 +4,6 @@
 
 alias unset="set -e"
 
-# shortcuts
-alias lsa=la
-
 # abbrevations and typos
 abbr "cd.." "cd .."
 abbr bwre brew
