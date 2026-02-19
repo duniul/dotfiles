@@ -6,7 +6,7 @@ function brewup -d "Update brew, upgrade brew installs, cleanup and run doctor"
     brew -v update
     
     echo "Upgrading Homebrew installs..."
-    brew upgrade -v --force-bottle
+    brew upgrade -v
 
     echo "Cleaning up Homebrew installs..."
     cleanup-brew
