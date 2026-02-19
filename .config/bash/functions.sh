@@ -10,8 +10,8 @@ function gz() {
 
 # Update all the things
 function allup() {
-	echo "Some updates might require sudo!"
-	sudo -v
+  echo "Some updates might require sudo!"
+  sudo -v
 
   echo "-- HOMEBREW --"
   brewup
@@ -112,7 +112,7 @@ function cdfinder() {
 
 alias cdf='cdfinder'
 
-# Empty the trash on all mounted volumes and main storage, clear Apple's system logs and then clear download history from quarantine
+# Empty the trash on all mounted volumes and main storage and then clear download history from quarantine
 function emptytrash() {
 	sudo rm -rfv /Volumes/*/.Trashes
 

@@ -1,7 +1,6 @@
 # Aliases shared between shells should be defined in ~/.aliases
-# Abbreviations/typos should be defined in ~/.abbrevations
-# Fish specific aliases should be defined here 👇
 
+# Fish specific aliases
 alias unset="set -e"
 
 # abbrevations and typos

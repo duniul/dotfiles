@@ -1,4 +1,4 @@
-function emptytrash -d "Empty the trash on all mounted volumes and main storage, clear Apple's system logs and then clear download history from quarantine."
+function emptytrash -d "Empty the trash on all mounted volumes and main storage and then clear download history from quarantine."
     sudo rm -rfv /Volumes/*/.Trashes
 
     rm -rfv ~/.Trash

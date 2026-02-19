@@ -46,7 +46,7 @@ shopt -s histappend                                    # append to history, don'
 # - cdspell: autocorrect typos in path names when using `cd`
 # - dirspell: autocorrect on directory names to match a glob.
 # - autocd:  e.g. `**/qux` will enter `./foo/bar/baz/qux`
-# - globstart: recursive globbing, e.g. `echo **/*.txt`
+# - globstar: recursive globbing, e.g. `echo **/*.txt`
 # - nocaseglob: case-insensitive globbing (used in pathname expansion)
 for option in cdspell dirspell autocd globstar nocaseglob; do
   shopt -s "$option" 2>/dev/null
