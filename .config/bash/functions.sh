@@ -131,12 +131,6 @@ function week() {
 	date +%V
 }
 
-# Shut down macOS
-function shutdownox() {
-	# cf. http://apple.stackexchange.com/a/103633
-	osascript -e 'tell app "System Events" to shut down'
-}
-
 # Print LS_COLORS, listing types and extensions in their assigned color.
 # Uses current LS_COLORS by default, but also accepts a .dircolors file.
 function print-colors() {
