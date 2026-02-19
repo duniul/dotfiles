@@ -20,13 +20,8 @@ end
 # Prepend bin directories to PATH
 fish_add_path $path_extras
 
-# Load extra dotfiles
-for file in ~/{.extras-pre,.exports,.aliases,.extras}
-    test -e "$file" && source $file
-end
-
 # Load dotfiles that should run AFTER the other dotfiles
-for file in ~/.{exports} ~/.config/fish/{extras}.fish
+for file in ~/.{extras} ~/.config/fish/{extras}.fish
     test -e "$file" && source $file
 end
 set -e file

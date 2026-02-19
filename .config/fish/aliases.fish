@@ -3,7 +3,7 @@
 # Fish specific aliases
 alias unset="set -e"
 
-# abbrevations and typos
+# abbreviations and typos
 abbr "cd.." "cd .."
 abbr bwre brew
 abbr caks cask

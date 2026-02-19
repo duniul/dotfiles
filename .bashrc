@@ -1,7 +1,7 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
 # Load dotfiles that should run BEFORE the other dotfiles (for setting PATH etc.)
-for file in ~/.{extras-pre,exports,aliases}.sh ~/.config/bash/{extras-pre,exports,aliases}.sh; do
+for file in ~/.{extras-pre,exports,aliases} ~/.config/bash/{extras-pre,exports,aliases}.sh; do
   [ -r "$file" ] && source "$file"
 done
 unset file
@@ -22,7 +22,7 @@ fi
 export PATH="$path_extras:$PATH"
 
 # Load dotfiles that should run AFTER the other dotfiles
-for file in ~/extras.sh ~/.config/bash/{prompt,extras}.sh; do
+for file in ~/.extras ~/.config/bash/{prompt,extras}.sh; do
   [ -r "$file" ] && source "$file"
 done
 unset file
