@@ -102,6 +102,12 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 step "Disable auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+step "Mute startup chime"
+sudo nvram StartupMute=%01
+
+step 'Disable "Are you sure you want to open this application?" dialog'
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
 # step "Allow to open apps also from \"unidentified developers\" by default"
 # sudo spctl --master-disable
 
@@ -206,6 +212,14 @@ defaults write com.apple.screencapture type -string 'png'
 # step "Enable HiDPI display modes (requires restart)"
 # sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
+#
+# Siri
+#
+
+step "Disable Siri"
+defaults write com.apple.assistant.support "Assistant Enabled" -bool false
+defaults write com.apple.Siri StatusMenuVisible -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -257,9 +271,10 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 step "Reduce the spring loading delay for directories"
 defaults write NSGlobalDomain com.apple.springing.delay -float 2
 
-step "Avoid creating .DS_Store files on network or USB volumes"
+step "Avoid creating .DS_Store files on network, USB volumes or SMB shares"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+defaults write com.apple.desktopservices DSDontWriteSMBStores -bool true
 
 # step "Disable disk image verification"
 # defaults write com.apple.frameworks.diskimages skip-verify -bool true
@@ -444,6 +459,9 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
 step "Update extensions automatically"
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
+
+step "Disable two-finger swipe back gesture in Safari"
+defaults write com.apple.Safari AppleEnableSwipeNavigateWithScrolls -bool false
 
 ###############################################################################
 # Mail                                                                        #
