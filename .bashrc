@@ -11,7 +11,8 @@ if [[ $(uname -m) == 'arm64' ]]; then
   export PATH="$PATH:$BREW_BIN:$BREW_SBIN:/usr/local/bin:$USER_BIN"
 fi
 
-PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' '_')
+# shellcheck disable=SC2086
+PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
 
 # Append bin directories to PATH
 export PATH="$PATH:$USER_BIN:$PNPM_HOME:$CARGO_BIN:$PYTHON_BINS"
@@ -29,8 +30,8 @@ done
 
 # Load shell specific dotfiles
 # To load settings that shouldn't be commited, use the extras files:
-#   ~/.config/fish/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
-#   ~/.config/fish/extras.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
+#   ~/.config/bash/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
+#   ~/.config/bash/extras.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
 for file in ~/.config/bash/{extras-pre,prompt,extras}.sh; do
   [ -r "$file" ] && source "$file"
 done
