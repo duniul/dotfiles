@@ -193,7 +193,7 @@ cmd = code --wait --diff $LOCAL $REMOTE
 
 [help]
 # Automatically correct and execute mistyped commands.
-autocorrect = 1
+autocorrect = prompt
 
 # Github's hub options
 [hub]
