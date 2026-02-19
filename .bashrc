@@ -62,6 +62,10 @@ for option in cdspell dirspell autocd globstar nocaseglob; do
   shopt -s "$option" 2>/dev/null
 done
 
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
+
 ################
 # SHELL COMMONS
 # These settings need to be configured in both .bash_profile and fish.config
