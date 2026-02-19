@@ -86,7 +86,7 @@ function cleanup-dsstore() {
 	gfind . -type f -name '*.DS_Store' -ls -delete
 }
 
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
 function cleanup-ls() {
 	/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder
 }
