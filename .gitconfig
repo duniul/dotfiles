@@ -73,7 +73,7 @@ anonamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git am
 maintcommit = "!f() { GIT_COMMITTER_NAME='Maintenance' GIT_COMMITTER_EMAIL='' git commit --author 'Maintenance <>'; }; f"
 
 # Like maintcommit, but amends the last commit instead.
-maintamend = "!f() { GIT_COMMITTER_NAME='Anonymous' GIT_COMMITTER_EMAIL='' git amend --author 'Maintenance <>'; }; f"
+maintamend = "!f() { GIT_COMMITTER_NAME='Maintenance' GIT_COMMITTER_EMAIL='' git amend --author 'Maintenance <>'; }; f"
 
 # Stash everything, including untracked.
 stashu = stash --include-untracked
@@ -88,7 +88,7 @@ stasha = stash apply
 addu = add -u
 
 # Sync the current branch with the latest changes.
-sync = fetch --all --prune && git rebase -p --autostash $1
+sync = fetch --all --prune && git rebase --rebase-merges --autostash $1
 
 # Rebase from the last N commits.
 relast = "!f() { git rebase -i HEAD~${1/-/} ${2}; }; f"
