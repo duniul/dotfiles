@@ -1,4 +1,4 @@
-function aws-login-sso -d "Log in with aws sso and extract credentials with yawsso."
+function aws-login-sso -d "Log in with AWS SSO and extract credentials with yawsso."
     set -l profiles $argv
 
     if [ -z "$profiles" ]
@@ -28,7 +28,7 @@ function aws-login-sso -d "Log in with aws sso and extract credentials with yaws
                 set_color red
                 echo "Failed to log in with AWS SSO."
                 set_color normal
-                return $status
+                return 1
             else
                 # Successfully logged in with AWS SSO.
                 # Reload profiles
@@ -41,7 +41,7 @@ function aws-login-sso -d "Log in with aws sso and extract credentials with yaws
             set_color normal
 
             echo $yawsso_result
-            return $status
+            return 1
         end
     end
 

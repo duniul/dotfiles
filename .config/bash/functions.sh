@@ -89,7 +89,7 @@ function cleanup-brew() {
 
 # Recursively delete .DS_Store files
 function cleanup-dsstore() {
-	gfind . -type f -name '*.DS_Store' -ls -delete
+	gfind . -type f -name '.DS_Store' -ls -delete
 }
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
@@ -115,7 +115,7 @@ alias cdf='cdfinder'
 # Empty the trash on all mounted volumes and main storage, clear Apple's system logs and then clear download history from quarantine
 function emptytrash() {
 	sudo rm -rfv /Volumes/*/.Trashes
-	sudo rm -rfv /private/var/log/asl/*.asl
+
 	rm -rfv ~/.Trash
 	rm -rfv ~/Library/Caches/com.spotify.client/Data
 	sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
@@ -215,8 +215,8 @@ function isodate() {
 	date +%Y-%m-%d
 }
 
-# Log in with aws-google-auth and extract credentials with aws-export-profile.
-function aws-sso-login() {
+# Log in with AWS SSO and extract credentials with yawsso.
+function aws-login-sso() {
 	profile=$1
 
 	# If no profile is passed, use the the AWS_PROFILE.
