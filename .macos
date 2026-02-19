@@ -534,10 +534,10 @@ step "Rebuild the index from scratch"
 sudo mdutil -E / >/dev/null
 
 ###############################################################################
-# Terminal & iTerm 2                                                          #
+# Terminal                                                       #
 ###############################################################################
 
-heading "Terminal & iTerm"
+heading "Terminal"
 
 step "Only use UTF-8 in Terminal.app"
 defaults write com.apple.terminal StringEncodings -array 4
@@ -549,14 +549,7 @@ step "Disable the annoying line marks"
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
 step "Install Dracula theme for Terminal.app"
-open "${HOME}/.init/Dracula.terminal"
-
-step "Install Dracula theme for iTerm"
-open "${HOME}/.init/Dracula.itermcolors"
-
-step "Set iTerm preferences dir (${DOTFILES_ITERM_DIR}) and tell iTerm to use it"
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_ITERM_DIR"
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+open "${HOME}/.dotfiles/terminal/Dracula.terminal"
 
 ###############################################################################
 # Time Machine                                                                #
