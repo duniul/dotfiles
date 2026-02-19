@@ -133,7 +133,7 @@ function shutdownox() {
 
 # Print LS_COLORS, listing types and extensions in their assigned color.
 # Uses current LS_COLORS by default, but also accepts a .dircolors file.
-function print_colors() {
+function print-colors() {
 	originalLsColors=$LS_COLORS
 	dircolorsFile=$1
 
@@ -161,11 +161,11 @@ function print_colors() {
 	echo -e ${tags[*]}
 }
 
-alias print_lscolors="print_colors"
-alias print_dircolors="print_colors"
+alias print-lscolors="print-colors"
+alias print-dircolors="print-colors"
 
 # Print all possible dircolors codes
-function print_dircolors_codes() {
+function print-dircolors-codes() {
 	tags=()
 
 	# add basic codes

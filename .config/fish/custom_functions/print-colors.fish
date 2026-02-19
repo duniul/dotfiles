@@ -9,8 +9,6 @@ function print-colors -a "dircolorsFile" -d "Print LS_COLORS, listing types and 
     set spaceSeparatedLsColors (string split ':' $LS_COLORS)
     set tags
 
-    echo $lsColors
-
     for lsColor in $spaceSeparatedLsColors
         set -l colorTuple (string split '=' $lsColor)
         set -l typeOrExt $colorTuple[1]
@@ -29,5 +27,5 @@ function print-colors -a "dircolorsFile" -d "Print LS_COLORS, listing types and 
     echo -e $tags
 end
 
-alias print_lscolors="print_colors"
-alias print_dircolors="print_colors"
+alias print-lscolors="print-colors"
+alias print-dircolors="print-colors"
