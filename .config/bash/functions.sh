@@ -244,20 +244,3 @@ function aws-sso-login() {
 	aws sso login --profile $profile
 	yawsso --profile $profile
 }
-
-# Update all global packages installed with Volta to the latest version
-function voltup() {
-	packagesPath="$VOLTA_HOME/tools/user/packages"
-	voltaFiles=$(ls $packagesPath)
-
-	echo -e "Updating all global packages installed with Volta...\n"
-
-	for file in $voltaFiles; do
-		packagePath="$packagesPath/$file"
-		name=$(jq -r '.name' $packagePath)
-
-		volta install $name
-	done
-
-	echo "Done, all global packages have been updated!"
-}
