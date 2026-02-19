@@ -13,13 +13,14 @@ The dotfiles are managed using a `bare` Git repo, [see this popular guide](https
 In short, this is what is included:
 
 - `bash` and `fish` 🐟 stuff
-  - configs with [exports](../.exports), [aliases](../.aliases), functions ([bash](../.config/bash/functions)/[fish](../.config/fish/custom_functions)), [abbreviations](../.config/fish/aliases) etc.
+  - configs with [exports](../.exports), [aliases](../.aliases), functions ([bash](../.config/bash/functions.sh)/[fish](../.config/fish/custom_functions)), [abbreviations](../.config/fish/aliases.fish) etc.
   - nice [`fisher`](https://github.com/jorgebucaran/fisher) packages
   - I use `fish` 99% of the time, but I like to keep corresponding exports, functions, and aliases available in `bash` as well
 - `brew` packages and casks
 - `git` config with aliases and defaults
 - `pnpm` for global npm packages
-- macOS defaults
+- [`ghostty`](../.config/ghostty/config) terminal config
+- [macOS defaults](../.macos)
 
 ## Installation
 
@@ -31,7 +32,7 @@ To automatically set up the bare Git repo and check out the dotfiles, run:
 curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/main/.dotfiles/setup-dotfiles-git.sh" | bash
 ```
 
-- If you don't feel like curling the script, you can [have a look at it yourself](.dotfiles/setup-dotfiles-git.sh) and run the steps manually.
+- If you don't feel like curling the script, you can [have a look at it yourself](../.dotfiles/setup-dotfiles-git.sh) and run the steps manually.
 - If the script fails, e.g. because of conflicting files, clear up the issues and either run the script again or follow the instructions in the command.
 
 #### 2) Run the setup script <small>([`.dotfiles/setup.sh`](../.dotfiles/setup.sh))</small>
@@ -43,7 +44,7 @@ bash "~/.dotfiles/setup.sh"
 - Installs Homebrew + packages and casks
 - Installs Fisher + packages
 - Installs pnpm + global packages
-- Sets `$PATH`
+- Installs Node via fnm
 
 #### 3) Set sensible macOS settings <small>([`.macos`](../.macos))</small>
 
