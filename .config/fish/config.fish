@@ -1,8 +1,13 @@
-###########
-# SET PATHS
-
 set fish_greeting
 
+# Load dotfiles that should run BEFORE the other dotfiles (for setting PATH etc.)
+for file in ~/.{extras-pre,exports,aliases} ~/.config/fish/{extras-pre,exports,aliases}.fish
+    test -e "$file" && source $file
+end
+
+#
+# SET PATHS
+#
 set -f usr_local_bin /usr/local/bin
 set -f python_bins $HOME/Library/Python/*/bin
 set -f path_extras $USER_BIN $PNPM_HOME $CARGO_BIN $python_bins $usr_local_bin
@@ -15,19 +20,13 @@ end
 # Prepend bin directories to PATH
 fish_add_path $path_extras
 
-###############
-# LOAD DOTFILES
-
-# Load common dotfiles
+# Load extra dotfiles
 for file in ~/{.extras-pre,.exports,.aliases,.extras}
     test -e "$file" && source $file
 end
 
-# Load shell specific dotfiles
-# To load settings that shouldn't be commited, use the extras files:
-#   ~/.config/fish/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
-#   ~/.config/fish/extras.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
-for file in ~/.config/fish/{extras-pre,exports,aliases,extras}.fish
+# Load dotfiles that should run AFTER the other dotfiles
+for file in ~/.{exports} ~/.config/fish/{extras}.fish
     test -e "$file" && source $file
 end
 set -e file

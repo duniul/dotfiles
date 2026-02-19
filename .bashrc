@@ -1,8 +1,14 @@
 # shellcheck shell=bash disable=SC1090,SC1091
 
-###########
-# SET PATHS
+# Load dotfiles that should run BEFORE the other dotfiles (for setting PATH etc.)
+for file in ~/.{extras-pre,exports,aliases}.sh ~/.config/bash/{extras-pre,exports,aliases}.sh; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
 
+#
+# SET PATHS
+#
 usr_local_bin="/usr/local/bin"
 python_bins=$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
 path_extras="$USER_BIN:$PNPM_HOME:$CARGO_BIN:$python_bins:$usr_local_bin"
@@ -15,19 +21,8 @@ fi
 # Prepend bin directories to PATH
 export PATH="$path_extras:$PATH"
 
-###############
-# LOAD DOTFILES
-
-# Load common dotfiles
-for file in ~/{.extras-pre,.exports,.aliases,.extras}; do
-  [ -r "$file" ] && source "$file"
-done
-
-# Load shell specific dotfiles
-# To load settings that shouldn't be commited, use the extras files:
-#   ~/.config/bash/extras-pre.sh: extras that should run BEFORE the other dotfiles (for setting PATH etc.)
-#   ~/.config/bash/extras.sh: extras that should run AFTER the other dotfiles (to be able to use exports and functions)
-for file in ~/.config/bash/{extras-pre,prompt,extras}.sh; do
+# Load dotfiles that should run AFTER the other dotfiles
+for file in ~/extras.sh ~/.config/bash/{prompt,extras}.sh; do
   [ -r "$file" ] && source "$file"
 done
 unset file
