@@ -17,9 +17,6 @@ PYTHON_BINS=$(echo $HOME/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
 # Append bin directories to PATH
 export PATH="$PATH:$USER_BIN:$PNPM_HOME:$CARGO_BIN:$PYTHON_BINS"
 
-# Source rustup/cargo env
-. "$HOME/.cargo/env"
-
 ###############
 # LOAD DOTFILES
 
