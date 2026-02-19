@@ -29,6 +29,12 @@ function allup() {
   rustup update
 }
 
+# Update all fisher packages
+function fisherup() {
+  echo 'Updating fisher...'
+  fisher update
+}
+
 # Update pip and it's packages
 function pipup() {
 	echo 'Updating pip...'
