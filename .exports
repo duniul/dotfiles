@@ -10,8 +10,7 @@
 
 ## GENERAL
 export LANG="en_US.UTF-8"                 # Set the default language to English
-export EDITOR="nano"                      # Edit with Nano by default if VISUAL isn't respected
-export VISUAL="code"                      # Edit visually with VS Code/Cursor
+export EDITOR="code"                      # Edit with Nano by default if VISUAL isn't respected
 export MANPAGER="less -X"                 # Don’t clear the screen after quitting a manual page
 export BASH_SILENCE_DEPRECATION_WARNING=1 # Hide the “default interactive shell is now zsh” warning on macOS.
 export XDG_CONFIG_HOME="$HOME/.config"    # Some tools expect it to be set
