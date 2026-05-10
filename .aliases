@@ -78,6 +78,7 @@ alias 1password='op'
 alias youtube='yt-dlp'
 alias yt='yt-dlp'
 alias ripgrep='rg'
+alias tf='terraform'
 
 # aws aliases
 alias awsconfig='code ~/.aws'
