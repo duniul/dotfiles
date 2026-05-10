@@ -10,58 +10,61 @@ function gz() {
 
 # Update all the things
 function allup() {
-  echo "Some updates might require sudo!"
-  sudo -v
+	echo "Some updates might require sudo!"
+	sudo -v
 
-  echo "-- HOMEBREW --"
-  brewup
+	echo -e "\n-- HOMEBREW --"
+	brewup
 
-  echo "-- FISHER --"
-  fisherup
+	echo -e "\n-- FISHER --"
+	fisherup
 
-  echo "-- PIP --"
-  pipup
+	echo -e "\n-- PIPX --"
+	pipup
 
-  echo "-- PNPM --"
-  pnpmup
+	echo -e "\n-- PNPM --"
+	pnpmup
 
-  echo "-- RUST --"
-  rustup update
+	echo -e "\n-- RUST --"
+	rustup update
 }
 
 # Update all fisher packages
 function fisherup() {
-  echo 'Updating fisher...'
-  fisher update
+	echo 'Updating fisher...'
+	fisher update
 }
 
 # Update pip and it's packages
 function pipup() {
-	echo 'Updating pip...'
-	pip3 install --upgrade pip
+	echo -e 'Upgrading pipx tools...\n'
+	pipx upgrade-all
 
-	echo 'Updating pip packages...'
-	pip3 list --outdated --format=json | jq '.[].name' | xargs -n1 pip3 install -U
+	spec="$HOME/.config/pipx/pipx-spec.json"
+	mkdir -p "$(dirname "$spec")"
+	pipx list --json >"$spec"
+	echo -e "\nDone! pipx spec updated at:\n  $spec"
 }
 
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
 function brewup() {
-	echo "Some updates might require sudo!"
 	sudo -v
 
-	echo "Updating Homebrew..."
+	echo "Updating Homebrew"
 	brew -v update
 
 	echo "Upgrading Homebrew installs..."
 	brew upgrade -v
 
-	echo "Cleaning up Homebrew installs..."
-	cleanup-brew
-
 	echo "Running Homebrew doctor..."
 	brew doctor --verbose
+
+	echo "Updating .Brewfile..."
+	# shellcheck disable=SC2119
+	brewdump
 }
 
+# shellcheck disable=SC2120
 # Dump a Brewfile to ~/.Brewfile or to a provided path. `brewdump [filepath]`
 function brewdump() {
 	file=$1
@@ -196,7 +199,7 @@ function print-dircolors-codes() {
 
 # Print network name of connected wifi network
 function wifi-network() {
-	ipconfig getsummary en0 | awk -F ' SSID : '  '/ SSID : / {print $2}'
+	ipconfig getsummary en0 | awk -F ' SSID : ' '/ SSID : / {print $2}'
 }
 
 #Print wifi password (requires keychain authentication)
