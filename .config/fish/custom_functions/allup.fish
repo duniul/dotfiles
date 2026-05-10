@@ -2,18 +2,18 @@ function allup -d "Update all the things"
   echo "Some updates might require sudo!"
   sudo -v
 
-  echo "-- HOMEBREW --"
+  echo -e "\n-- HOMEBREW --"
   brewup
 
-  echo "-- FISHER --"
+  echo -e "\n-- FISHER --"
   fisherup
 
-  echo "-- PIP --"
+  echo -e "\n-- PIPX --"
   pipup
 
-  echo "-- PNPM --"
+  echo -e "\n-- PNPM --"
   pnpmup
 
-  echo "-- RUST --"
+  echo -e "\n-- RUST --"
   rustup update
 end

@@ -10,8 +10,9 @@ unset file
 # SET PATHS
 #
 usr_local_bin="/usr/local/bin"
+pipx_bin="$HOME/.local/bin"
 python_bins=$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
-path_extras="$USER_BIN:$PNPM_HOME:$CARGO_BIN:$python_bins:$usr_local_bin"
+path_extras="$USER_BIN:$PNPM_HOME:$CARGO_BIN:$python_bins:$usr_local_bin:$pipx_bin"
 
 if [[ $(uname -m) == 'arm64' ]]; then
   # Set extra brew bins for M1

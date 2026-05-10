@@ -1,0 +1,92 @@
+{
+    "pipx_spec_version": "0.1",
+    "venvs": {
+        "licensecheck": {
+            "metadata": {
+                "backend": "pip",
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/licensecheck",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/markdown_py",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "url-normalize": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/url-normalize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "uv": [
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/uv",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/Users/daniel/.local/pipx/venvs/licensecheck/bin/uvx",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "licensecheck"
+                    ],
+                    "apps_of_dependencies": [
+                        "markdown_py",
+                        "normalizer",
+                        "url-normalize",
+                        "markdown-it",
+                        "pygmentize",
+                        "uv",
+                        "uvx"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "licensecheck",
+                    "package_or_url": "licensecheck",
+                    "package_version": "2025.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.6",
+                "python_version": "Python 3.14.4",
+                "source_interpreter": {
+                    "__Path__": "/opt/homebrew/opt/python@3.14/libexec/bin/python",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        }
+    }
+}
