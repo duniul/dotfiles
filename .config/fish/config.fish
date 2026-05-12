@@ -11,7 +11,8 @@ end
 set -f usr_local_bin /usr/local/bin
 set -f pipx_bin $HOME/.local/bin
 set -f python_bins $HOME/Library/Python/*/bin
-set -f path_extras $USER_BIN $PNPM_HOME $CARGO_BIN $python_bins $usr_local_bin $pipx_bin
+set -f pnpm_bin $PNPM_HOME/bin
+set -f path_extras $USER_BIN $CARGO_BIN $pnpm_bin $python_bins $usr_local_bin $pipx_bin
 
 if [ (uname -m) = arm64 ]
     # Set extra brew bins for M1
@@ -83,6 +84,3 @@ eval (fnm env --use-on-cd | source)
 
 ################################################
 # UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE
-
-# Created by `pipx` on 2026-05-10 08:19:57
-set PATH $PATH /Users/daniel/.local/bin
