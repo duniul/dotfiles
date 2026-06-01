@@ -51,6 +51,9 @@ stat = status
 # Amend the latest commit without making any changes.
 amend = commit --amend --no-edit
 
+# Add unstaged and amend the latest commit.
+addmend = !git add -u && git amend
+
 # Credit an author for the latest commit.
 credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 
