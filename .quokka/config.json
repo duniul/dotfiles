@@ -1,13 +1,12 @@
 {
-  "pro": false,
+  "pro": true,
   "installPackageCommand": "pnpm add {packageName}",
   "delay": 1500,
   "showValueOnSelection": true,
-  "plugins": [
-    "quokka-plugin-subdir",
-    "jsdom-quokka-plugin",
-    "alias-quokka-plugin",
-    "./plugins/benchmark"
-  ],
-  "env": { "params": { "runner": "--experimental-specifier-resolution=node" } }
+  "plugins": ["quokka-plugin-subdir", "jsdom-quokka-plugin", "alias-quokka-plugin", "./plugins/benchmark"],
+  "env": {
+    "params": {
+      "runner": "--experimental-specifier-resolution=node"
+    }
+  }
 }
