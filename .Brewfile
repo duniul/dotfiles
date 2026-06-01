@@ -110,4 +110,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
-cargo "rustlings"
+npm "corepack"
