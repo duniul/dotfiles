@@ -1,0 +1,173 @@
+{
+  "imp": {
+    "prefix": "imp",
+    "description": "Import something.",
+    "body": [
+      "import $0 from '$1';"
+    ]
+  },
+  "impd": {
+    "prefix": "impd",
+    "description": "Import something with destructuring.",
+    "body": [
+      "import { $0 } from '$1';"
+    ]
+  },
+  "imr": {
+    "prefix": "imr",
+    "description": "Import React.",
+    "body": [
+      "import React from 'react';"
+    ]
+  },
+  "impt": {
+    "prefix": "impt",
+    "description": "Import prop-types as T.",
+    "body": [
+      "import T from 'prop-types';",
+      ""
+    ]
+  },
+  "props": {
+    "prefix": "props",
+    "description": "Spread this.props.",
+    "body": [
+      "const { $0} = this.props;"
+    ]
+  },
+  "state": {
+    "prefix": "state",
+    "description": "Spread this.state.",
+    "body": [
+      "const { $0 } = this.state;"
+    ]
+  },
+  "rfc": {
+    "prefix": "rfc",
+    "description": "Create functional component.",
+    "body": [
+      "import T from 'prop-types';",
+      "",
+      "export const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "  $1",
+      "};",
+      ""
+    ]
+  },
+  "rcc": {
+    "prefix": "rcc",
+    "description": "Create regular class component.",
+    "body": [
+      "import T from 'prop-types';",
+      "",
+      "class ${TM_FILENAME_BASE} extends React.Component {",
+      "  constructor(props) {",
+      "    super(props);",
+      "  }",
+      "",
+      "  render() {",
+      "    $0",
+      "  }",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "  $1",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};",
+      ""
+    ]
+  },
+  "rpc": {
+    "prefix": "rpc",
+    "description": "Create pure class component.",
+    "body": [
+      "import T from 'prop-types';",
+      "",
+      "class ${TM_FILENAME_BASE} extends React.PureComponent {",
+      "  constructor(props) {",
+      "    super(props);",
+      "  }",
+      "",
+      "  render() {",
+      "    $0",
+      "  }",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "  $1",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};",
+      ""
+    ]
+  },
+  "rtl": {
+    "prefix": "rtl",
+    "description": "Setup test file with React Testing Library",
+    "body": [
+      "import { render } from '@testing-library/react';",
+      "import React from 'react';",
+      "import ${TM_FILENAME/(^[^.]*)(\\..*)/$1/} from './${TM_FILENAME/(^[^.]*)(\\..*)/$1/}';",
+      "",
+      "const setup = customProps => {",
+      "  const props = { ...customProps };",
+      "  const utils = render(<${TM_FILENAME/(^[^.]*)(\\..*)/$1/} {...props} />);",
+      "",
+      "  return {",
+      "    ...utils,",
+      "    props,",
+      "  };",
+      "};",
+      "",
+      "it('${1}', () => {",
+      "  ",
+      "});",
+      ""
+    ]
+  },
+  "rpr": {
+    "prefix": "rpr",
+    "description": "Create a React provider with context and hook.",
+    "body": [
+      "import { createContext, useContext, useMemo } from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE/Provider//i}Context = createContext(null);",
+      "",
+      "export function ${TM_FILENAME_BASE}({ children }) {",
+      "",
+      "  const value = useMemo(",
+      "    () => ({",
+      "",
+      "    }),",
+      "    []",
+      "  );",
+      "",
+      "  return (",
+      "    <${TM_FILENAME_BASE/Provider//i}Context.Provider value={value}>",
+      "      {children}",
+      "    </${TM_FILENAME_BASE/Provider//i}Context.Provider>",
+      "  );",
+      "}",
+      "",
+      "export function use${TM_FILENAME_BASE/Provider//i}() {",
+      "  const context = useContext(${TM_FILENAME_BASE/Provider//i}Context);",
+      "  ",
+      "  if (!context) {",
+      "    throw new Error(`${use${TM_FILENAME_BASE/provider//i}} must be used within a ${TM_FILENAME_BASE}.');",
+      "  }",
+      "",
+      "  return context;",
+      "}",
+      ""
+    ]
+  }
+}

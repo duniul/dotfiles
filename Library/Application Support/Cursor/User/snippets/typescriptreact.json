@@ -1,0 +1,119 @@
+{
+  "imp": {
+    "prefix": "import",
+    "description": "Import something.",
+    "body": ["import $0 from '$1';"]
+  },
+  "impd": {
+    "prefix": "import",
+    "description": "Import something with destructuring.",
+    "body": ["import { $0 } from '$1';"]
+  },
+  "rtl": {
+    "prefix": "rtl",
+    "description": "Setup test file with React Testing Library",
+    "body": [
+      "import { render } from '@testing-library/react';",
+      "import React from 'react';",
+      "import ${TM_FILENAME/(^[^.]*)(\\..*)/$1/} from './${TM_FILENAME/(^[^.]*)(\\..*)/$1/}';",
+      "",
+      "const setup = customProps => {",
+      "  const props = { ...customProps };",
+      "  const utils = render(<${TM_FILENAME/(^[^.]*)(\\..*)/$1/} {...props} />);",
+      "",
+      "  return {",
+      "    ...utils,",
+      "    props,",
+      "  };",
+      "};",
+      "",
+      "it('${1}', () => {",
+      "  ",
+      "});",
+      ""
+    ]
+  },
+  "jmo": {
+    "prefix": "jmo",
+    "description": "Use a function mocked by Jest.",
+    "body": ["const $0Mock = $0 as jest.MockedFunction<typeof $0>;", ""]
+  },
+  "rpr": {
+    "prefix": "rpr",
+    "description": "Create a React provider with context and hook.",
+    "body": [
+      "import { createContext, useContext, useMemo } from 'react';",
+      "",
+      "export interface ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}ContextProps {",
+      "  $0",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Context = createContext<${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}ContextProps | null>(null);",
+      "",
+      "export interface ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)?/${1:/upcase}${2:/camelcase}/g}Props {",
+      "  children: React.ReactNode;",
+      "}",
+      "",
+      "export function ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}({ children }: ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Context)?/${1:/upcase}${2:/camelcase}/g}Props): React.JSX.Element {",
+      "",
+      "  const value = useMemo(",
+      "    (): ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}ContextProps => ({",
+      "",
+      "    }),",
+      "    []",
+      "  );",
+      "",
+      "  return (",
+      "    <${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Context.Provider value={value}>",
+      "      {children}",
+      "    </${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Context.Provider>",
+      "  );",
+      "}",
+      "",
+      "export function use${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}(): ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}ContextProps | never {",
+      "  const context = useContext(${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Context);",
+      "  ",
+      "  if (!context) {",
+      "    throw new Error(`${use${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}.name} must be used within a ${${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}.name}.`);",
+      "  }",
+      "  ",
+      "  return context;",
+      "}",
+      ""
+    ]
+  },
+  "cla": {
+    "prefix": "cla",
+    "description": "Create a class from the file name.",
+    "body": [
+      "export interface ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Props {",
+      "  $0",
+      "}",
+      "",
+      "export class ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g} {",
+      "  constructor(props: ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)(Provider)?/${1:/upcase}${2:/camelcase}/g}Props) {",
+      "    ",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  "rfc": {
+    "prefix": "rfc",
+    "description": "Create functional component.",
+    "body": [
+      "export interface ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)/${1:/upcase}${2:/camelcase}/g}Props {",
+      "",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)/${1:/upcase}${2:/camelcase}/g} = ({ }: ${TM_FILENAME_BASE/(\\w)([^-]+)(-?)/${1:/upcase}${2:/camelcase}/g}Props): React.JSX.Element => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      ""
+    ]
+  }
+}

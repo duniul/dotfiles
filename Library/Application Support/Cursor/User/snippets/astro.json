@@ -1,0 +1,18 @@
+{
+  "comp": {
+    "prefix": "comp",
+    "description": "",
+    "body": [
+      "---",
+      "export interface Props {",
+      "\t",
+      "}",
+      "",
+      "const {  } = Astro.props as Props;",
+      "---",
+      "",
+      "$0",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "jmo": {
+    "prefix": "jmo",
+    "description": "Use a function mocked by Jest.",
+    "body": ["const $0Mock = $0 as jest.MockedFunction<typeof $0>;", ""]
+  },
+  "cla": {
+    "prefix": "cla",
+    "description": "Create a class from the file name.",
+    "body": [
+      "export interface ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi}Props {",
+      "  $0",
+      "}",
+      "",
+      "export class ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi} {",
+      "  constructor(props: ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi}Props) {",
+      "    ",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  "arkc": {
+    "prefix": "arkc",
+    "body": [
+      "import { zodWrapArkType } from \"sierra-domain/utils/arktype.utils\";",
+      "import { v3Author } from \"sierra-domain/v3-author/v3-author-types\";",
+      "",
+      "export type ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi} = typeof ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi}.ark.infer;",
+      "",
+      "export const ${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi} = zodWrapArkType(v3Author.${TM_FILENAME_BASE/(?:^|-)([a-z])/${1:/upcase}/gi});",
+      ""
+    ]
+  }
+}
