@@ -41,7 +41,6 @@ brew "openjdk@21"
 brew "pipx"
 brew "pkgconf"
 brew "ripgrep"
-brew "rustup"
 brew "shellcheck"
 brew "shfmt"
 brew "symlinks"
@@ -83,7 +82,6 @@ cask "keka"
 cask "logitech-g-hub"
 cask "mac-mouse-fix"
 cask "mouseless"
-cask "ngrok"
 cask "notion"
 cask "postman"
 cask "raycast"
@@ -97,16 +95,3 @@ cask "transmission"
 cask "tuple"
 cask "visual-studio-code"
 cask "vivaldi"
-mas "1Password for Safari", id: 1569813296
-mas "ColorSlurp", id: 1287239339
-mas "Dato", id: 1470584107
-mas "Dropover", id: 1355679052
-mas "DuckDuckGo Privacy for Safari", id: 1482920575
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "WhatsApp", id: 310633997
-mas "Xcode", id: 497799835
-npm "corepack"

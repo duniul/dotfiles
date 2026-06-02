@@ -73,10 +73,9 @@ function brewdump() {
 		file="$HOME/.Brewfile"
 	fi
 
-	brew bundle dump --force --file "$file"
+	brew bundle dump --file "$file" --force --tap --brew --cask
 
-	# Remove vscode entries from the Brewfile
-	sed -i '' '/^vscode/d' "$file"
+	sed -i '' 's/\(brew "docker"\), link: false/\1/' "$file" # strip link: false only from the docker line
 }
 
 # Clean up unused Homebrew dependencies and packages
