@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"font_size": 14,
+	"hot_exit": true,
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+}
