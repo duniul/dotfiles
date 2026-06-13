@@ -6,8 +6,7 @@
   "plugins": [
     "quokka-plugin-subdir",
     "jsdom-quokka-plugin",
-    "alias-quokka-plugin",
-    "./plugins/benchmark"
+    "alias-quokka-plugin"
   ],
   "env": {
     "params": {
