@@ -73,7 +73,7 @@ function brewdump() {
 		file="$HOME/.Brewfile"
 	fi
 
-	brew bundle dump --file "$file" --force --tap --brew --cask
+	brew bundle dump --file "$file" --force --tap --brew --cask --no-describe
 
 	sed -i '' 's/\(brew "docker"\), link: false/\1/' "$file" # strip link: false only from the docker line
 }
