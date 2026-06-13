@@ -83,5 +83,8 @@ eval (direnv hook fish) # Enable direnv
 ## fnm (https://github.com/Schniz/fnm)
 eval (fnm env --use-on-cd | source)
 
+# OrbStack (https://orbstack.dev)
+. ~/.orbstack/shell/init2.fish
+
 ################################################
 # UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE
