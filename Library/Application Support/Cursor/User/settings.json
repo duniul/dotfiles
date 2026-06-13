@@ -226,6 +226,10 @@
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:claude-3.5-sonnet",
   "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
   "gitlens.views.scm.grouped.views": {
     "commits": true,
     "branches": true,
@@ -302,6 +306,7 @@
   // ext WallabyJs.quokka-vscode
   //
   "quokka.suppressExpirationNotifications": true,
+  "quokka.codeAutoPlayDelay": 2000,
   "shellformat.effectLanguages": [
     "shellscript",
     "dockerfile",
@@ -356,7 +361,8 @@
   "yaml.schemaStore.enable": false,
 
   //
-  // new/unsorted below ⬇︎
+  // new/unsorted/frequently changed below
   //
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "diffEditor.hideUnchangedRegions.enabled": true,
 }
