@@ -1,0 +1,3 @@
+# dotfiles root ignore file
+# ignore all files except the ones manually added via dot add
+**/**
