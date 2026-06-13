@@ -1,9 +1,9 @@
-tap "bearer/tap"
-tap "bwhaley/ssmsh", "https://github.com/bwhaley/ssmsh"
-tap "dotenvx/brew"
-tap "github/gh"
-tap "hashicorp/tap"
-tap "jesseduffield/lazygit"
+tap "bearer/tap", trusted: true
+tap "bwhaley/ssmsh", "https://github.com/bwhaley/ssmsh", trusted: true
+tap "dotenvx/brew", trusted: true
+tap "github/gh", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "jesseduffield/lazygit", trusted: true
 brew "bash"
 brew "bash-completion"
 brew "bat"
