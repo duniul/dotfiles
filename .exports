@@ -38,5 +38,8 @@ export CARGO_BIN="$HOME/.cargo/bin"
 ## user bins
 export USER_BIN="$HOME/bin"
 
+## java home
+export JAVA_HOME="/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+
 ## bat
 export BAT_THEME="Dracula"
