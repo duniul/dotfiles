@@ -59,9 +59,6 @@ done
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
 
-# OrbStack (https://orbstack.dev)
-source ~/.orbstack/shell/init2.bash
-
 ################
 # SHELL COMMONS
 # These settings need to be configured in both .bash_profile and fish.config
@@ -74,6 +71,9 @@ eval "$(direnv hook bash)"
 
 ## fnm (https://github.com/Schniz/fnm)
 eval "$(fnm env --use-on-cd)"
+
+# OrbStack (https://orbstack.dev)
+. ~/.orbstack/shell/init.bash
 
 ################################################
 # UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE
