@@ -38,7 +38,7 @@ curl -fsSL "https://raw.githubusercontent.com/duniul/dotfiles/main/.dotfiles/set
 #### 2) Run the setup script <small>([`.dotfiles/setup.sh`](../.dotfiles/setup.sh))</small>
 
 ```sh
-bash "~/.dotfiles/setup.sh"
+bash ~/.dotfiles/setup.sh
 ```
 
 - Installs Homebrew + packages and casks
@@ -49,7 +49,7 @@ bash "~/.dotfiles/setup.sh"
 #### 3) Set sensible macOS settings <small>([`.macos`](../.macos))</small>
 
 ```sh
-bash "~/.macos"
+bash ~/.macos
 ```
 
 This script configures _a lot_ of stuff on your Mac, so have a quick look at it before running it if you're not familiar with it.
