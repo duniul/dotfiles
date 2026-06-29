@@ -3,7 +3,10 @@
 ##############################################################################################################
 ### XCode Command Line Tools
 
+
 if ! xcode-select --print-path &>/dev/null; then
+
+  echo "XCode Command Line Tools not found, installing..."
 
   # Prompt user to install the XCode Command Line Tools
   xcode-select --install &>/dev/null
@@ -13,6 +16,8 @@ if ! xcode-select --print-path &>/dev/null; then
     sleep 5
   done
 
+else 
+  echo "XCode Command Line Tools found, continuing..."
 fi
 ###
 ##############################################################################################################
@@ -22,43 +27,44 @@ fi
 
 # install Homebrew if needed
 if ! which brew &>/dev/null; then
-  # If your machine has /usr/local locked down, you can do this to place everything in ~/.homebrew:
-  #   mkdir $HOME/.homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C $HOME/.homebrew
-  #   export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
+
+  echo "Homebrew not found, installing..."
 
   # this scripts installs it the regular way by default (/usr/local):
   # shellcheck disable=SC2091
   sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
+
+else
+  echo "Homebrew found, continuing..."
 fi
 
-# install packages and apps from the Brewfile
+
+echo "Installing packages and apps from the Brewfile..."
 brew bundle --file ~/.Brewfile
 
-### setup latest bash and fish
+echo "Adding bash and fish to /etc/shells..."
 brewpath=$(brew --prefix)
 bashpath="$brewpath/bin/bash"
 fishpath="$brewpath/bin/fish"
 
-# add shells installed by homebrew to list of shells
 sudo bash -c "echo $bashpath$'\n'$fishpath >> /etc/shells"
 
-# set fish as default shell for current user
+echo "Setting fish as default shell..."
 chsh -s "$fishpath"
 
-# install fisher packages
+echo "Installing fisher packages..."
 fish -c "fisher update"
 
-# install better nanorc config (https://github.com/scopatz/nanorc)
+echo "Installing better nanorc config..."
 curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
-# install pip packages
-pip3 install -r pip/pip-requirements.txt
-
-# install Node
+echo "Installing Node LTS via fnm..."
 fnm install 24
 
-# install global Node deps
+echo "Installing global pnpm deps..."
 pnpm -g install
+
+echo "Done!"
 
 ### end of homebrew
 ##############################################################################################################
