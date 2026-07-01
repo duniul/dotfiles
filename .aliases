@@ -31,8 +31,7 @@ alias opr='gh pr view --web' # open pull request in browser
 alias prl='git pr-link'      # copy a formatted markdown link to the provided PR
 
 # dotfiles aliases
-alias dotfiles_env='env GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR'
-alias dotcode='dotfiles_env code $HOME'
+alias dotcode='GIT_WORK_TREE=$HOME GIT_DIR=$DOTFILES_GIT_DIR code $HOME'
 alias dotfiles='git --git-dir=$DOTFILES_GIT_DIR --work-tree=$HOME'
 alias dot='dotfiles'
 
