@@ -1,9 +1,4 @@
-tap "bearer/tap", trusted: true
-tap "bwhaley/ssmsh", "https://github.com/bwhaley/ssmsh", trusted: true
-tap "dotenvx/brew", trusted: true
-tap "github/gh", trusted: true
 tap "hashicorp/tap", trusted: true
-tap "jesseduffield/lazygit", trusted: true
 brew "bash"
 brew "bash-completion"
 brew "bat"
@@ -51,10 +46,7 @@ brew "watch"
 brew "wget"
 brew "yq"
 brew "yt-dlp"
-brew "bearer/tap/bearer"
-brew "bwhaley/ssmsh/ssmsh"
-brew "dotenvx/brew/dotenvx"
-brew "hashicorp/tap/terraform"
+brew "hashicorp/tap/terraform", trusted: true
 cask "1password"
 cask "1password-cli"
 cask "appcleaner"
