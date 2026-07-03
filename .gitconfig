@@ -91,7 +91,7 @@ stasha = stash apply
 addu = add -u
 
 # Sync the current branch with the latest changes.
-sync = fetch --all --prune && git rebase --rebase-merges --autostash $1
+sync = "!git fetch --all --prune && git rebase --rebase-merges --autostash"
 
 # Rebase from the last N commits.
 relast = "!f() { git rebase -i HEAD~${1/-/} ${2}; }; f"
