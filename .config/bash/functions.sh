@@ -216,19 +216,3 @@ function wifi-reset() {
 function isodate() {
 	date +%Y-%m-%d
 }
-
-# Log in with AWS SSO and extract credentials with yawsso.
-function aws-login-sso() {
-	profile=$1
-
-	# If no profile is passed, use the the AWS_PROFILE.
-	if [ -z "$profile" ]; then
-		profile=$AWS_PROFILE
-	fi
-
-	echo "Logging in with profile: $profile"
-	echo
-
-	aws sso login --profile $profile
-	yawsso --profile $profile
-}
