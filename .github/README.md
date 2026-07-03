@@ -42,9 +42,10 @@ bash ~/.dotfiles/setup.sh
 ```
 
 - Installs Homebrew + packages and casks
+- Adds brew's bash and fish to `/etc/shells` and makes fish the default shell
 - Installs Fisher + packages
-- Installs pnpm + global packages
-- Installs Node via fnm
+- Installs Node LTS via fnm
+- Enables pnpm via corepack + installs global packages
 
 #### 3) Set sensible macOS settings <small>([`.macos`](../.macos))</small>
 
