@@ -1,0 +1,14 @@
+# Global pnpm packages, restored by ~/.dotfiles/setup.sh (`pnpm add -g`).
+# Snapshot with `pnpmup`, which updates globals and rewrites this file.
+@changesets/cli@2.31.0
+clean-modules@4.0.0
+fkill-cli@9.0.0
+npm-check-updates@22.2.9
+oxfmt@0.57.0
+oxlint@1.72.0
+prettier@3.9.4
+serve@14.2.6
+sort-jsonc-cli@1.0.2
+tsx@4.22.4
+turbo@2.10.1
+typescript@6.0.3
