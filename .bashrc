@@ -74,8 +74,8 @@ eval "$(direnv hook bash)"
 ## fnm (https://github.com/Schniz/fnm)
 eval "$(fnm env --use-on-cd)"
 
-# OrbStack (https://orbstack.dev)
-. ~/.orbstack/shell/init.bash
+# OrbStack (https://orbstack.dev), only exists after OrbStack has been launched once
+[ -f ~/.orbstack/shell/init.bash ] && . ~/.orbstack/shell/init.bash
 
 ################################################
 # UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE

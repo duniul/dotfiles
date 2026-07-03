@@ -55,7 +55,8 @@ bind --user \v echo\ -n\ \(clear\ \|\ string\ replace\ \\e\\\[3J\ \"\"\)\;\ comm
 # - Search git status: Ctrl+S
 # - Search history: Ctrl+H
 # - Search processes: Ctrl+P
-fzf_configure_bindings --directory=\cF --git_status=\cS --git_log=\f --history=\b --variables=\cV --processes=\cP
+# Guarded so shells work before fisher has installed the plugin (e.g. during setup.sh)
+type -q fzf_configure_bindings && fzf_configure_bindings --directory=\cF --git_status=\cS --git_log=\f --history=\b --variables=\cV --processes=\cP
 
 ## pure-fish (https://github.com/pure-fish/pure)
 set -g pure_color_prompt_on_success cyan # Different color for more contrast against red error prompts.
@@ -82,8 +83,8 @@ eval (direnv hook fish) # Enable direnv
 ## fnm (https://github.com/Schniz/fnm)
 fnm env --use-on-cd | source
 
-# OrbStack (https://orbstack.dev)
-. ~/.orbstack/shell/init2.fish
+# OrbStack (https://orbstack.dev), only exists after OrbStack has been launched once
+test -e ~/.orbstack/shell/init2.fish && . ~/.orbstack/shell/init2.fish
 
 ################################################
 # UNCATEGORIZED OR AUTO-APPENDED BELOW THIS LINE
