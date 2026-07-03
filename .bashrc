@@ -54,6 +54,9 @@ for option in cdspell dirspell autocd globstar nocaseglob; do
   shopt -s "$option" 2>/dev/null
 done
 
+## fzf (https://github.com/junegunn/fzf)
+eval "$(fzf --bash)"
+
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
