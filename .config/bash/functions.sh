@@ -46,6 +46,20 @@ function pipup() {
 	echo -e "\nDone! pipx spec updated at:\n  $spec"
 }
 
+# Update global pnpm packages and snapshot the package list
+function pnpmup() {
+	corepack pnpm -g update --latest
+
+	list="$HOME/.pnpm/global-packages.txt"
+	# shellcheck disable=SC2016
+	echo '# Global pnpm packages, restored by ~/.dotfiles/setup.sh (`pnpm add -g`).' >"$list"
+	# shellcheck disable=SC2016
+	echo '# Snapshot with `pnpmup`, which updates globals and rewrites this file.' >>"$list"
+	corepack pnpm -g list --json | jq -r '.[0].dependencies | to_entries[] | "\(.key)@\(.value.version)"' >>"$list"
+
+	echo -e "\nDone! Global package list updated at:\n  $list"
+}
+
 # Update brew, upgrade brew and cask installs, cleanup and run doctor
 function brewup() {
 	sudo -v
