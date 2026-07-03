@@ -12,9 +12,8 @@ unset file
 pnpm_bin="$PNPM_HOME/bin"
 python_bins=$(echo "$HOME"/Library/Python/*/bin | tr -s ' ' | tr ' ' ':')
 pipx_bin="$HOME/.local/bin"
-java_bin="/usr/libexec/java_home/bin"
 usr_local_bin="/usr/local/bin"
-path_extras="$USER_BIN:$CARGO_BIN:$pnpm_bin:$python_bins:$pipx_bin:$java_bin:$usr_local_bin"
+path_extras="$USER_BIN:$CARGO_BIN:$pnpm_bin:$python_bins:$pipx_bin:$usr_local_bin"
 
 if [[ $(uname -m) == 'arm64' ]]; then
   # Set extra brew bins for M1
