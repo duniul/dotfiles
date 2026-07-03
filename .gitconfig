@@ -4,7 +4,7 @@ email = hello@danielgrefberg.com
 signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL9Q6HjwWl75g4X1V0lhtJb6M9h+y1LmUe6e6KezCfE8
 
 [core]
-editor = code -w
+editor = cursor -w
 autocrlf = false
 excludesfile = ~/.gitignore_global
 
