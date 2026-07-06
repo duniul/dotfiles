@@ -46,3 +46,6 @@ export BAT_THEME="Dracula"
 
 # ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+# claude code
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
