@@ -9,6 +9,6 @@ oxlint@1.72.0
 prettier@3.9.4
 serve@14.2.6
 sort-jsonc-cli@1.0.2
-tsx@4.22.4
-turbo@2.10.1
+tsx@4.23.0
+turbo@2.10.3
 typescript@6.0.3
