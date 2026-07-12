@@ -230,3 +230,32 @@ function wifi-reset() {
 function isodate() {
 	date +%Y-%m-%d
 }
+
+# Save or restore the macOS Dock configuration. `dock save|restore`
+function dock() {
+	local file="$HOME/.dotfiles/dock/com.apple.dock.plist"
+
+	case "$1" in
+	save)
+		mkdir -p "$(dirname "$file")"
+		defaults export com.apple.dock - >"$file"
+		echo "Dock configuration saved to:"
+		echo "  $file"
+		;;
+	restore)
+		if [ ! -f "$file" ]; then
+			echo "No saved Dock configuration found at:" >&2
+			echo "  $file" >&2
+			return 1
+		fi
+		defaults import com.apple.dock "$file"
+		killall Dock
+		echo "Dock configuration restored from:"
+		echo "  $file"
+		;;
+	*)
+		echo "Usage: dock save|restore" >&2
+		return 1
+		;;
+	esac
+}

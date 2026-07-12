@@ -98,4 +98,16 @@ if [ ! -d ~/.nano ]; then
   curl -fsSL https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 fi
 
+##############################################################################################################
+### Dock
+
+# Restore the Dock last, so every app it pins has already been installed above.
+# Snapshot with the `dock` shell function (`dock save`).
+dockplist=~/.dotfiles/dock/com.apple.dock.plist
+if [ -f "$dockplist" ]; then
+  echo "Restoring Dock configuration..."
+  defaults import com.apple.dock "$dockplist"
+  killall Dock
+fi
+
 echo "Done!"
