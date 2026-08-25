@@ -24,8 +24,8 @@ untrackedCache = true
 [init]
 defaultBranch = main
 
-[credential]
-helper = osxkeychain
+# [credential]
+# helper = osxkeychain
 
 [gpg]
 format = ssh
@@ -219,3 +219,12 @@ colorMoved = default
 [gitbutler]
 signCommits = true
 aiModelProvider = anthropic
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
