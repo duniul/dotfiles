@@ -4,6 +4,8 @@
         "licensecheck": {
             "metadata": {
                 "backend": "pip",
+                "environment": null,
+                "exposure_enabled": true,
                 "injected_packages": {},
                 "main_package": {
                     "app_paths": [
@@ -61,8 +63,16 @@
                         "markdown-it",
                         "pygmentize"
                     ],
+                    "completion_paths": [],
+                    "completion_paths_of_dependencies": {},
+                    "completions": [],
+                    "completions_of_dependencies": [],
+                    "cooldown_days": null,
+                    "expected_apps": [],
                     "include_apps": true,
                     "include_dependencies": false,
+                    "include_resources_from": [],
+                    "lock_file": null,
                     "man_pages": [],
                     "man_pages_of_dependencies": [],
                     "man_paths": [],
@@ -74,7 +84,7 @@
                     "pip_args": [],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.6",
+                "pipx_metadata_version": "0.12",
                 "python_version": "Python 3.14.6",
                 "source_interpreter": {
                     "__Path__": "/opt/homebrew/opt/python@3.14/libexec/bin/python",
