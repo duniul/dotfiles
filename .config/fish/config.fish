@@ -23,7 +23,7 @@ end
 fish_add_path $path_extras
 
 # Load dotfiles that should run AFTER the other dotfiles
-for file in ~/.{extras} ~/.config/fish/{extras}.fish
+for file in ~/.extras ~/.config/fish/extras.fish
     test -e "$file" && source $file
 end
 set -e file
