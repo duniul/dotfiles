@@ -100,7 +100,7 @@
   //
   // editor diffs
   //
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
 
   //
@@ -215,6 +215,9 @@
   "git.inputValidation": true,
   "git.inputValidationLength": 100,
   "git.inputValidationSubjectLength": 72,
+  "github.gitAuthentication": false,
+  "git.useIntegratedAskPass": false,
+  "git.terminalAuthentication": false,
 
   //
   // ext eamodio.gitlens
@@ -223,8 +226,6 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.enabled": false,
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:claude-3.5-sonnet",
   "gitlens.plusFeatures.enabled": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.codeLens.recentChange.enabled": false,
@@ -364,5 +365,5 @@
   // new/unsorted/frequently changed below
   //
   "window.zoomLevel": 1,
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "cursor.composer.queueMessageDefaultBehavior": "steer"
 }
