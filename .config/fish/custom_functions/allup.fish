@@ -14,6 +14,8 @@ function allup -d "Update all the things"
   echo -e "\n-- PNPM --"
   pnpmup
 
-  echo -e "\n-- RUST --"
-  rustup update
+  if type -q rustup
+      echo -e "\n-- RUST --"
+      rustup update
+  end
 end
