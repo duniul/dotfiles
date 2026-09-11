@@ -1,4 +1,8 @@
-# Dotfiles - Bare Git Repo
+---
+name: dotfiles
+description: Managing the dotfiles bare Git repo (`dot` alias) and the fish/bash config layout under $HOME. Use when editing shell config, aliases, exports, functions, Brewfile, or running `dot` commands.
+---
+
 
 These dotfiles are managed as a **bare Git repo** checked out to `$HOME`. The repo lives at `~/.dotfiles-git` and the
 work tree is `~`. Interact with it using the `dot` alias, a wrapped `git` alias which only interacts with the dotfiles
