@@ -4,11 +4,11 @@
 clean-modules@4.0.0
 fkill-cli@9.0.0
 npm-check-updates@23.1.0
-oxfmt@0.68.0
-oxlint@1.83.0
-prettier@3.9.8
+oxfmt@0.70.0
+oxlint@1.85.0
+prettier@3.9.9
 serve@14.2.6
 sort-jsonc-cli@1.0.2
-tsx@4.23.13
-turbo@2.11.2
+tsx@4.23.15
+turbo@2.11.5
 typescript@7.0.2
