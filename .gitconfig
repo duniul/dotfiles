@@ -228,3 +228,6 @@ aiModelProvider = anthropic
 [credential]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[include]
+	path = ~/.gitconfig.local
