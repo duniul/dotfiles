@@ -78,7 +78,7 @@ set -g async_prompt_functions _pure_prompt_git # Async settings for pure-fish pr
 eval (dircolors-fish ~/.dircolors/duniul.dircolors)
 
 ## direnv (https://direnv.net/)
-eval (direnv hook fish) # Enable direnv
+direnv hook fish | source # Enable direnv
 
 ## fnm (https://github.com/Schniz/fnm)
 fnm env --use-on-cd | source
