@@ -32,6 +32,7 @@ export DIRENV_LOG_FORMAT="" # direnv log formatting, leave empty to silence
 
 ## pnpm
 export PNPM_HOME="$HOME/.pnpm"
+export PNPM_CONFIG_NPMRC_AUTH_FILE="$HOME/.npmrc" # Trust ~/.npmrc auth even when running pnpm from ~
 
 ## rust cargo
 export CARGO_BIN="$HOME/.cargo/bin"
