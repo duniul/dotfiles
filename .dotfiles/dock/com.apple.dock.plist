@@ -16,10 +16,10 @@
 	<false/>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>805462752.664783</real>
+		<real>814968903.140326</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
-	<real>805016178.18060195</real>
+	<real>814987849.883009</real>
 	<key>launchanim</key>
 	<false/>
 	<key>loc</key>
@@ -29,7 +29,7 @@
 	<key>minimize-to-application</key>
 	<true/>
 	<key>mod-count</key>
-	<integer>44</integer>
+	<integer>198</integer>
 	<key>mouse-over-hilite-stack</key>
 	<true/>
 	<key>mru-spaces</key>
@@ -48,9 +48,9 @@
 				AAAEAAAAAwMAAAAAACAGAAAAAQEAAFN5c3RlbQAADAAA
 				AAEBAABBcHBsaWNhdGlvbnMMAAAAAQEAAENhbGVuZGFy
 				LmFwcAwAAAABBgAAEAAAACAAAAA0AAAACAAAAAQDAAAX
-				AAAA////DwgAAAAEAwAAGQAAAP///w8IAAAABAMAAEIN
+				AAAA////DwgAAAAEAwAAGQAAAP///w8IAAAABAMAAEMN
 				AAD///8PDAAAAAEGAABcAAAAbAAAAHwAAAAIAAAAAAQA
-				AEHH34AvAAAAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAA
+				AEHIMwdgAAAAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAA
 				AAAAAAAAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABN
 				YWNpbnRvc2ggSEQIAAAABAMAAAAgJYnQAQAAJAAAAAEB
 				AAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERFMi0xMkI2NjdG
@@ -77,13 +77,13 @@
 				<key>file-label</key>
 				<string>Calendar</string>
 				<key>file-mod-date</key>
-				<integer>3862198622</integer>
+				<integer>3873146816</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>3862198622</integer>
+				<integer>3873146816</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -99,11 +99,11 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cwsAAAABAQAAR2hvc3R0eS5hcHAACAAAAAEGAAAQAAAA
-				JAAAAAgAAAAEAwAAQ0gAAAAAAAAIAAAABAMAALYDJgAA
-				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAQcf7CXMC
-				nDsYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
+				JAAAAAgAAAAEAwAA70UXAgAAAAAIAAAABAMAAJIjjwIA
+				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAQchHhS5A
+				5q8YAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
 				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHH34Av
+				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHIMwdg
 				AAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERF
 				Mi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAABAAAA7xMA
 				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -128,64 +128,13 @@
 				<key>file-label</key>
 				<string>Ghostty</string>
 				<key>file-mod-date</key>
-				<integer>106218407583874</integer>
+				<integer>70548713715048</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>187251555738313</integer>
-			</dict>
-			<key>tile-type</key>
-			<string>file-tile</string>
-		</dict>
-		<dict>
-			<key>GUID</key>
-			<integer>656626334</integer>
-			<key>tile-data</key>
-			<dict>
-				<key>book</key>
-				<data>
-				Ym9va0gCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgB
-				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
-				cxUAAAABAQAATWljcm9zb2Z0IE91dGxvb2suYXBwAAAA
-				CAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAAQ0gAAAAAAAAI
-				AAAABAMAAEQtAgAAAAAACAAAAAEGAABUAAAAZAAAAAgA
-				AAAABAAAQcfum7gAAAAYAAAAAQIAAAIAAAAAAAAADwAA
-				AAAAAAAAAAAAAAAAAAgAAAABCQAAZmlsZTovLy8MAAAA
-				AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAACAlidABAAAI
-				AAAAAAQAAEHH34AvAAAAJAAAAAEBAAAwMEZEQTI2QS0z
-				QjRDLTQ3RDYtOERFMi0xMkI2NjdGMTNBNTgYAAAAAQIA
-				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
-				LwAAAAAAAAABBQAAqAAAAP7///8BAAAAAAAAAA0AAAAE
-				EAAARAAAAAAAAAAFEAAAdAAAAAAAAAAQEAAAlAAAAAAA
-				AABAEAAAhAAAAAAAAAACIAAARAEAAAAAAAAFIAAAtAAA
-				AAAAAAAQIAAAxAAAAAAAAAARIAAA+AAAAAAAAAASIAAA
-				2AAAAAAAAAATIAAA6AAAAAAAAAAgIAAAJAEAAAAAAAAw
-				IAAAUAEAAAAAAAAQ0AAABAAAAAAAAAA=
-				</data>
-				<key>bundle-identifier</key>
-				<string>com.microsoft.Outlook</string>
-				<key>dock-extra</key>
-				<false/>
-				<key>file-data</key>
-				<dict>
-					<key>_CFURLString</key>
-					<string>file:///Applications/Microsoft%20Outlook.app/</string>
-					<key>_CFURLStringType</key>
-					<integer>15</integer>
-				</dict>
-				<key>file-label</key>
-				<string>Microsoft Outlook</string>
-				<key>file-mod-date</key>
-				<integer>259832206611643</integer>
-				<key>file-type</key>
-				<integer>41</integer>
-				<key>is-beta</key>
-				<false/>
-				<key>parent-mod-date</key>
-				<integer>221954891407714</integer>
+				<integer>275620517435801</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -201,11 +150,11 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cwcAAAABAQAAWmVuLmFwcAAIAAAAAQYAABAAAAAkAAAA
-				CAAAAAQDAABDSAAAAAAAAAgAAAAEAwAAbqYQAAAAAAAI
+				CAAAAAQDAADvRRcCAAAAAAgAAAAEAwAAbqYQAAAAAAAI
 				AAAAAQYAAEQAAABUAAAACAAAAAAEAABBx/a+TAAAABgA
 				AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
 				AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
-				CAAAAAQDAAAAICWJ0AEAAAgAAAAABAAAQcffgC8AAAAk
+				CAAAAAQDAAAAICWJ0AEAAAgAAAAABAAAQcgzB2AAAAAk
 				AAAAAQEAADAwRkRBMjZBLTNCNEMtNDdENi04REUyLTEy
 				QjY2N0YxM0E1OBgAAAABAgAAgQAAAAEAAADvEwAAAQAA
 				AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA
@@ -230,13 +179,13 @@
 				<key>file-label</key>
 				<string>Zen</string>
 				<key>file-mod-date</key>
-				<integer>55086822249428</integer>
+				<integer>2499251510691</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>187251555738313</integer>
+				<integer>275620517435801</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -252,11 +201,11 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cwoAAAABAQAASGVsaXVtLmFwcAAACAAAAAEGAAAQAAAA
-				JAAAAAgAAAAEAwAAQ0gAAAAAAAAIAAAABAMAABCpHQAA
+				JAAAAAgAAAAEAwAA70UXAgAAAAAIAAAABAMAABCpHQAA
 				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAQcf3VEll
 				8jEYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
 				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHH34Av
+				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHIMwdg
 				AAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERF
 				Mi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAABAAAA7xMA
 				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -281,13 +230,13 @@
 				<key>file-label</key>
 				<string>Helium</string>
 				<key>file-mod-date</key>
-				<integer>224183978303890</integer>
+				<integer>162911985650079</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>212883919954070</integer>
+				<integer>27822379310618</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -303,11 +252,11 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cwsAAAABAQAAU3BvdGlmeS5hcHAACAAAAAEGAAAQAAAA
-				JAAAAAgAAAAEAwAAQ0gAAAAAAAAIAAAABAMAAImZDAAA
+				JAAAAAgAAAAEAwAA70UXAgAAAAAIAAAABAMAAImZDAAA
 				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAwcPAkUAA
 				AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
 				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHH34Av
+				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHIMwdg
 				AAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERF
 				Mi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAABAAAA7xMA
 				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -332,13 +281,13 @@
 				<key>file-label</key>
 				<string>Spotify</string>
 				<key>file-mod-date</key>
-				<integer>86117960652964</integer>
+				<integer>61941599314653</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>187251555738313</integer>
+				<integer>275620517435801</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -354,11 +303,11 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cwkAAAABAQAAU2xhY2suYXBwAAAACAAAAAEGAAAQAAAA
-				JAAAAAgAAAAEAwAAQ0gAAAAAAAAIAAAABAMAAN3oAAAA
+				JAAAAAgAAAAEAwAA70UXAgAAAAAIAAAABAMAAE7EhwIA
 				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAQcftEUyA
 				AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
 				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHH34Av
+				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHIMwdg
 				AAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERF
 				Mi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAABAAAA7xMA
 				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -383,13 +332,13 @@
 				<key>file-label</key>
 				<string>Slack</string>
 				<key>file-mod-date</key>
-				<integer>3863976857</integer>
+				<integer>3873630990</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>145873839853063</integer>
+				<integer>275620517435801</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -405,12 +354,12 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cxAAAAABAQAAU3VibGltZSBUZXh0LmFwcAgAAAABBgAA
-				EAAAACQAAAAIAAAABAMAAENIAAAAAAAACAAAAAQDAADo
-				kgwAAAAAAAgAAAABBgAATAAAAFwAAAAIAAAAAAQAAEHG
-				7s9AAAAAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAA
+				EAAAACQAAAAIAAAABAMAAO9FFwIAAAAACAAAAAQDAADe
+				DdUBAAAAAAgAAAABBgAATAAAAFwAAAAIAAAAAAQAAEHI
+				MzRlBiwnGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAA
 				AAAAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
 				bnRvc2ggSEQIAAAABAMAAAAgJYnQAQAACAAAAAAEAABB
-				x9+ALwAAACQAAAABAQAAMDBGREEyNkEtM0I0Qy00N0Q2
+				yDMHYAAAACQAAAABAQAAMDBGREEyNkEtM0I0Qy00N0Q2
 				LThERTItMTJCNjY3RjEzQTU4GAAAAAECAACBAAAAAQAA
 				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
 				AQUAAKgAAAD+////AQAAAAAAAAANAAAABBAAADwAAAAA
@@ -434,20 +383,71 @@
 				<key>file-label</key>
 				<string>Sublime Text</string>
 				<key>file-mod-date</key>
-				<integer>3830650752</integer>
+				<integer>13674754073034</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>184073279617239</integer>
+				<integer>275620517435801</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9va4wCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAJAB
+				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
+				cxYAAAABAQAAVmlzdWFsIFN0dWRpbyBDb2RlLmFwcAAA
+				CAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA70UXAgAAAAAI
+				AAAABAMAAJ+VowIAAAAACAAAAAEGAABUAAAAZAAAAAgA
+				AAAABAAAQchFbP8AAAAYAAAAAQIAAAIAAAAAAAAADwAA
+				AAAAAAAAAAAAAAAAAAgAAAABCQAAZmlsZTovLy8MAAAA
+				AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAACAlidABAAAI
+				AAAAAAQAAEHIMwdgAAAAJAAAAAEBAAAwMEZEQTI2QS0z
+				QjRDLTQ3RDYtOERFMi0xMkI2NjdGMTNBNTgYAAAAAQIA
+				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+				LwAAAAAAAAABBQAALwAAAAEBAABOU1VSTEJvb2ttYXJr
+				UXVhcmFudGluZU1vdW50ZWROZXR3b3JrVm9sdW1lc0tl
+				eQC0AAAA/v///wEAAAAAAAAADgAAAAQQAABEAAAAAAAA
+				AAUQAAB0AAAAAAAAABAQAACUAAAAAAAAAEAQAACEAAAA
+				AAAAAAIgAABEAQAAAAAAAAUgAAC0AAAAAAAAABAgAADE
+				AAAAAAAAABEgAAD4AAAAAAAAABIgAADYAAAAAAAAABMg
+				AADoAAAAAAAAACAgAAAkAQAAAAAAADAgAABQAQAAAAAA
+				ABDQAAAEAAAAAAAAAFgBAIBQAQAAAAAAAA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.microsoft.VSCode</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/Visual%20Studio%20Code.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Visual Studio Code</string>
+				<key>file-mod-date</key>
+				<integer>0</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>0</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
 		</dict>
 		<dict>
 			<key>GUID</key>
-			<integer>4137676149</integer>
+			<integer>998697447</integer>
 			<key>tile-data</key>
 			<dict>
 				<key>book</key>
@@ -455,12 +455,12 @@
 				Ym9vazwCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
-				cwoAAAABAQAAQ3Vyc29yLmFwcAAACAAAAAEGAAAQAAAA
-				JAAAAAgAAAAEAwAAQ0gAAAAAAAAIAAAABAMAAFYvDQAA
-				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAwcPAkUAA
+				cwoAAAABAQAAQ2xhdWRlLmFwcAAACAAAAAEGAAAQAAAA
+				JAAAAAgAAAAEAwAA70UXAgAAAAAIAAAABAMAAP24mAIA
+				AAAACAAAAAEGAABIAAAAWAAAAAgAAAAABAAAwcPAn1AA
 				AAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAA
 				AAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHH34Av
+				aCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQAAEHIMwdg
 				AAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3RDYtOERF
 				Mi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAABAAAA7xMA
 				AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
@@ -472,26 +472,26 @@
 				0AAABAAAAAAAAAA=
 				</data>
 				<key>bundle-identifier</key>
-				<string>com.todesktop.230313mzl4w4u92</string>
+				<string>com.anthropic.claudefordesktop</string>
 				<key>dock-extra</key>
 				<false/>
 				<key>file-data</key>
 				<dict>
 					<key>_CFURLString</key>
-					<string>file:///Applications/Cursor.app/</string>
+					<string>file:///Applications/Claude.app/</string>
 					<key>_CFURLStringType</key>
 					<integer>15</integer>
 				</dict>
 				<key>file-label</key>
-				<string>Cursor</string>
+				<string>Claude</string>
 				<key>file-mod-date</key>
-				<integer>274770104148342</integer>
+				<integer>2398370400</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>184073279617239</integer>
+				<integer>275620517435801</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -507,12 +507,12 @@
 				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAB
 				AAAEAAAAAwMAAAAAACAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cw0AAAABAQAAR2l0QnV0bGVyLmFwcAAAAAgAAAABBgAA
-				EAAAACQAAAAIAAAABAMAAENIAAAAAAAACAAAAAQDAADE
-				VC4AAAAAAAgAAAABBgAATAAAAFwAAAAIAAAAAAQAAEHH
-				/gtU3ujyGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAA
+				EAAAACQAAAAIAAAABAMAAO9FFwIAAAAACAAAAAQDAACB
+				R7sAAAAAAAgAAAABBgAATAAAAFwAAAAIAAAAAAQAAEHI
+				JL13KmMAGAAAAAECAAACAAAAAAAAAA8AAAAAAAAAAAAA
 				AAAAAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
 				bnRvc2ggSEQIAAAABAMAAAAgJYnQAQAACAAAAAAEAABB
-				x9+ALwAAACQAAAABAQAAMDBGREEyNkEtM0I0Qy00N0Q2
+				yDMHYAAAACQAAAABAQAAMDBGREEyNkEtM0I0Qy00N0Q2
 				LThERTItMTJCNjY3RjEzQTU4GAAAAAECAACBAAAAAQAA
 				AO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
 				AQUAAKgAAAD+////AQAAAAAAAAANAAAABBAAADwAAAAA
@@ -536,13 +536,13 @@
 				<key>file-label</key>
 				<string>GitButler</string>
 				<key>file-mod-date</key>
-				<integer>39483205586861</integer>
+				<integer>189360389420017</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>184073279617239</integer>
+				<integer>142742818878282</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -552,54 +552,6 @@
 	<array>
 		<dict>
 			<key>GUID</key>
-			<integer>869838894</integer>
-			<key>tile-data</key>
-			<dict>
-				<key>book</key>
-				<data>
-				Ym9va1wCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwB
-				AAAEAAAAAwMAAAAAACAFAAAAAQEAAFVzZXJzAAAABgAA
-				AAEBAABTaGFyZWQAAAcAAAABAQAASG9yaXpvbgAMAAAA
-				AQYAABAAAAAgAAAAMAAAAAgAAAAEAwAAP0gAAAAAAAAI
-				AAAABAMAAEFIAAAAAAAACAAAAAQDAAAknx8AAAAAAAwA
-				AAABBgAAVAAAAGQAAAB0AAAACAAAAAAEAABBxmlIFYAA
-				ABgAAAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAA
-				CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
-				IEhECAAAAAQDAAAAICWJ0AEAAAgAAAAABAAAQcffgC8A
-				AAAkAAAAAQEAADAwRkRBMjZBLTNCNEMtNDdENi04REUy
-				LTEyQjY2N0YxM0E1OBgAAAABAgAAgQAAAAEAAADvEwAA
-				AQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAACo
-				AAAA/v///wEAAAAAAAAADQAAAAQQAABAAAAAAAAAAAUQ
-				AACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
-				AAIgAABYAQAAAAAAAAUgAADIAAAAAAAAABAgAADYAAAA
-				AAAAABEgAAAMAQAAAAAAABIgAADsAAAAAAAAABMgAAD8
-				AAAAAAAAACAgAAA4AQAAAAAAADAgAABkAQAAAAAAABDQ
-				AAAEAAAAAAAAAA==
-				</data>
-				<key>file-data</key>
-				<dict>
-					<key>_CFURLString</key>
-					<string>file:///Users/Shared/Horizon</string>
-					<key>_CFURLStringType</key>
-					<integer>15</integer>
-				</dict>
-				<key>file-label</key>
-				<string>Horizon</string>
-				<key>file-mod-date</key>
-				<integer>3813148971</integer>
-				<key>file-type</key>
-				<integer>40</integer>
-				<key>is-beta</key>
-				<false/>
-				<key>parent-mod-date</key>
-				<integer>213919006901903</integer>
-			</dict>
-			<key>tile-type</key>
-			<string>file-tile</string>
-		</dict>
-		<dict>
-			<key>GUID</key>
 			<integer>584281959</integer>
 			<key>tile-data</key>
 			<dict>
@@ -607,8 +559,8 @@
 				<integer>2</integer>
 				<key>book</key>
 				<data>
-				Ym9va5gCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQB
+				Ym9va6gCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJQB
 				AAAEAAAAAwMAAAAAACAFAAAAAQEAAFVzZXJzAAAADwAA
 				AAEBAABkYW5pZWwuZ3JlZmJlcmcACQAAAAEBAABEb3du
 				bG9hZHMAAAAMAAAAAQYAABAAAAAgAAAAOAAAAAgAAAAE
@@ -617,17 +569,17 @@
 				AAAEAABBx9+ALwAAABgAAAABAgAAAgAAAAAAAAAPAAAA
 				AAAAAAAAAAAAAAAACAAAAAQDAAABAAAAAAAAAAQAAAAD
 				AwAA9gEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1h
-				Y2ludG9zaCBIRAgAAAAEAwAAACAlidABAAAkAAAAAQEA
-				ADAwRkRBMjZBLTNCNEMtNDdENi04REUyLTEyQjY2N0Yx
-				M0E1OBgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
-				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEA
-				AAAAAAAAEAAAAAQQAABMAAAAAAAAAAUQAACQAAAAAAAA
-				ABAQAAC0AAAAAAAAAEAQAACkAAAAAAAAAAIgAABwAQAA
-				AAAAAAUgAADwAAAAAAAAABAgAAAAAQAAAAAAABEgAAAk
-				AQAAAAAAABIgAAAUAQAAAAAAABMgAACkAAAAAAAAACAg
-				AABQAQAAAAAAADAgAAB8AQAAAAAAAAHAAADUAAAAAAAA
-				ABHAAAAgAAAAAAAAABLAAADkAAAAAAAAABDQAAAEAAAA
-				AAAAAA==
+				Y2ludG9zaCBIRAgAAAAEAwAAACAlidABAAAIAAAAAAQA
+				AEHIJKWrAAAAJAAAAAEBAAAwMEZEQTI2QS0zQjRDLTQ3
+				RDYtOERFMi0xMkI2NjdGMTNBNTgYAAAAAQIAAIEAAAAB
+				AAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
+				AAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAEEAAATAAA
+				AAAAAAAFEAAAkAAAAAAAAAAQEAAAtAAAAAAAAABAEAAA
+				pAAAAAAAAAACIAAAgAEAAAAAAAAFIAAA8AAAAAAAAAAQ
+				IAAAAAEAAAAAAAARIAAANAEAAAAAAAASIAAAFAEAAAAA
+				AAATIAAAJAEAAAAAAAAgIAAAYAEAAAAAAAAwIAAAjAEA
+				AAAAAAABwAAA1AAAAAAAAAARwAAAIAAAAAAAAAASwAAA
+				5AAAAAAAAAAQ0AAABAAAAAAAAAA=
 				</data>
 				<key>displayas</key>
 				<integer>0</integer>
@@ -670,7 +622,7 @@
 	<key>showhidden</key>
 	<true/>
 	<key>tilesize</key>
-	<integer>54</integer>
+	<real>50.0</real>
 	<key>trash-full</key>
 	<true/>
 	<key>version</key>
