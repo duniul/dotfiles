@@ -51,7 +51,6 @@ The user uses **fish** as their primary shell. Bash is maintained for feature pa
 
 - `.dotfiles/setup.sh` - fresh install script (brew, fisher, pnpm, fnm)
 - `.dotfiles/setup-dotfiles-git.sh` - bare repo bootstrap script
-- `.dotfiles/migration.sh` - old machine migration helper
 
 ## git config
 
