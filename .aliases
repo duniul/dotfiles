@@ -21,8 +21,7 @@ alias bashprofile='edit ~/.bash_profile'
 alias bashfunctions='edit $BASH_DIR/functions.sh'
 alias aliases='edit $HOME/.aliases'
 
-# vscode vs cursor aliases
-alias code='/opt/homebrew/bin/cursor'
+# vscode aliases
 alias vscode='/opt/homebrew/bin/code'
 
 # Github aliases
